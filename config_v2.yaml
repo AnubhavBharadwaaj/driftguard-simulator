@@ -1,0 +1,81 @@
+simulation:
+  seeds: [0, 1, 2, 3, 4]
+  n_lots: 40
+  shifted_test_lots: 8
+  lot_sizes: [25, 60, 100, 150, 200]
+  checkpoints_h: [0, 24, 48, 72, 96, 168]
+  standard_checkpoints_h: [0, 24, 96, 168]
+  split_lots: {train: 24, calibration: 8, test: 8}
+  temperature_c: 125.0
+  activation_energy_ev: 0.7
+  boltzmann_ev_per_k: 0.00008617333262
+  parameters:
+    leakage_uA: {limit: 50.0, family_medians: [10.0, 11.5]}
+    iddq_uA: {limit: 200.0, family_medians: [82.0, 96.0]}
+    delay_ns: {limit: 12.0, family_medians: [6.8, 7.6]}
+  inprior:
+    lot_median_log_sigma: 0.30
+    part_log_sigma: 0.10
+    correlation: 0.50
+    healthy_n_range: [0.20, 0.50]
+    healthy_drift_mean: 0.045
+    healthy_drift_sd: 0.012
+    lot_drift_sd: 0.012
+    noise_range: [0.01, 0.02]
+    tester_offset_max: 0.03
+    defect_rate_range: [0.01, 0.03]
+    defect_amplitude_scale: 1.0
+  shifted:
+    correlation: 0.30
+    noise_range: [0.02, 0.03]
+    tester_offset_max: 0.03
+    defect_amplitude_scale: 0.70
+    tau_h_range: [18.0, 72.0]
+  broad_prior:
+    lot_size_range: [20, 200]
+    lot_median_log_sigma: [0.12, 0.48]
+    part_log_sigma: [0.05, 0.18]
+    correlation: [0.20, 0.80]
+    healthy_drift_mean: [0.015, 0.10]
+    exponent_n: [0.15, 0.75]
+    noise: [0.005, 0.03]
+    tester_offset_max: [0.0, 0.04]
+    defect_rate: [0.0, 0.05]
+  defect_type_probs: {D1_high_in_limit: 0.25, D2_fast_drifter: 0.30, D3_late_accelerator: 0.25, D4_multivariate: 0.20}
+  d1_multiple_range: [3.0, 4.8]
+  d2_drift_range: [0.30, 1.50]
+  d3_late_range: [0.45, 1.60]
+  d4_sigma_shift: 2.35
+  n_testers: 3
+  n_board_slots: 16
+  missing_rate: 0.01
+  slot_gradient_max_c: 4.0
+detectors:
+  operating_far_pct: [0.1, 0.5, 1.0]
+  bh_q: [0.1, 0.2]
+  small_lot_cutoff: 30
+  shrinkage_target_n: 30
+  mincov_support_fraction: 0.75
+  fusion_splits:
+    - {module_a: 0.60, slope: 0.20, interval: 0.20}
+    - {module_a: 0.40, slope: 0.30, interval: 0.30}
+    - {module_a: 0.80, slope: 0.10, interval: 0.10}
+forecaster:
+  power_n_grid: [0.20, 0.225, 0.25, 0.275, 0.30, 0.325, 0.35, 0.375, 0.40, 0.425, 0.45, 0.475, 0.50]
+  catboost_iterations: 180
+  catboost_depth: 6
+  catboost_learning_rate: 0.05
+  conformal_nominal_pct: 90.0
+adaptive:
+  budgets_pct: [0, 2, 5, 10, 20, 30]
+  target_far_pct: 0.5
+spikein:
+  spikes_per_type_per_lot: 40
+  max_fraction_per_pass: 0.10
+  promised_recall_pct: [90, 95, 99]
+fusion:
+  guard_band_fraction: 0.10
+  oven_total_h: 168.0
+runtime:
+  cpu_threads: 4
+  max_wall_clock_s: 14400

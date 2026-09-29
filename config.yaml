@@ -1,0 +1,67 @@
+simulation:
+  seeds: [0, 1, 2, 3, 4]
+  n_lots: 40
+  n_families: 2
+  lot_sizes: [25, 60, 100, 150, 200]
+  split_lots: {train: 24, calibration: 8, test: 8}
+  checkpoints_h: [0, 24, 96, 168]
+  temperature_c: 125
+  parameters:
+    leakage_uA: {limit: 50.0, family_medians: [10.0, 11.5]}
+    iddq_uA: {limit: 200.0, family_medians: [82.0, 96.0]}
+    delay_ns: {limit: 12.0, family_medians: [6.8, 7.6]}
+  lot_median_log_sigma: 0.30
+  part_log_sigma: 0.10
+  parameter_correlation: 0.50
+  healthy_n_range: [0.20, 0.50]
+  healthy_drift_mean: 0.045
+  healthy_drift_sd: 0.012
+  lot_drift_sd: 0.012
+  defect_rate_range: [0.01, 0.03]
+  defect_type_probs:
+    D1_high_in_limit: 0.25
+    D2_fast_drifter: 0.30
+    D3_late_accelerator: 0.25
+    D4_multivariate: 0.20
+  d1_level_multiple_range: [3.0, 4.8]
+  d1_limit_fraction_cap: 0.97
+  d2_drift_range: [0.30, 1.50]
+  d3_late_amplitude_range: [0.45, 1.60]
+  d4_sigma_shift: 2.35
+  measurement_noise_range: [0.01, 0.02]
+  tester_offset_max: 0.03
+  n_testers: 3
+  n_board_slots: 16
+  missing_rate: 0.01
+
+module_a:
+  small_lot_cutoff: 30
+  shrinkage_target_n: 30
+  robust_sigma_floor: 0.001
+  mincov_support_fraction: 0.75
+  isolation_forest_estimators: 180
+  isolation_forest_max_samples: 512
+  operating_far_pct: [0.1, 0.5, 1.0]
+  dpat_sigma: 6.0
+
+module_b:
+  svr_c: 12.0
+  svr_epsilon: 0.03
+  svr_gamma: scale
+  catboost_iterations: 180
+  catboost_depth: 6
+  catboost_learning_rate: 0.05
+  catboost_l2_leaf_reg: 4.0
+  conformal_nominal_pct: 90.0
+  power_n_grid: [0.20, 0.225, 0.25, 0.275, 0.30, 0.325, 0.35, 0.375, 0.40, 0.425, 0.45, 0.475, 0.50]
+
+fusion:
+  guard_band_fraction: 0.10
+  lot_slope_k_grid: [2.0, 2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 8.0]
+  k_target_far_pct: 0.5
+  oven_hours_after_24h: 144.0
+  latency_repeats: 15
+
+runtime:
+  cpu_threads: 4
+  round_significant_figures: 4
