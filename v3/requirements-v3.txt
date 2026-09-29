@@ -1,0 +1,4 @@
+# Start from the immutable v2 requirements.
+-r ../requirements.txt
+
+# Add v3 packages only after dry run dependency checks and API verification.

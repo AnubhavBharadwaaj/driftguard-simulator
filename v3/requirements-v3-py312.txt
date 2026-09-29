@@ -1,0 +1,2 @@
+# Reserved for the isolated Python 3.12 conformal cross check environment.
+# nonconform will be pinned here after its installed API is verified.
