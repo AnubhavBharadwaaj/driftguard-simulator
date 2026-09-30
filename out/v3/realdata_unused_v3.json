@@ -939,13 +939,197 @@
       "caveat": "Accelerated power cycling to failure, not component burn-in. DUT2 was preconditioned by cutting one of six bond wires. Three devices are too few for a production performance claim.",
       "evidence_label": "PUBLIC DATASET SANITY CHECK",
       "rivals_using_it": 0
-    }
-  ],
-  "unavailable": [
+    },
     {
       "dataset": "Bosch Production Line Performance",
-      "status": "skipped_corrupt_download",
-      "reason": "train_numeric archive is incomplete (BadZipFile); labels cannot be read"
+      "source": "Kaggle Bosch Production Line Performance competition",
+      "licence": "Competition data. Use and redistribution are subject to the Kaggle competition rules.",
+      "n_parts": 1183747,
+      "n_failures": 6879,
+      "failure_prevalence_pct": 0.581120796927046,
+      "split": {
+        "type": "chronological 60/20/20 by earliest station timestamp",
+        "missing_timestamps_interpolated_from_ordered_part_id": 582,
+        "train_parts": 710248,
+        "calibration_parts": 236749,
+        "test_parts": 236750,
+        "test_failures": 964
+      },
+      "lots_definition": "ten unit production time window crossed with exact station path",
+      "n_test_lots": 15843,
+      "model": "HistGradientBoosting on row statistics and 48 measurements selected using training data only",
+      "selected_measurements": [
+        "L1_S24_F1723",
+        "L1_S24_F867",
+        "L1_S24_F1632",
+        "L1_S24_F1695",
+        "L1_S24_F1604",
+        "L1_S24_F839",
+        "L1_S24_F1758",
+        "L1_S24_F1667",
+        "L1_S24_F958",
+        "L1_S24_F816",
+        "L1_S24_F930",
+        "L1_S24_F902",
+        "L1_S24_F1846",
+        "L1_S24_F1298",
+        "L1_S24_F993",
+        "L1_S24_F988",
+        "L1_S24_F1672",
+        "L1_S24_F1581",
+        "L1_S24_F1844",
+        "L2_S28_F3259",
+        "L1_S24_F1326",
+        "L1_S24_F1207",
+        "L3_S49_F4206",
+        "L1_S25_F2808",
+        "L1_S25_F2920",
+        "L1_S24_F1498",
+        "L2_S28_F3226",
+        "L1_S25_F2857",
+        "L3_S49_F4211",
+        "L1_S25_F2990",
+        "L1_S24_F1609",
+        "L2_S28_F3303",
+        "L1_S24_F1494",
+        "L1_S25_F2950",
+        "L1_S25_F2886",
+        "L1_S24_F1270",
+        "L1_S25_F2970",
+        "L2_S28_F3292",
+        "L1_S25_F2940",
+        "L1_S24_F1102",
+        "L1_S24_F1842",
+        "L0_S22_F546",
+        "L1_S25_F2915",
+        "L0_S22_F556",
+        "L1_S24_F1490",
+        "L1_S24_F1212",
+        "L1_S24_F679",
+        "L1_S24_F1174"
+      ],
+      "average_precision": 0.01129907594432901,
+      "operating_points": [
+        {
+          "tier": "REJECT",
+          "target": "FAR 0.5%",
+          "threshold": 0.7704226157097938,
+          "achieved_far_pct": 0.4890027397725056,
+          "recall_pct": 7.468879668049793,
+          "false_alarms_per_1000_good": 4.8900273977250555,
+          "escapes_per_1000_defects": 925.3112033195022,
+          "n_good": 235786,
+          "n_defects": 964,
+          "far_cp95": [
+            0.46124412242577073,
+            0.5179889569743458
+          ],
+          "recall_cp95": [
+            5.889511838346254,
+            9.313627909319003
+          ]
+        },
+        {
+          "tier": "REJECT",
+          "target": "FAR 1.0%",
+          "threshold": 0.7073921121158684,
+          "achieved_far_pct": 0.7625558769392585,
+          "recall_pct": 9.95850622406639,
+          "false_alarms_per_1000_good": 7.625558769392585,
+          "escapes_per_1000_defects": 900.4149377593361,
+          "n_good": 235786,
+          "n_defects": 964,
+          "far_cp95": [
+            0.7278375508904904,
+            0.7984926450683738
+          ],
+          "recall_cp95": [
+            8.14094861652978,
+            12.024741072620525
+          ]
+        },
+        {
+          "tier": "REJECT",
+          "target": "FAR 5.0%",
+          "threshold": 0.4305825676204992,
+          "achieved_far_pct": 2.8619171621724786,
+          "recall_pct": 12.344398340248963,
+          "false_alarms_per_1000_good": 28.619171621724785,
+          "escapes_per_1000_defects": 876.5560165975104,
+          "n_good": 235786,
+          "n_defects": 964,
+          "far_cp95": [
+            2.794985427939702,
+            2.9300109736661333
+          ],
+          "recall_cp95": [
+            10.333527583603308,
+            14.588416522669148
+          ]
+        },
+        {
+          "tier": "REVIEW",
+          "target": "recall 80%",
+          "threshold": 0.28024815092174976,
+          "achieved_far_pct": 73.8979413536003,
+          "recall_pct": 73.96265560165975,
+          "false_alarms_per_1000_good": 738.979413536003,
+          "escapes_per_1000_defects": 260.37344398340247,
+          "n_good": 235786,
+          "n_defects": 964,
+          "far_cp95": [
+            73.72016323458008,
+            74.07513184420635
+          ],
+          "recall_cp95": [
+            71.07004174458208,
+            76.70806251051539
+          ]
+        },
+        {
+          "tier": "REVIEW",
+          "target": "recall 90%",
+          "threshold": 0.22764653524412048,
+          "achieved_far_pct": 92.12421432994326,
+          "recall_pct": 95.12448132780084,
+          "false_alarms_per_1000_good": 921.2421432994325,
+          "escapes_per_1000_defects": 48.75518672199175,
+          "n_good": 235786,
+          "n_defects": 964,
+          "far_cp95": [
+            92.0147603121678,
+            92.23263151858822
+          ],
+          "recall_cp95": [
+            93.56905519303402,
+            96.39598484966473
+          ]
+        },
+        {
+          "tier": "REVIEW",
+          "target": "recall 95%",
+          "threshold": 0.18234485507175488,
+          "achieved_far_pct": 97.66525578278609,
+          "recall_pct": 98.96265560165975,
+          "false_alarms_per_1000_good": 976.6525578278608,
+          "escapes_per_1000_defects": 10.373443983402453,
+          "n_good": 235786,
+          "n_defects": 964,
+          "far_cp95": [
+            97.60350386718008,
+            97.72583211706187
+          ],
+          "recall_cp95": [
+            98.10058456776976,
+            99.50146366461206
+          ]
+        }
+      ],
+      "runtime_s": 67.93851037499553,
+      "caveat": "Real rare production failures, but not burn-in trajectories. Labels identify line failures and do not identify semiconductor failure mechanisms. The competition data cannot be redistributed.",
+      "evidence_label": "PUBLIC DATASET SANITY CHECK",
+      "rivals_using_it": 0
     }
-  ]
+  ],
+  "unavailable": []
 }

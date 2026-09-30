@@ -34,6 +34,10 @@ A second laboratory dataset tests the same early to late idea on three IGBTs age
 
 CORA strengthens evidence diversity but remains descriptive because it contains only three devices and DUT2 was deliberately preconditioned with a cut bond wire. This limitation is stated at `realdata_unused[1].caveat` in `out/v3/driftguard_results_v3.json`.
 
+Bosch adds a chronological held out test covering 236,750 production parts and 964 failures, but only 7.47 percent of failures were found at 0.489 percent false alarms. The operating result is at `headline.bosch_reject_at_0p5_far` and the split is at `realdata_unused[2].split` in `out/v3/driftguard_results_v3.json`.
+
+The Bosch result shows why low false alarm screening is difficult at production scale and why review recall cannot be presented without its workload. The 80 percent calibration target produced 73.96 percent held out recall at 73.90 percent false alarms under `realdata_unused[2].operating_points` in `out/v3/driftguard_results_v3.json`.
+
 ## Slide 6: Research and references
 
 Five dependence aware evidence rules and one learned rule were compared, with one rule selected using C2 calibration only. Their calibration and held out summaries appear under `combiners.validation` and `combiners.held_out_test` in `out/v3/driftguard_results_v3.json`.
@@ -49,6 +53,7 @@ Every reported decision identifies its read hour, target, achieved false alarm r
 5. Do not claim that the eight device gEOL check represents semiconductor production diversity.
 6. Do not claim that a foundation model was benchmarked.
 7. Do not claim that the three device CORA result proves production performance.
+8. Do not claim that the Bosch model has useful production recall at the controlled 0.5 percent false alarm setting.
 
 ## Three separating numbers
 

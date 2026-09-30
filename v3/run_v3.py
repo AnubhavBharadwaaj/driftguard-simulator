@@ -36,6 +36,7 @@ from conformal import evaluate, fisher_p
 from module_a_v2 import component_scores, conditional_residual_scores
 from simulate_v2 import PARAMS, generate_evaluation, impute
 from evaluate_cora import evaluate as evaluate_cora
+from evaluate_bosch import evaluate as evaluate_bosch
 
 warnings.filterwarnings("ignore", message="The covariance matrix associated to your dataset is not full rank")
 warnings.filterwarnings("ignore", message="Determinant has increased; this should not happen")
@@ -423,14 +424,18 @@ def damaged_dataset_status() -> list[dict]:
         except Exception as exc:
             ok, bad = False, type(exc).__name__
         status.append({"dataset": "CORA IGBT DATA3206", "status": "ready" if ok else "skipped_corrupt_download", "reason": None if ok else f"ZIP has no complete central directory ({bad}); downloaded size {cora.stat().st_size} bytes"})
-    bosch = DATASETS / "Bosch_Production_Line_Performance" / "train_numeric.csv.zip.download" / "train_numeric.csv.zip"
-    try:
-        with zipfile.ZipFile(bosch) as zf:
-            bad = zf.testzip()
-        ok = bad is None
-    except Exception as exc:
-        ok, bad = False, type(exc).__name__
-    status.append({"dataset": "Bosch Production Line Performance", "status": "ready" if ok else "skipped_corrupt_download", "reason": None if ok else f"train_numeric archive is incomplete ({bad}); labels cannot be read"})
+    bosch_csv = DATASETS / "Bosch_Production_Line_Performance" / "train_numeric.csv"
+    if bosch_csv.exists() and bosch_csv.stat().st_size > 1_000_000_000:
+        status.append({"dataset": "Bosch Production Line Performance", "status": "ready_extracted", "reason": "Complete labelled train_numeric.csv is available"})
+    else:
+        bosch = DATASETS / "Bosch_Production_Line_Performance" / "train_numeric.csv.zip.download" / "train_numeric.csv.zip"
+        try:
+            with zipfile.ZipFile(bosch) as zf:
+                bad = zf.testzip()
+            ok = bad is None
+        except Exception as exc:
+            ok, bad = False, type(exc).__name__
+        status.append({"dataset": "Bosch Production Line Performance", "status": "ready" if ok else "skipped_corrupt_download", "reason": None if ok else f"train_numeric archive is incomplete ({bad}); labels cannot be read"})
     return status
 
 
@@ -524,8 +529,9 @@ def main():
 
     geol = evaluate_geol()
     cora = evaluate_cora()
+    bosch = evaluate_bosch()
     damaged = damaged_dataset_status()
-    write_json(OUT / "realdata_unused_v3.json", {"datasets": [geol, cora], "unavailable": [row for row in damaged if not row["status"].startswith("ready")]})
+    write_json(OUT / "realdata_unused_v3.json", {"datasets": [geol, cora, bosch], "unavailable": [row for row in damaged if not row["status"].startswith("ready")]})
 
     detector_name = f"best_{selected_combiner}"
     reject = [r for r in operating_summary if r["detector"] == detector_name and r["tier"] == "REJECT" and r["target"] == "FAR 0.5%" and r["decision_hour"] == 24 and r["test_set"] == "inprior"]
@@ -544,8 +550,8 @@ def main():
                 "WP2": {"status": "done", "reason": "REJECT and REVIEW tables at explicit 24, 96 and 168 hour decisions"},
                 "WP3": {"status": "done", "reason": "five dependence-aware mergers plus learned logistic source combiner"},
                 "WP4": {"status": "skipped", "reason": "foundation model weights were not required to complete the calibrated simulation and remain a finale benchmark"},
-                "WP5": {"status": "partial", "reason": "Aalborg gEOL and CORA IGBT completed; Bosch numeric archives remain incomplete and the other planned real datasets were not evaluated"},
-                "WP5b": {"status": "partial", "reason": "Aalborg gEOL and CORA IGBT completed; SPRC corpus remains a separate extraction task"},
+                "WP5": {"status": "partial", "reason": "Aalborg gEOL, CORA IGBT and Bosch completed; the other planned real datasets were not evaluated"},
+                "WP5b": {"status": "partial", "reason": "Aalborg gEOL, CORA IGBT and Bosch completed; SPRC corpus remains a separate extraction task"},
                 "WP6": {"status": "skipped", "reason": "cross-repository schemas need a separate auditable adapter; rival code was not copied"},
                 "WP7": {"status": "done", "reason": "R1 to R5 reimplemented; R3 transparently uses sklearn fallback because libomp is unavailable"},
                 "WP8": {"status": "done", "reason": "consolidated machine-readable results and slide notes"},
@@ -559,19 +565,20 @@ def main():
         "rival_stack": rival_summary,
         "rival_benchmarks": [],
         "realdata": [],
-        "realdata_unused": [geol, cora],
+        "realdata_unused": [geol, cora, bosch],
         "headline": {
             "reject_tier_24h_inprior": reject[0] if reject else None,
             "review_tier_recall95_cost": review[0] if review else None,
             "shifted_reject_tier": shifted[0] if shifted else None,
             "best_forecaster": f"gEOL {best_geol}", "real_data_best": geol["metrics"][best_geol],
             "cora_best_at_15_percent": cora["best_at_15_percent"],
+            "bosch_reject_at_0p5_far": next(row for row in bosch["operating_points"] if row["tier"] == "REJECT" and row["target"] == "FAR 0.5%"),
             "sprc_n_parts": None, "sprc_n_lots": None, "sprc_mae_168h": None, "sprc_false_alarms_per_1000": None, "sprc_lot_shift_result": None,
         },
         "integrity": {
             "test_lots_touched_once": True, "shifted_set_touched_once": True, "thresholds_set_on": "C1 and C2 calibration lots only",
-            "where_new_methods_lose": ["Bosch cannot be evaluated because its local numeric archives are incomplete", "R3 is not exact XGBoost because the required OpenMP runtime is absent", "gEOL has only two devices per test condition", "CORA has only three devices and DUT2 is deliberately preconditioned"],
-            "notes": ["Every decision row states its hour", "No rival source or dataset is committed", "Power cycling is a public dataset sanity check, not burn-in validation", "CORA uses three devices, including one deliberately preconditioned device, so its forecast errors are descriptive only"],
+            "where_new_methods_lose": ["R3 is not exact XGBoost because the required OpenMP runtime is absent", "gEOL has only two devices per test condition", "CORA has only three devices and DUT2 is deliberately preconditioned", "Bosch recall is low at the controlled 0.5 percent false alarm setting"],
+            "notes": ["Every decision row states its hour", "No rival source or dataset is committed", "Power cycling is a public dataset sanity check, not burn-in validation", "CORA uses three devices, including one deliberately preconditioned device, so its forecast errors are descriptive only", "Bosch is a production line failure benchmark, not a burn-in trajectory dataset"],
         },
     }
     write_json(OUT / "driftguard_results_v3.json", results)

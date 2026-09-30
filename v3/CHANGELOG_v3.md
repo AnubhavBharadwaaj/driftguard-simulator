@@ -20,3 +20,4 @@
 7. Recorded CORA and Bosch as unavailable because their local archives are incomplete.
 8. Added five Sahodrift v3 inspector cards, including a strong D4 example and honest failure cases.
 9. Added leave one device out CORA IGBT forecasting at 15, 25 and 50 percent of observed life using the corrected extracted MAT files.
+10. Added a chronological Bosch production line benchmark with training only feature selection and calibration only operating thresholds.
