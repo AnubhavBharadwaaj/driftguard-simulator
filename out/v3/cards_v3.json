@@ -1,0 +1,99 @@
+{
+  "cards": [
+    {
+      "product": "Sahodrift",
+      "card_type": "representative_D1",
+      "seed": 0,
+      "part_id": "S0_L06_P183",
+      "lot_id": "S0_L06",
+      "true_label": "D1_high_in_limit",
+      "decision_hour": 24,
+      "selected_combiner": "twice_mean",
+      "conformal_p_value": 0.00281819395862904,
+      "reject_threshold": 0.005,
+      "status": "REJECT",
+      "evidence": {
+        "selected_component_fisher_p": 0.0004644411881770771,
+        "conditional_residual_p": 0.0022017760470579976
+      },
+      "reason": "combined evidence crossed the frozen threshold",
+      "failure_case": false
+    },
+    {
+      "product": "Sahodrift",
+      "card_type": "representative_D2",
+      "seed": 0,
+      "part_id": "S0_L30_P075",
+      "lot_id": "S0_L30",
+      "true_label": "D2_fast_drifter",
+      "decision_hour": 24,
+      "selected_combiner": "twice_mean",
+      "conformal_p_value": 0.005407051105169192,
+      "reject_threshold": 0.005,
+      "status": "CONTINUE",
+      "evidence": {
+        "selected_component_fisher_p": 0.0008284027392560886,
+        "conditional_residual_p": 0.002633786767804349
+      },
+      "reason": "combined evidence remained above the frozen threshold",
+      "failure_case": false
+    },
+    {
+      "product": "Sahodrift",
+      "card_type": "strong_D4",
+      "seed": 0,
+      "part_id": "S0_L25_P110",
+      "lot_id": "S0_L25",
+      "true_label": "D4_multivariate",
+      "decision_hour": 24,
+      "selected_combiner": "twice_mean",
+      "conformal_p_value": 0.004303320001112854,
+      "reject_threshold": 0.005,
+      "status": "REJECT",
+      "evidence": {
+        "selected_component_fisher_p": 4.418907211813713e-05,
+        "conditional_residual_p": 0.003028700029410178
+      },
+      "reason": "combined evidence crossed the frozen threshold",
+      "failure_case": false
+    },
+    {
+      "product": "Sahodrift",
+      "card_type": "false_alarm",
+      "seed": 0,
+      "part_id": "S0_L30_P046",
+      "lot_id": "S0_L30",
+      "true_label": "healthy",
+      "decision_hour": 24,
+      "selected_combiner": "twice_mean",
+      "conformal_p_value": 0.003683507774653921,
+      "reject_threshold": 0.005,
+      "status": "REJECT",
+      "evidence": {
+        "selected_component_fisher_p": 0.0002854027324818614,
+        "conditional_residual_p": 0.0023983105821288714
+      },
+      "reason": "combined evidence crossed the frozen threshold",
+      "failure_case": true
+    },
+    {
+      "product": "Sahodrift",
+      "card_type": "missed_defect",
+      "seed": 0,
+      "part_id": "S0_L33_P033",
+      "lot_id": "S0_L33",
+      "true_label": "D3_late_accelerator",
+      "decision_hour": 24,
+      "selected_combiner": "twice_mean",
+      "conformal_p_value": 0.9162367419548612,
+      "reject_threshold": 0.005,
+      "status": "CONTINUE",
+      "evidence": {
+        "selected_component_fisher_p": 0.8609546370700908,
+        "conditional_residual_p": 0.7955523632549126
+      },
+      "reason": "combined evidence remained above the frozen threshold",
+      "failure_case": true
+    }
+  ]
+}

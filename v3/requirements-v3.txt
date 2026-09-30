@@ -1,4 +1,8 @@
 # Start from the immutable v2 requirements.
 -r ../requirements.txt
 
-# Add v3 packages only after dry run dependency checks and API verification.
+# Verified against the Python 3.11 environment with pip dry runs.
+openpyxl==3.1.5
+
+# xgboost 3.2.0 was dependency checked but is intentionally not pinned because
+# its macOS wheel cannot load without a system OpenMP runtime on this machine.

@@ -8,3 +8,14 @@
 4. Recreated an isolated Python 3.11 environment from `requirements.txt` after a successful dependency dry run.
 5. Ran seed 0 through the original v2 pipeline and saved the raw result to `out/v3/regression_seed0_raw.json`.
 6. Unpacked the supplied top 23 rival source archive outside the repository for audit only. Rival code and data are not copied into this repository.
+
+## Simulation and evidence package
+
+1. Added a lot disjoint C1 and C2 calibration protocol with randomized tie handling.
+2. Compared Fisher, Cauchy, harmonic mean, Tippett, twice mean and learned logistic evidence combinations without using test labels for selection.
+3. Added explicit 24, 96 and 168 hour operating points with REJECT and REVIEW tiers.
+4. Reimplemented five audited rival approach families without copying rival code.
+5. Added benign shift traps and matched false alarm comparisons.
+6. Evaluated early to late forecasting on eight public Aalborg gEOL power cycling devices.
+7. Recorded CORA and Bosch as unavailable because their local archives are incomplete.
+8. Added five Sahodrift v3 inspector cards, including a strong D4 example and honest failure cases.

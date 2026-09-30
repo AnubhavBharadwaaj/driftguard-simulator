@@ -1,0 +1,456 @@
+{
+  "datasets": [
+    {
+      "dataset": "Aalborg gEOL power cycling",
+      "licence": "CC BY",
+      "n_units": 8,
+      "n_lots": 4,
+      "lots_definition": "test condition",
+      "protocol": "Leave one device out. First 15 percent of cycle trajectory predicts median final one percent VCE,sat.",
+      "metrics": {
+        "condition_ratio": {
+          "mae_v": 0.0031732099857946228,
+          "mape_pct": 0.09380341714174892,
+          "n": 8
+        },
+        "linear": {
+          "mae_v": 0.10293611394480257,
+          "mape_pct": 3.3930375278005696,
+          "n": 8
+        },
+        "persistence": {
+          "mae_v": 0.1820390343090093,
+          "mape_pct": 5.3355163775774574,
+          "n": 8
+        },
+        "pooled_ratio": {
+          "mae_v": 0.1276340673099034,
+          "mape_pct": 4.007647244217722,
+          "n": 8
+        },
+        "power_law": {
+          "mae_v": 0.12379833666840112,
+          "mape_pct": 3.6206407928752897,
+          "n": 8
+        }
+      },
+      "per_device": [
+        {
+          "device": "Tjmax125deltaTj100tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax125deltaTj100tontoff1_5",
+          "method": "persistence",
+          "target_v": 3.47818423897085,
+          "prediction_v": 3.21773153634311,
+          "absolute_error_v": 0.2604527026277399,
+          "absolute_percentage_error": 7.488180174860562,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax125deltaTj100tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax125deltaTj100tontoff1_5",
+          "method": "linear",
+          "target_v": 3.47818423897085,
+          "prediction_v": 3.4336376437797957,
+          "absolute_error_v": 0.044546595191054195,
+          "absolute_percentage_error": 1.2807428281670024,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax125deltaTj100tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax125deltaTj100tontoff1_5",
+          "method": "pooled_ratio",
+          "target_v": 3.47818423897085,
+          "prediction_v": 3.350775612575152,
+          "absolute_error_v": 0.12740862639569794,
+          "absolute_percentage_error": 3.6630787112472376,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax125deltaTj100tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax125deltaTj100tontoff1_5",
+          "method": "condition_ratio",
+          "target_v": 3.47818423897085,
+          "prediction_v": 3.480293103283743,
+          "absolute_error_v": 0.002108864312893033,
+          "absolute_percentage_error": 0.06063118477924616,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax125deltaTj100tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax125deltaTj100tontoff1_5",
+          "method": "power_law",
+          "target_v": 3.47818423897085,
+          "prediction_v": 3.290714083885279,
+          "absolute_error_v": 0.18747015508557086,
+          "absolute_percentage_error": 5.389885704876889,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax125deltaTj100tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax125deltaTj100tontoff1_5",
+          "method": "persistence",
+          "target_v": 3.4221630279917896,
+          "prediction_v": 3.16398693181528,
+          "absolute_error_v": 0.2581760961765096,
+          "absolute_percentage_error": 7.544237199243361,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax125deltaTj100tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax125deltaTj100tontoff1_5",
+          "method": "linear",
+          "target_v": 3.4221630279917896,
+          "prediction_v": 3.3476212332671182,
+          "absolute_error_v": 0.07454179472467137,
+          "absolute_percentage_error": 2.1782070028503098,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax125deltaTj100tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax125deltaTj100tontoff1_5",
+          "method": "pooled_ratio",
+          "target_v": 3.4221630279917896,
+          "prediction_v": 3.2948088210248496,
+          "absolute_error_v": 0.12735420696694,
+          "absolute_percentage_error": 3.7214535346574245,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax125deltaTj100tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax125deltaTj100tontoff1_5",
+          "method": "condition_ratio",
+          "target_v": 3.4221630279917896,
+          "prediction_v": 3.420089387275775,
+          "absolute_error_v": 0.0020736407160146797,
+          "absolute_percentage_error": 0.0605944456489422,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax125deltaTj100tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax125deltaTj100tontoff1_5",
+          "method": "power_law",
+          "target_v": 3.4221630279917896,
+          "prediction_v": 3.2247691094027635,
+          "absolute_error_v": 0.1973939185890261,
+          "absolute_percentage_error": 5.768103885596057,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff1_5",
+          "method": "persistence",
+          "target_v": 3.83121683727892,
+          "prediction_v": 3.55084448404918,
+          "absolute_error_v": 0.28037235322973997,
+          "absolute_percentage_error": 7.318101927868729,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff1_5",
+          "method": "linear",
+          "target_v": 3.83121683727892,
+          "prediction_v": 3.7943213293012756,
+          "absolute_error_v": 0.03689550797764429,
+          "absolute_percentage_error": 0.9630232259014848,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff1_5",
+          "method": "pooled_ratio",
+          "target_v": 3.83121683727892,
+          "prediction_v": 3.6976618362391207,
+          "absolute_error_v": 0.13355500103979923,
+          "absolute_percentage_error": 3.485968210941963,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff1_5",
+          "method": "condition_ratio",
+          "target_v": 3.83121683727892,
+          "prediction_v": 3.8344202981049627,
+          "absolute_error_v": 0.0032034608260427255,
+          "absolute_percentage_error": 0.0836147094278785,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff1_5",
+          "method": "power_law",
+          "target_v": 3.83121683727892,
+          "prediction_v": 3.6110236278690313,
+          "absolute_error_v": 0.22019320940988862,
+          "absolute_percentage_error": 5.7473439578606165,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff1_5",
+          "method": "persistence",
+          "target_v": 3.5843640318374,
+          "prediction_v": 3.31928121118185,
+          "absolute_error_v": 0.2650828206555502,
+          "absolute_percentage_error": 7.3955328839650445,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff1_5",
+          "method": "linear",
+          "target_v": 3.5843640318374,
+          "prediction_v": 3.4988869782552188,
+          "absolute_error_v": 0.08547705358218138,
+          "absolute_percentage_error": 2.384720213207935,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff1_5",
+          "method": "pooled_ratio",
+          "target_v": 3.5843640318374,
+          "prediction_v": 3.456524078558519,
+          "absolute_error_v": 0.12783995327888098,
+          "absolute_percentage_error": 3.56660071754342,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff1_5",
+          "method": "condition_ratio",
+          "target_v": 3.5843640318374,
+          "prediction_v": 3.581369480153031,
+          "absolute_error_v": 0.002994551684369018,
+          "absolute_percentage_error": 0.08354485364127384,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff1_5",
+          "method": "power_law",
+          "target_v": 3.5843640318374,
+          "prediction_v": 3.3733927962532793,
+          "absolute_error_v": 0.2109712355841209,
+          "absolute_percentage_error": 5.8858763705419115,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff20-sample1.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff20",
+          "method": "persistence",
+          "target_v": 3.4281020965012,
+          "prediction_v": 3.29830344617486,
+          "absolute_error_v": 0.12979865032633997,
+          "absolute_percentage_error": 3.786312270536384,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff20-sample1.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff20",
+          "method": "linear",
+          "target_v": 3.4281020965012,
+          "prediction_v": 3.5913874560145302,
+          "absolute_error_v": 0.16328535951333034,
+          "absolute_percentage_error": 4.7631416718884525,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff20-sample1.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff20",
+          "method": "pooled_ratio",
+          "target_v": 3.4281020965012,
+          "prediction_v": 3.5587353245699593,
+          "absolute_error_v": 0.13063322806875943,
+          "absolute_percentage_error": 3.810657453933088,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff20-sample1.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff20",
+          "method": "condition_ratio",
+          "target_v": 3.4281020965012,
+          "prediction_v": 3.4346789424438886,
+          "absolute_error_v": 0.006576845942688703,
+          "absolute_percentage_error": 0.19185093551913707,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff20-sample1.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff20",
+          "method": "power_law",
+          "target_v": 3.4281020965012,
+          "prediction_v": 3.385327038333756,
+          "absolute_error_v": 0.04277505816744398,
+          "absolute_percentage_error": 1.2477766695193002,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff20-sample2.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff20",
+          "method": "persistence",
+          "target_v": 3.38634168735946,
+          "prediction_v": 3.25188544388258,
+          "absolute_error_v": 0.13445624347687968,
+          "absolute_percentage_error": 3.9705456770289334,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff20-sample2.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff20",
+          "method": "linear",
+          "target_v": 3.38634168735946,
+          "prediction_v": 3.512293630402129,
+          "absolute_error_v": 0.125951943042669,
+          "absolute_percentage_error": 3.719410345176405,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff20-sample2.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff20",
+          "method": "pooled_ratio",
+          "target_v": 3.38634168735946,
+          "prediction_v": 3.5086521872391354,
+          "absolute_error_v": 0.12231049987967557,
+          "absolute_percentage_error": 3.611877098410841,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff20-sample2.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff20",
+          "method": "condition_ratio",
+          "target_v": 3.38634168735946,
+          "prediction_v": 3.3798573993196523,
+          "absolute_error_v": 0.006484288039807495,
+          "absolute_percentage_error": 0.19148357249394096,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj100tontoff20-sample2.xlsx",
+          "lot": "Tjmax150deltaTj100tontoff20",
+          "method": "power_law",
+          "target_v": 3.38634168735946,
+          "prediction_v": 3.3497050647786035,
+          "absolute_error_v": 0.036636622580856315,
+          "absolute_percentage_error": 1.0818938537009877,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj50tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax150deltaTj50tontoff1_5",
+          "method": "persistence",
+          "target_v": 2.471356890173085,
+          "prediction_v": 2.40685997164557,
+          "absolute_error_v": 0.06449691852751505,
+          "absolute_percentage_error": 2.6097775996650125,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj50tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax150deltaTj50tontoff1_5",
+          "method": "linear",
+          "target_v": 2.471356890173085,
+          "prediction_v": 2.598999378153801,
+          "absolute_error_v": 0.1276424879807161,
+          "absolute_percentage_error": 5.164874749100947,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj50tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax150deltaTj50tontoff1_5",
+          "method": "pooled_ratio",
+          "target_v": 2.471356890173085,
+          "prediction_v": 2.596904057545725,
+          "absolute_error_v": 0.12554716737263982,
+          "absolute_percentage_error": 5.080090531313223,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj50tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax150deltaTj50tontoff1_5",
+          "method": "condition_ratio",
+          "target_v": 2.471356890173085,
+          "prediction_v": 2.4703845082574,
+          "absolute_error_v": 0.000972381915685272,
+          "absolute_percentage_error": 0.03934607419720629,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj50tontoff1_5-sample1.xlsx",
+          "lot": "Tjmax150deltaTj50tontoff1_5",
+          "method": "power_law",
+          "target_v": 2.471356890173085,
+          "prediction_v": 2.5154345268799014,
+          "absolute_error_v": 0.0440776367068163,
+          "absolute_percentage_error": 1.7835399201986266,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj50tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax150deltaTj50tontoff1_5",
+          "method": "persistence",
+          "target_v": 2.46851601828275,
+          "prediction_v": 2.40503952883095,
+          "absolute_error_v": 0.06347648945180007,
+          "absolute_percentage_error": 2.5714432874516313,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj50tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax150deltaTj50tontoff1_5",
+          "method": "linear",
+          "target_v": 2.46851601828275,
+          "prediction_v": 2.633664187828904,
+          "absolute_error_v": 0.16514816954615386,
+          "absolute_percentage_error": 6.690180186112017,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj50tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax150deltaTj50tontoff1_5",
+          "method": "pooled_ratio",
+          "target_v": 2.46851601828275,
+          "prediction_v": 2.5949398737595843,
+          "absolute_error_v": 0.1264238554768342,
+          "absolute_percentage_error": 5.121451695694579,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj50tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax150deltaTj50tontoff1_5",
+          "method": "condition_ratio",
+          "target_v": 2.46851601828275,
+          "prediction_v": 2.469487664731606,
+          "absolute_error_v": 0.0009716464488560561,
+          "absolute_percentage_error": 0.03936156142636629,
+          "early_fraction": 0.15
+        },
+        {
+          "device": "Tjmax150deltaTj50tontoff1_5-sample2.xlsx",
+          "lot": "Tjmax150deltaTj50tontoff1_5",
+          "method": "power_law",
+          "target_v": 2.46851601828275,
+          "prediction_v": 2.519384875506236,
+          "absolute_error_v": 0.050868857223485886,
+          "absolute_percentage_error": 2.06070598070793,
+          "early_fraction": 0.15
+        }
+      ],
+      "caveat": "Power cycling degradation, not burn-in. Same early-to-late forecasting structure.",
+      "evidence_label": "PUBLIC DATASET SANITY CHECK",
+      "rivals_using_it": 0
+    }
+  ],
+  "unavailable": [
+    {
+      "dataset": "CORA IGBT DATA3204",
+      "status": "skipped_corrupt_download",
+      "reason": "ZIP has no complete central directory (BadZipFile); downloaded size 142946500 bytes"
+    },
+    {
+      "dataset": "Bosch Production Line Performance",
+      "status": "skipped_corrupt_download",
+      "reason": "train_numeric archive is incomplete (BadZipFile); labels cannot be read"
+    }
+  ]
+}
