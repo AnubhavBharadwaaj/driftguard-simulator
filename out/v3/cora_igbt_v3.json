@@ -1,0 +1,500 @@
+{
+  "dataset": "CORA.RDR Si IGBT accelerated power cycling",
+  "doi": "10.34810/data3206",
+  "licence": "CC BY 4.0",
+  "n_devices": 3,
+  "n_lots": 3,
+  "lots_definition": "one continuously aged physical device per file",
+  "protocol": "On-state Vce is averaged per eight-second cycle after rejecting off-state and artifact samples. The first 15, 25 or 50 percent of each device trajectory predicts the median final one percent. Ratio priors use the other two devices only.",
+  "trace_inventory": [
+    {
+      "device": "DUT1",
+      "n_raw_electrical_samples": 8992484,
+      "n_cycles": 22483,
+      "preconditioned": false
+    },
+    {
+      "device": "DUT2",
+      "n_raw_electrical_samples": 7465220,
+      "n_cycles": 18664,
+      "preconditioned": true
+    },
+    {
+      "device": "DUT3",
+      "n_raw_electrical_samples": 6263330,
+      "n_cycles": 15660,
+      "preconditioned": false
+    }
+  ],
+  "metrics": [
+    {
+      "early_fraction": 0.15,
+      "method": "leave_one_device_out_ratio",
+      "mae_v": 0.009694826987090751,
+      "median_absolute_error_v": 0.007839436683537038,
+      "mape_pct": 0.3974716760637432,
+      "n_devices": 3
+    },
+    {
+      "early_fraction": 0.15,
+      "method": "linear",
+      "mae_v": 0.12732009042411097,
+      "median_absolute_error_v": 0.1736088615968132,
+      "mape_pct": 5.236415673303809,
+      "n_devices": 3
+    },
+    {
+      "early_fraction": 0.15,
+      "method": "persistence",
+      "mae_v": 0.16167663226018383,
+      "median_absolute_error_v": 0.15810971269758634,
+      "mape_pct": 6.629070179882038,
+      "n_devices": 3
+    },
+    {
+      "early_fraction": 0.15,
+      "method": "power_law",
+      "mae_v": 1.7135210075088214,
+      "median_absolute_error_v": 0.169406539226991,
+      "mape_pct": 69.75120865935152,
+      "n_devices": 3
+    },
+    {
+      "early_fraction": 0.25,
+      "method": "leave_one_device_out_ratio",
+      "mae_v": 0.012801012571020287,
+      "median_absolute_error_v": 0.012333201515080994,
+      "mape_pct": 0.5244125275495807,
+      "n_devices": 3
+    },
+    {
+      "early_fraction": 0.25,
+      "method": "linear",
+      "mae_v": 0.09935570969695018,
+      "median_absolute_error_v": 0.13144413375597885,
+      "mape_pct": 4.087514852427803,
+      "n_devices": 3
+    },
+    {
+      "early_fraction": 0.25,
+      "method": "persistence",
+      "mae_v": 0.15141178584012613,
+      "median_absolute_error_v": 0.14600515522666502,
+      "mape_pct": 6.208525975555003,
+      "n_devices": 3
+    },
+    {
+      "early_fraction": 0.25,
+      "method": "power_law",
+      "mae_v": 2.6172441623534923,
+      "median_absolute_error_v": 2.8166006319113697,
+      "mape_pct": 107.61748583765882,
+      "n_devices": 3
+    },
+    {
+      "early_fraction": 0.5,
+      "method": "leave_one_device_out_ratio",
+      "mae_v": 0.025970296161674494,
+      "median_absolute_error_v": 0.027181485618662293,
+      "mape_pct": 1.0619346514332635,
+      "n_devices": 3
+    },
+    {
+      "early_fraction": 0.5,
+      "method": "linear",
+      "mae_v": 0.07682194701446828,
+      "median_absolute_error_v": 0.09884623966227446,
+      "mape_pct": 3.1593478573591924,
+      "n_devices": 3
+    },
+    {
+      "early_fraction": 0.5,
+      "method": "persistence",
+      "mae_v": 0.12393281893077275,
+      "median_absolute_error_v": 0.13037664397333248,
+      "mape_pct": 5.084928689850366,
+      "n_devices": 3
+    },
+    {
+      "early_fraction": 0.5,
+      "method": "power_law",
+      "mae_v": 0.030710227190244115,
+      "median_absolute_error_v": 0.0208324201332184,
+      "mape_pct": 1.2629555948393971,
+      "n_devices": 3
+    }
+  ],
+  "per_device": [
+    {
+      "device": "DUT1",
+      "preconditioned": false,
+      "early_fraction": 0.15,
+      "method": "persistence",
+      "target_final_vce_on_v": 2.4214349581933314,
+      "prediction_v": 2.265105352367892,
+      "absolute_error_v": 0.15632960582543953,
+      "absolute_percentage_error": 6.456072887544309
+    },
+    {
+      "device": "DUT1",
+      "preconditioned": false,
+      "early_fraction": 0.15,
+      "method": "linear",
+      "target_final_vce_on_v": 2.4214349581933314,
+      "prediction_v": 2.247826096596518,
+      "absolute_error_v": 0.1736088615968132,
+      "absolute_percentage_error": 7.169668588841443
+    },
+    {
+      "device": "DUT1",
+      "preconditioned": false,
+      "early_fraction": 0.15,
+      "method": "leave_one_device_out_ratio",
+      "target_final_vce_on_v": 2.4214349581933314,
+      "prediction_v": 2.428193382224706,
+      "absolute_error_v": 0.006758424031374499,
+      "absolute_percentage_error": 0.2791082208715224
+    },
+    {
+      "device": "DUT1",
+      "preconditioned": false,
+      "early_fraction": 0.15,
+      "method": "power_law",
+      "target_final_vce_on_v": 2.4214349581933314,
+      "prediction_v": 2.2699058422251657,
+      "absolute_error_v": 0.15152911596816576,
+      "absolute_percentage_error": 6.257823091858882
+    },
+    {
+      "device": "DUT1",
+      "preconditioned": false,
+      "early_fraction": 0.25,
+      "method": "persistence",
+      "target_final_vce_on_v": 2.4214349581933314,
+      "prediction_v": 2.2754298029666664,
+      "absolute_error_v": 0.14600515522666502,
+      "absolute_percentage_error": 6.029695521353241
+    },
+    {
+      "device": "DUT1",
+      "preconditioned": false,
+      "early_fraction": 0.25,
+      "method": "linear",
+      "target_final_vce_on_v": 2.4214349581933314,
+      "prediction_v": 2.2899908244373526,
+      "absolute_error_v": 0.13144413375597885,
+      "absolute_percentage_error": 5.428356987711587
+    },
+    {
+      "device": "DUT1",
+      "preconditioned": false,
+      "early_fraction": 0.25,
+      "method": "leave_one_device_out_ratio",
+      "target_final_vce_on_v": 2.4214349581933314,
+      "prediction_v": 2.428411570018844,
+      "absolute_error_v": 0.006976611825512347,
+      "absolute_percentage_error": 0.28811890246755584
+    },
+    {
+      "device": "DUT1",
+      "preconditioned": false,
+      "early_fraction": 0.25,
+      "method": "power_law",
+      "target_final_vce_on_v": 2.4214349581933314,
+      "prediction_v": 5.238035590104701,
+      "absolute_error_v": 2.8166006319113697,
+      "absolute_percentage_error": 116.31948330393631
+    },
+    {
+      "device": "DUT1",
+      "preconditioned": false,
+      "early_fraction": 0.5,
+      "method": "persistence",
+      "target_final_vce_on_v": 2.4214349581933314,
+      "prediction_v": 2.291058314219999,
+      "absolute_error_v": 0.13037664397333248,
+      "absolute_percentage_error": 5.384271980223183
+    },
+    {
+      "device": "DUT1",
+      "preconditioned": false,
+      "early_fraction": 0.5,
+      "method": "linear",
+      "target_final_vce_on_v": 2.4214349581933314,
+      "prediction_v": 2.322588718531057,
+      "absolute_error_v": 0.09884623966227446,
+      "absolute_percentage_error": 4.082134823725561
+    },
+    {
+      "device": "DUT1",
+      "preconditioned": false,
+      "early_fraction": 0.5,
+      "method": "leave_one_device_out_ratio",
+      "target_final_vce_on_v": 2.4214349581933314,
+      "prediction_v": 2.4101956262960025,
+      "absolute_error_v": 0.011239331897328952,
+      "absolute_percentage_error": 0.4641599750304582
+    },
+    {
+      "device": "DUT1",
+      "preconditioned": false,
+      "early_fraction": 0.5,
+      "method": "power_law",
+      "target_final_vce_on_v": 2.4214349581933314,
+      "prediction_v": 2.475983720203468,
+      "absolute_error_v": 0.054548762010136365,
+      "absolute_percentage_error": 2.2527452916115496
+    },
+    {
+      "device": "DUT2",
+      "preconditioned": true,
+      "early_fraction": 0.15,
+      "method": "persistence",
+      "target_final_vce_on_v": 2.458434555973339,
+      "prediction_v": 2.3003248432757526,
+      "absolute_error_v": 0.15810971269758634,
+      "absolute_percentage_error": 6.431316721993758
+    },
+    {
+      "device": "DUT2",
+      "preconditioned": true,
+      "early_fraction": 0.15,
+      "method": "linear",
+      "target_final_vce_on_v": 2.458434555973339,
+      "prediction_v": 2.431293903712215,
+      "absolute_error_v": 0.027140652261123943,
+      "absolute_percentage_error": 1.103981075891543
+    },
+    {
+      "device": "DUT2",
+      "preconditioned": true,
+      "early_fraction": 0.15,
+      "method": "leave_one_device_out_ratio",
+      "target_final_vce_on_v": 2.458434555973339,
+      "prediction_v": 2.466273992656876,
+      "absolute_error_v": 0.007839436683537038,
+      "absolute_percentage_error": 0.31887920971861144
+    },
+    {
+      "device": "DUT2",
+      "preconditioned": true,
+      "early_fraction": 0.15,
+      "method": "power_law",
+      "target_final_vce_on_v": 2.458434555973339,
+      "prediction_v": 7.278061923304646,
+      "absolute_error_v": 4.819627367331307,
+      "absolute_percentage_error": 196.04456647507254
+    },
+    {
+      "device": "DUT2",
+      "preconditioned": true,
+      "early_fraction": 0.25,
+      "method": "persistence",
+      "target_final_vce_on_v": 2.458434555973339,
+      "prediction_v": 2.313481084793338,
+      "absolute_error_v": 0.1449534711800009,
+      "absolute_percentage_error": 5.896169610364559
+    },
+    {
+      "device": "DUT2",
+      "preconditioned": true,
+      "early_fraction": 0.25,
+      "method": "linear",
+      "target_final_vce_on_v": 2.458434555973339,
+      "prediction_v": 2.4504922640239997,
+      "absolute_error_v": 0.007942291949339264,
+      "absolute_percentage_error": 0.3230629804662328
+    },
+    {
+      "device": "DUT2",
+      "preconditioned": true,
+      "early_fraction": 0.25,
+      "method": "leave_one_device_out_ratio",
+      "target_final_vce_on_v": 2.458434555973339,
+      "prediction_v": 2.47076775748842,
+      "absolute_error_v": 0.012333201515080994,
+      "absolute_percentage_error": 0.5016688967828983
+    },
+    {
+      "device": "DUT2",
+      "preconditioned": true,
+      "early_fraction": 0.25,
+      "method": "power_law",
+      "target_final_vce_on_v": 2.458434555973339,
+      "prediction_v": 2.662973005584121,
+      "absolute_error_v": 0.20453844961078227,
+      "absolute_percentage_error": 8.3198655467077
+    },
+    {
+      "device": "DUT2",
+      "preconditioned": true,
+      "early_fraction": 0.5,
+      "method": "persistence",
+      "target_final_vce_on_v": 2.458434555973339,
+      "prediction_v": 2.358272402850006,
+      "absolute_error_v": 0.10016215312333276,
+      "absolute_percentage_error": 4.0742249119451035
+    },
+    {
+      "device": "DUT2",
+      "preconditioned": true,
+      "early_fraction": 0.5,
+      "method": "linear",
+      "target_final_vce_on_v": 2.458434555973339,
+      "prediction_v": 2.4449138914848474,
+      "absolute_error_v": 0.01352066448849154,
+      "absolute_percentage_error": 0.5499704865293217
+    },
+    {
+      "device": "DUT2",
+      "preconditioned": true,
+      "early_fraction": 0.5,
+      "method": "leave_one_device_out_ratio",
+      "target_final_vce_on_v": 2.458434555973339,
+      "prediction_v": 2.497924626942371,
+      "absolute_error_v": 0.03949007096903223,
+      "absolute_percentage_error": 1.606309627933024
+    },
+    {
+      "device": "DUT2",
+      "preconditioned": true,
+      "early_fraction": 0.5,
+      "method": "power_law",
+      "target_final_vce_on_v": 2.458434555973339,
+      "prediction_v": 2.4751840554007165,
+      "absolute_error_v": 0.01674949942737758,
+      "absolute_percentage_error": 0.6813075168782009
+    },
+    {
+      "device": "DUT3",
+      "preconditioned": false,
+      "early_fraction": 0.15,
+      "method": "persistence",
+      "target_final_vce_on_v": 2.4370706045317725,
+      "prediction_v": 2.266480026274247,
+      "absolute_error_v": 0.17059057825752566,
+      "absolute_percentage_error": 6.999820930108045
+    },
+    {
+      "device": "DUT3",
+      "preconditioned": false,
+      "early_fraction": 0.15,
+      "method": "linear",
+      "target_final_vce_on_v": 2.4370706045317725,
+      "prediction_v": 2.2558598471173767,
+      "absolute_error_v": 0.18121075741439574,
+      "absolute_percentage_error": 7.435597355178443
+    },
+    {
+      "device": "DUT3",
+      "preconditioned": false,
+      "early_fraction": 0.15,
+      "method": "leave_one_device_out_ratio",
+      "target_final_vce_on_v": 2.4370706045317725,
+      "prediction_v": 2.4225839842854118,
+      "absolute_error_v": 0.014486620246360715,
+      "absolute_percentage_error": 0.5944275976010958
+    },
+    {
+      "device": "DUT3",
+      "preconditioned": false,
+      "early_fraction": 0.15,
+      "method": "power_law",
+      "target_final_vce_on_v": 2.4370706045317725,
+      "prediction_v": 2.2676640653047815,
+      "absolute_error_v": 0.169406539226991,
+      "absolute_percentage_error": 6.951236411123123
+    },
+    {
+      "device": "DUT3",
+      "preconditioned": false,
+      "early_fraction": 0.25,
+      "method": "persistence",
+      "target_final_vce_on_v": 2.4370706045317725,
+      "prediction_v": 2.27379387341806,
+      "absolute_error_v": 0.16327673111371244,
+      "absolute_percentage_error": 6.699712794947208
+    },
+    {
+      "device": "DUT3",
+      "preconditioned": false,
+      "early_fraction": 0.25,
+      "method": "linear",
+      "target_final_vce_on_v": 2.4370706045317725,
+      "prediction_v": 2.27838990114624,
+      "absolute_error_v": 0.15868070338553242,
+      "absolute_percentage_error": 6.511124589105587
+    },
+    {
+      "device": "DUT3",
+      "preconditioned": false,
+      "early_fraction": 0.25,
+      "method": "leave_one_device_out_ratio",
+      "target_final_vce_on_v": 2.4370706045317725,
+      "prediction_v": 2.417977380159305,
+      "absolute_error_v": 0.01909322437246752,
+      "absolute_percentage_error": 0.7834497833982881
+    },
+    {
+      "device": "DUT3",
+      "preconditioned": false,
+      "early_fraction": 0.25,
+      "method": "power_law",
+      "target_final_vce_on_v": 2.4370706045317725,
+      "prediction_v": 7.2676640100700975,
+      "absolute_error_v": 4.830593405538325,
+      "absolute_percentage_error": 198.21310866233247
+    },
+    {
+      "device": "DUT3",
+      "preconditioned": false,
+      "early_fraction": 0.5,
+      "method": "persistence",
+      "target_final_vce_on_v": 2.4370706045317725,
+      "prediction_v": 2.2958109448361195,
+      "absolute_error_v": 0.14125965969565302,
+      "absolute_percentage_error": 5.796289177382813
+    },
+    {
+      "device": "DUT3",
+      "preconditioned": false,
+      "early_fraction": 0.5,
+      "method": "linear",
+      "target_final_vce_on_v": 2.4370706045317725,
+      "prediction_v": 2.3189716676391336,
+      "absolute_error_v": 0.11809893689263884,
+      "absolute_percentage_error": 4.845938261822695
+    },
+    {
+      "device": "DUT3",
+      "preconditioned": false,
+      "early_fraction": 0.5,
+      "method": "leave_one_device_out_ratio",
+      "target_final_vce_on_v": 2.4370706045317725,
+      "prediction_v": 2.40988911891311,
+      "absolute_error_v": 0.027181485618662293,
+      "absolute_percentage_error": 1.1153343513363083
+    },
+    {
+      "device": "DUT3",
+      "preconditioned": false,
+      "early_fraction": 0.5,
+      "method": "power_law",
+      "target_final_vce_on_v": 2.4370706045317725,
+      "prediction_v": 2.457903024664991,
+      "absolute_error_v": 0.0208324201332184,
+      "absolute_percentage_error": 0.8548139760284407
+    }
+  ],
+  "best_at_15_percent": {
+    "early_fraction": 0.15,
+    "method": "leave_one_device_out_ratio",
+    "mae_v": 0.009694826987090751,
+    "median_absolute_error_v": 0.007839436683537038,
+    "mape_pct": 0.3974716760637432,
+    "n_devices": 3
+  },
+  "caveat": "Accelerated power cycling to failure, not component burn-in. DUT2 was preconditioned by cutting one of six bond wires. Three devices are too few for a production performance claim.",
+  "evidence_label": "PUBLIC DATASET SANITY CHECK",
+  "rivals_using_it": 0
+}

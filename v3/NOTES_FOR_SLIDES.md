@@ -30,6 +30,10 @@ The best early to late gEOL forecast used a condition matched ratio and produced
 
 This result supports the forecasting workflow but does not prove burn in performance. The dataset limitation is stated at `realdata_unused[0].caveat` in `out/v3/driftguard_results_v3.json`.
 
+A second laboratory dataset tests the same early to late idea on three IGBTs aged until failure, with the best 15 percent life forecast reaching 0.00969 V mean absolute error. The CORA result is at `headline.cora_best_at_15_percent` in `out/v3/driftguard_results_v3.json`.
+
+CORA strengthens evidence diversity but remains descriptive because it contains only three devices and DUT2 was deliberately preconditioned with a cut bond wire. This limitation is stated at `realdata_unused[1].caveat` in `out/v3/driftguard_results_v3.json`.
+
 ## Slide 6: Research and references
 
 Five dependence aware evidence rules and one learned rule were compared, with one rule selected using C2 calibration only. Their calibration and held out summaries appear under `combiners.validation` and `combiners.held_out_test` in `out/v3/driftguard_results_v3.json`.
@@ -44,6 +48,7 @@ Every reported decision identifies its read hour, target, achieved false alarm r
 4. Do not call the supervised baseline XGBoost because it is an explicit sklearn fallback.
 5. Do not claim that the eight device gEOL check represents semiconductor production diversity.
 6. Do not claim that a foundation model was benchmarked.
+7. Do not claim that the three device CORA result proves production performance.
 
 ## Three separating numbers
 

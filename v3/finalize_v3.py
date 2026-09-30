@@ -112,7 +112,7 @@ def update_results(commit: str) -> None:
             "WP12": {"status": "skipped", "reason": "No WP12 action is defined in the supplied phase plan."},
             "WP13": {"status": "skipped", "reason": "No WP13 action is defined in the supplied phase plan."},
             "WP14": {"status": "skipped", "reason": "No WP14 action is defined in the supplied phase plan."},
-            "WP15": {"status": "partial", "reason": "Dataset acquisition was attempted; gEOL is complete while CORA and Bosch archives are truncated."},
+            "WP15": {"status": "partial", "reason": "CORA extracted MAT files and gEOL are complete; Bosch numeric archives remain incomplete."},
             "WP16": {"status": "skipped", "reason": "The literature queue is preserved in literature_v3.json, but full paper extraction is outside the completed simulation phase."},
         }
     )
