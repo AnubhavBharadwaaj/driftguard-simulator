@@ -1,0 +1,556 @@
+{
+  "benchmarks": [
+    {
+      "dataset": "Aabhas",
+      "commit": "3d3b1e152f65abd2ad2f90fdc6f755b83f2de73c",
+      "split": {
+        "trap_classes_counted_good": [
+          "Va",
+          "VI",
+          "VII",
+          "all rows where is_trap is true"
+        ],
+        "source_split": "train LOT000 to LOT143, calibration LOT144 to LOT191, test LOT192 to LOT239"
+      },
+      "rows": [
+        {
+          "dataset": "Aabhas",
+          "detector": "Sahodrift_v5",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.5005726890934544,
+          "recall_pct": 28.571428571428573,
+          "diagnostic_recall_pct": 28.571428571428573,
+          "n_pos": 427,
+          "n_good": 23573,
+          "far_cp95": [
+            0.41450737528472886,
+            0.5991668036106396
+          ],
+          "recall_cp95": [
+            24.330856102019858,
+            33.11184247729798
+          ],
+          "n_healthy_calibration": 23547,
+          "min_attainable_p": 4.246645150331238e-05,
+          "infeasible_at_alpha": false,
+          "calibration_rule": "v5 lot-cross conformal using every healthy calibration part"
+        },
+        {
+          "dataset": "Aabhas",
+          "detector": "Sahodrift_v5",
+          "decision_hour": 24,
+          "target_far_pct": 0.54,
+          "achieved_far_pct": 0.5260255376914267,
+          "recall_pct": 28.571428571428573,
+          "diagnostic_recall_pct": 28.571428571428573,
+          "n_pos": 427,
+          "n_good": 23573,
+          "far_cp95": [
+            0.43770546108924996,
+            0.6268589935841556
+          ],
+          "recall_cp95": [
+            24.330856102019858,
+            33.11184247729798
+          ],
+          "n_healthy_calibration": 23547,
+          "min_attainable_p": 4.246645150331238e-05,
+          "infeasible_at_alpha": false,
+          "calibration_rule": "v5 lot-cross conformal using every healthy calibration part"
+        },
+        {
+          "dataset": "Aabhas",
+          "detector": "R1_lot_mad",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.1442328087218428,
+          "recall_pct": 20.374707259953162,
+          "diagnostic_recall_pct": 20.374707259953162,
+          "n_pos": 427,
+          "n_good": 23573,
+          "n_healthy_calibration": 23547,
+          "min_attainable_p": 4.246645150331238e-05,
+          "infeasible_at_alpha": false,
+          "far_cp95": [
+            0.09990545274596435,
+            0.20149312204595515
+          ],
+          "recall_cp95": [
+            16.653836005526475,
+            24.511809981815727
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "no supervised fit"
+        },
+        {
+          "dataset": "Aabhas",
+          "detector": "R2_isolation_forest",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.564204810588385,
+          "recall_pct": 22.24824355971897,
+          "diagnostic_recall_pct": 22.24824355971897,
+          "n_pos": 427,
+          "n_good": 23573,
+          "n_healthy_calibration": 23547,
+          "min_attainable_p": 4.246645150331238e-05,
+          "infeasible_at_alpha": false,
+          "far_cp95": [
+            0.4726040868156857,
+            0.6682969447441537
+          ],
+          "recall_cp95": [
+            18.390260001535903,
+            26.495673654941093
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "fit independently inside each calibration or test lot, matching public stack"
+        },
+        {
+          "dataset": "Aabhas",
+          "detector": "R4_unsupervised_ensemble",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.3775505875365885,
+          "recall_pct": 33.25526932084309,
+          "diagnostic_recall_pct": 33.25526932084309,
+          "n_pos": 427,
+          "n_good": 23573,
+          "n_healthy_calibration": 23547,
+          "min_attainable_p": 4.246645150331238e-05,
+          "infeasible_at_alpha": false,
+          "far_cp95": [
+            0.3033105318345102,
+            0.46440612050537644
+          ],
+          "recall_cp95": [
+            28.799128629330607,
+            37.94538687053857
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "full training split except disclosed 12,000 healthy row MCD numerical cap"
+        },
+        {
+          "dataset": "Aabhas",
+          "detector": "R5_ridge_forecast_slope",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.1442328087218428,
+          "recall_pct": 15.22248243559719,
+          "diagnostic_recall_pct": 15.22248243559719,
+          "n_pos": 427,
+          "n_good": 23573,
+          "n_healthy_calibration": 23547,
+          "min_attainable_p": 4.246645150331238e-05,
+          "infeasible_at_alpha": false,
+          "far_cp95": [
+            0.09990545274596435,
+            0.20149312204595515
+          ],
+          "recall_cp95": [
+            11.949059866651558,
+            18.986739030182047
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "full training split"
+        },
+        {
+          "dataset": "Aabhas",
+          "detector": "Sahodrift_v5",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.4199720018665422,
+          "recall_pct": 40.749414519906324,
+          "diagnostic_recall_pct": 40.749414519906324,
+          "n_pos": 427,
+          "n_good": 23573,
+          "far_cp95": [
+            0.3414596596257484,
+            0.5110671937272051
+          ],
+          "recall_cp95": [
+            36.04999699613613,
+            45.57791899451699
+          ],
+          "n_healthy_calibration": 23547,
+          "min_attainable_p": 4.246645150331238e-05,
+          "infeasible_at_alpha": false,
+          "calibration_rule": "v5 lot-cross conformal using every healthy calibration part"
+        },
+        {
+          "dataset": "Aabhas",
+          "detector": "R1_lot_mad",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.1399906672888474,
+          "recall_pct": 45.433255269320846,
+          "diagnostic_recall_pct": 45.433255269320846,
+          "n_pos": 427,
+          "n_good": 23573,
+          "n_healthy_calibration": 23547,
+          "min_attainable_p": 4.246645150331238e-05,
+          "infeasible_at_alpha": false,
+          "far_cp95": [
+            0.09638211987802406,
+            0.19654329120107641
+          ],
+          "recall_cp95": [
+            40.63945957216623,
+            50.290751289993985
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "no supervised fit"
+        },
+        {
+          "dataset": "Aabhas",
+          "detector": "R2_isolation_forest",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.5769312348873712,
+          "recall_pct": 38.64168618266979,
+          "diagnostic_recall_pct": 38.64168618266979,
+          "n_pos": 427,
+          "n_good": 23573,
+          "n_healthy_calibration": 23547,
+          "min_attainable_p": 4.246645150331238e-05,
+          "infeasible_at_alpha": false,
+          "far_cp95": [
+            0.4842621870372148,
+            0.6820846461133052
+          ],
+          "recall_cp95": [
+            33.998862675077135,
+            43.44305397107293
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "fit independently inside each calibration or test lot, matching public stack"
+        },
+        {
+          "dataset": "Aabhas",
+          "detector": "R4_unsupervised_ensemble",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.29694990030967633,
+          "recall_pct": 45.19906323185012,
+          "diagnostic_recall_pct": 45.19906323185012,
+          "n_pos": 427,
+          "n_good": 23573,
+          "n_healthy_calibration": 23547,
+          "min_attainable_p": 4.246645150331238e-05,
+          "infeasible_at_alpha": false,
+          "far_cp95": [
+            0.2315579431114239,
+            0.3750315197553132
+          ],
+          "recall_cp95": [
+            40.40897910949787,
+            50.056115275274195
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "full training split except disclosed 12,000 healthy row MCD numerical cap"
+        },
+        {
+          "dataset": "Aabhas",
+          "detector": "R5_ridge_forecast_slope",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.19938064735078267,
+          "recall_pct": 28.337236533957846,
+          "diagnostic_recall_pct": 28.337236533957846,
+          "n_pos": 427,
+          "n_good": 23573,
+          "n_healthy_calibration": 23547,
+          "min_attainable_p": 4.246645150331238e-05,
+          "infeasible_at_alpha": false,
+          "far_cp95": [
+            0.14653305344727366,
+            0.26504680398617264
+          ],
+          "recall_cp95": [
+            24.108856758857957,
+            32.86876008795492
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "full training split"
+        }
+      ],
+      "published_points": [
+        {
+          "hour": 24,
+          "recall_pct": 29.7,
+          "far_pct": 0.54,
+          "split": "their published split"
+        }
+      ]
+    },
+    {
+      "dataset": "BurnTrace",
+      "commit": "a8796e197f242d87768272db8b055dda21120c69",
+      "split": {
+        "source_split": "lot grouped 60/20/20 inside the published labelled calibration table",
+        "split_differs_from_their_published_holdout": true,
+        "reason": "The designated public holdout has no labels"
+      },
+      "rows": [
+        {
+          "dataset": "BurnTrace",
+          "detector": "Sahodrift_v5",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": null,
+          "recall_pct": null,
+          "diagnostic_recall_pct": 0.0,
+          "n_pos": 13,
+          "n_good": 215,
+          "far_cp95": [
+            0.0,
+            1.701122581691038
+          ],
+          "recall_cp95": [
+            0.0,
+            24.705263800047092
+          ],
+          "n_healthy_calibration": 144,
+          "min_attainable_p": 0.006896551724137931,
+          "infeasible_at_alpha": true,
+          "calibration_rule": "v5 lot-cross conformal using every healthy calibration part"
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R1_lot_mad",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": null,
+          "recall_pct": null,
+          "diagnostic_recall_pct": 30.76923076923077,
+          "n_pos": 13,
+          "n_good": 215,
+          "n_healthy_calibration": 144,
+          "min_attainable_p": 0.006896551724137931,
+          "infeasible_at_alpha": true,
+          "far_cp95": [
+            0.011775031332615725,
+            2.5640774929679475
+          ],
+          "recall_cp95": [
+            9.09203945720966,
+            61.42616617507044
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "no supervised fit"
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R2_isolation_forest",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": null,
+          "recall_pct": null,
+          "diagnostic_recall_pct": 23.076923076923077,
+          "n_pos": 13,
+          "n_good": 215,
+          "n_healthy_calibration": 144,
+          "min_attainable_p": 0.006896551724137931,
+          "infeasible_at_alpha": true,
+          "far_cp95": [
+            0.0,
+            1.701122581691038
+          ],
+          "recall_cp95": [
+            5.038107349115153,
+            53.81315392340409
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "fit independently inside each calibration or test lot, matching public stack"
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R4_unsupervised_ensemble",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": null,
+          "recall_pct": null,
+          "diagnostic_recall_pct": 23.076923076923077,
+          "n_pos": 13,
+          "n_good": 215,
+          "n_healthy_calibration": 144,
+          "min_attainable_p": 0.006896551724137931,
+          "infeasible_at_alpha": true,
+          "far_cp95": [
+            0.011775031332615725,
+            2.5640774929679475
+          ],
+          "recall_cp95": [
+            5.038107349115153,
+            53.81315392340409
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "full training split except disclosed 12,000 healthy row MCD numerical cap"
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R5_ridge_forecast_slope",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": null,
+          "recall_pct": null,
+          "diagnostic_recall_pct": 23.076923076923077,
+          "n_pos": 13,
+          "n_good": 215,
+          "n_healthy_calibration": 144,
+          "min_attainable_p": 0.006896551724137931,
+          "infeasible_at_alpha": true,
+          "far_cp95": [
+            0.0,
+            1.701122581691038
+          ],
+          "recall_cp95": [
+            5.038107349115153,
+            53.81315392340409
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "full training split"
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "Sahodrift_v5",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": null,
+          "recall_pct": null,
+          "diagnostic_recall_pct": 0.0,
+          "n_pos": 13,
+          "n_good": 215,
+          "far_cp95": [
+            0.0,
+            1.701122581691038
+          ],
+          "recall_cp95": [
+            0.0,
+            24.705263800047092
+          ],
+          "n_healthy_calibration": 144,
+          "min_attainable_p": 0.006896551724137931,
+          "infeasible_at_alpha": true,
+          "calibration_rule": "v5 lot-cross conformal using every healthy calibration part"
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R1_lot_mad",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": null,
+          "recall_pct": null,
+          "diagnostic_recall_pct": 53.84615384615385,
+          "n_pos": 13,
+          "n_good": 215,
+          "n_healthy_calibration": 144,
+          "min_attainable_p": 0.006896551724137931,
+          "infeasible_at_alpha": true,
+          "far_cp95": [
+            0.011775031332615725,
+            2.5640774929679475
+          ],
+          "recall_cp95": [
+            25.134548227030358,
+            80.7767558198712
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "no supervised fit"
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R2_isolation_forest",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": null,
+          "recall_pct": null,
+          "diagnostic_recall_pct": 61.53846153846154,
+          "n_pos": 13,
+          "n_good": 215,
+          "n_healthy_calibration": 144,
+          "min_attainable_p": 0.006896551724137931,
+          "infeasible_at_alpha": true,
+          "far_cp95": [
+            1.3188357419354335,
+            6.592891500021435
+          ],
+          "recall_cp95": [
+            31.577760291406303,
+            86.14206611098393
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "fit independently inside each calibration or test lot, matching public stack"
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R4_unsupervised_ensemble",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": null,
+          "recall_pct": null,
+          "diagnostic_recall_pct": 69.23076923076923,
+          "n_pos": 13,
+          "n_good": 215,
+          "n_healthy_calibration": 144,
+          "min_attainable_p": 0.006896551724137931,
+          "infeasible_at_alpha": true,
+          "far_cp95": [
+            2.9169078342920716,
+            9.546549706361871
+          ],
+          "recall_cp95": [
+            38.57383382492956,
+            90.90796054279033
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "full training split except disclosed 12,000 healthy row MCD numerical cap"
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R5_ridge_forecast_slope",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": null,
+          "recall_pct": null,
+          "diagnostic_recall_pct": 30.76923076923077,
+          "n_pos": 13,
+          "n_good": 215,
+          "n_healthy_calibration": 144,
+          "min_attainable_p": 0.006896551724137931,
+          "infeasible_at_alpha": true,
+          "far_cp95": [
+            0.0,
+            1.701122581691038
+          ],
+          "recall_cp95": [
+            9.09203945720966,
+            61.42616617507044
+          ],
+          "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+          "fit_note": "full training split"
+        }
+      ],
+      "published_points": [
+        {
+          "hour": 24,
+          "recall_pct": 21.1,
+          "far_pct": 2.55,
+          "split": "their published split"
+        },
+        {
+          "hour": 168,
+          "recall_pct": 72.2,
+          "far_pct": 1.04,
+          "split": "their published split"
+        }
+      ]
+    }
+  ],
+  "R3_status": "not run: the full 500-tree supervised fallback exceeded the v5 30-minute cap in earlier profiling; no approximation substituted",
+  "runtime_seconds": 37.25356197357178,
+  "demo": {
+    "public_url": "https://sahodrift-app.vercel.app"
+  }
+}

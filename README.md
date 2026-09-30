@@ -73,6 +73,16 @@ The experiment design keeps training, calibration and test lots separate. Thresh
 
 Synthetic rows are labelled simulation evidence. Aabhas and BurnTrace are cross benchmark evidence tied to their repository commit and split note. CORA and gEOL are CC BY public laboratory data. Bosch data is governed by Kaggle competition rules and is never redistributed here. Rival repositories and datasets remain uncommitted under `data_ext/`.
 
+## v5 calibration and public inspector
+
+The v5 protocol compares every merger only after the same lot-held-out recalibration, then ranks test scores against every healthy calibration part. Results and the resolution guard are in `out/v5/sahodrift_results_v5.json`. The nominal 0.5 percent operating point is accompanied by a conservative 0.25 percent sensitivity run because the factor-two result motivating it is not an exact validity proof for this outlier construction.
+
+Public browser inspector: https://sahodrift-app.vercel.app
+
+### CORA identifier erratum
+
+The correct DOI for the Perez-Farre et al. Si IGBT accelerated power-cycling dataset is `10.34810/data3204`. The dataset Readme's `10.34810/data3206` reference is a typo: DataCite identifies `data3206` as an unrelated colistin-delivery dataset. The frozen v4 output is not rewritten; v5 records the correction explicitly.
+
 ## Results and limitations
 
 Treat every recall together with its achieved FAR, decision hour, sample count and interval. V4 closes the calibration selection leak and degenerate review threshold, but its in prior 0.5 percent REJECT row spends 0.665 percent FAR and the review tiers remain expensive. Public cross benchmarks are mixed: the method is competitive on Aabhas at 24 hours but detected no BurnTrace anomalies in the small held out split. The sequential result is explicitly exploratory.

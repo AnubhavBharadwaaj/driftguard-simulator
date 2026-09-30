@@ -1,0 +1,4083 @@
+{
+  "schema_version": "5.0",
+  "generated_utc": "2026-09-30T02:29:23.731678+00:00",
+  "protocol": {
+    "selected_merger": "twice_mean",
+    "selection_on_c2a_recalibrated": [
+      {
+        "seed": 0,
+        "method": "fisher",
+        "recall_pct": 20.0,
+        "achieved_far_pct": 1.0204081632653061,
+        "n_healthy_calibration": 490,
+        "min_attainable_p": 0.002036659877800407,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 0,
+        "method": "cauchy",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.20408163265306123,
+        "n_healthy_calibration": 490,
+        "min_attainable_p": 0.002036659877800407,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 0,
+        "method": "harmonic_mean",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.20408163265306123,
+        "n_healthy_calibration": 490,
+        "min_attainable_p": 0.002036659877800407,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 0,
+        "method": "tippett",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.20408163265306123,
+        "n_healthy_calibration": 490,
+        "min_attainable_p": 0.002036659877800407,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 0,
+        "method": "twice_mean",
+        "recall_pct": 40.0,
+        "achieved_far_pct": 0.6122448979591837,
+        "n_healthy_calibration": 490,
+        "min_attainable_p": 0.002036659877800407,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 1,
+        "method": "fisher",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.2915451895043732,
+        "n_healthy_calibration": 343,
+        "min_attainable_p": 0.0029069767441860465,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 1,
+        "method": "cauchy",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.8746355685131195,
+        "n_healthy_calibration": 343,
+        "min_attainable_p": 0.0029069767441860465,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 1,
+        "method": "harmonic_mean",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.8746355685131195,
+        "n_healthy_calibration": 343,
+        "min_attainable_p": 0.0029069767441860465,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 1,
+        "method": "tippett",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.8746355685131195,
+        "n_healthy_calibration": 343,
+        "min_attainable_p": 0.0029069767441860465,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 1,
+        "method": "twice_mean",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.2915451895043732,
+        "n_healthy_calibration": 343,
+        "min_attainable_p": 0.0029069767441860465,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 2,
+        "method": "fisher",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 183,
+        "min_attainable_p": 0.005434782608695652,
+        "infeasible_at_alpha": true
+      },
+      {
+        "seed": 2,
+        "method": "cauchy",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 183,
+        "min_attainable_p": 0.005434782608695652,
+        "infeasible_at_alpha": true
+      },
+      {
+        "seed": 2,
+        "method": "harmonic_mean",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 183,
+        "min_attainable_p": 0.005434782608695652,
+        "infeasible_at_alpha": true
+      },
+      {
+        "seed": 2,
+        "method": "tippett",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 183,
+        "min_attainable_p": 0.005434782608695652,
+        "infeasible_at_alpha": true
+      },
+      {
+        "seed": 2,
+        "method": "twice_mean",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 183,
+        "min_attainable_p": 0.005434782608695652,
+        "infeasible_at_alpha": true
+      },
+      {
+        "seed": 3,
+        "method": "fisher",
+        "recall_pct": 16.666666666666664,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 319,
+        "min_attainable_p": 0.003125,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 3,
+        "method": "cauchy",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 319,
+        "min_attainable_p": 0.003125,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 3,
+        "method": "harmonic_mean",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 319,
+        "min_attainable_p": 0.003125,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 3,
+        "method": "tippett",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 319,
+        "min_attainable_p": 0.003125,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 3,
+        "method": "twice_mean",
+        "recall_pct": 16.666666666666664,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 319,
+        "min_attainable_p": 0.003125,
+        "infeasible_at_alpha": false
+      },
+      {
+        "seed": 4,
+        "method": "fisher",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 180,
+        "min_attainable_p": 0.0055248618784530384,
+        "infeasible_at_alpha": true
+      },
+      {
+        "seed": 4,
+        "method": "cauchy",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 180,
+        "min_attainable_p": 0.0055248618784530384,
+        "infeasible_at_alpha": true
+      },
+      {
+        "seed": 4,
+        "method": "harmonic_mean",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 180,
+        "min_attainable_p": 0.0055248618784530384,
+        "infeasible_at_alpha": true
+      },
+      {
+        "seed": 4,
+        "method": "tippett",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 180,
+        "min_attainable_p": 0.0055248618784530384,
+        "infeasible_at_alpha": true
+      },
+      {
+        "seed": 4,
+        "method": "twice_mean",
+        "recall_pct": 0.0,
+        "achieved_far_pct": 0.0,
+        "n_healthy_calibration": 180,
+        "min_attainable_p": 0.0055248618784530384,
+        "infeasible_at_alpha": true
+      }
+    ],
+    "selection_summary": [
+      {
+        "method": "cauchy",
+        "mean_recall_pct": 0.0,
+        "mean_far_pct": 0.21574344023323616
+      },
+      {
+        "method": "fisher",
+        "mean_recall_pct": 7.333333333333333,
+        "mean_far_pct": 0.2623906705539359
+      },
+      {
+        "method": "harmonic_mean",
+        "mean_recall_pct": 0.0,
+        "mean_far_pct": 0.21574344023323616
+      },
+      {
+        "method": "tippett",
+        "mean_recall_pct": 0.0,
+        "mean_far_pct": 0.21574344023323616
+      },
+      {
+        "method": "twice_mean",
+        "mean_recall_pct": 11.333333333333332,
+        "mean_far_pct": 0.1807580174927114
+      }
+    ],
+    "cross_conformal": {
+      "description": "Each calibration lot is ranked against healthy parts in every other calibration lot; tests are ranked against all healthy calibration parts.",
+      "nominal_alpha": 0.005,
+      "conservative_alpha": 0.0025,
+      "theorem_used": "Barber et al. (2021), Theorem 1: jackknife+ coverage is at least 1 minus 2 alpha; Appendix A.2 states average p-values are valid up to a factor of two. This motivates, but does not prove exact validity for, the conservative alpha/2 sensitivity run.",
+      "outlier_caveat": "Bates et al. (2023) establishes marginal super-uniformity for split-conformal outlier p-values and warns that conditional validity can fail. Our lot-cross procedure is therefore reported empirically, not claimed exact."
+    }
+  },
+  "operating_rows": [
+    {
+      "seed": 0,
+      "detector": "v5_cross_conformal",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.10090817356205853,
+      "recall_pct": 26.31578947368421,
+      "false_rejects": 1,
+      "true_rejects": 5,
+      "n_good": 991,
+      "n_pos": 19,
+      "far_cp95": [
+        0.002554741128222621,
+        0.5609292553847368
+      ],
+      "recall_cp95": [
+        9.146578490766654,
+        51.202934534587264
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 83.33333333333334,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 920,
+      "min_attainable_p": 0.0010857763300760044,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 0,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.10090817356205853,
+      "recall_pct": 26.31578947368421,
+      "false_rejects": 1,
+      "true_rejects": 5,
+      "n_good": 991,
+      "n_pos": 19,
+      "far_cp95": [
+        0.002554741128222621,
+        0.5609292553847368
+      ],
+      "recall_cp95": [
+        9.146578490766654,
+        51.202934534587264
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 83.33333333333334,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 920,
+      "min_attainable_p": 0.0010857763300760044,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 0,
+      "detector": "v5_cross_conformal",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 0.0,
+      "false_rejects": 0,
+      "true_rejects": 0,
+      "n_good": 770,
+      "n_pos": 15,
+      "far_cp95": [
+        0.0,
+        0.4779295186617949
+      ],
+      "recall_cp95": [
+        0.0,
+        21.8019360910534
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 0.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 920,
+      "min_attainable_p": 0.0010857763300760044,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 0,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 0.0,
+      "false_rejects": 0,
+      "true_rejects": 0,
+      "n_good": 770,
+      "n_pos": 15,
+      "far_cp95": [
+        0.0,
+        0.4779295186617949
+      ],
+      "recall_cp95": [
+        0.0,
+        21.8019360910534
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 0.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 920,
+      "min_attainable_p": 0.0010857763300760044,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 0,
+      "detector": "v5_cross_conformal",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 168,
+      "achieved_far_pct": 1.0090817356205852,
+      "recall_pct": 68.42105263157895,
+      "false_rejects": 10,
+      "true_rejects": 13,
+      "n_good": 991,
+      "n_pos": 19,
+      "far_cp95": [
+        0.4849246206442081,
+        1.8478852753175907
+      ],
+      "recall_cp95": [
+        43.44984311538491,
+        87.42393641270166
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 60.0,
+        "D3_late_accelerator": 66.66666666666666,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 920,
+      "min_attainable_p": 0.0010857763300760044,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 0,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 168,
+      "achieved_far_pct": 1.0090817356205852,
+      "recall_pct": 63.1578947368421,
+      "false_rejects": 10,
+      "true_rejects": 12,
+      "n_good": 991,
+      "n_pos": 19,
+      "far_cp95": [
+        0.4849246206442081,
+        1.8478852753175907
+      ],
+      "recall_cp95": [
+        38.35779233144053,
+        83.71141278449004
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 83.33333333333334,
+        "D2_fast_drifter": 60.0,
+        "D3_late_accelerator": 66.66666666666666,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 920,
+      "min_attainable_p": 0.0010857763300760044,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 0,
+      "detector": "v5_cross_conformal",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 40.0,
+      "false_rejects": 0,
+      "true_rejects": 6,
+      "n_good": 770,
+      "n_pos": 15,
+      "far_cp95": [
+        0.0,
+        0.4779295186617949
+      ],
+      "recall_cp95": [
+        16.336432385951348,
+        67.71302337937183
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 50.0,
+        "D3_late_accelerator": 50.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 920,
+      "min_attainable_p": 0.0010857763300760044,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 0,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 20.0,
+      "false_rejects": 0,
+      "true_rejects": 3,
+      "n_good": 770,
+      "n_pos": 15,
+      "far_cp95": [
+        0.0,
+        0.4779295186617949
+      ],
+      "recall_cp95": [
+        4.331200510583661,
+        48.089113380685305
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 33.33333333333333,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 920,
+      "min_attainable_p": 0.0010857763300760044,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 1,
+      "detector": "v5_cross_conformal",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 4.545454545454546,
+      "false_rejects": 0,
+      "true_rejects": 1,
+      "n_good": 998,
+      "n_pos": 22,
+      "far_cp95": [
+        0.0,
+        0.36894491936705126
+      ],
+      "recall_cp95": [
+        0.11501475265735751,
+        22.84443976676334
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 1076,
+      "min_attainable_p": 0.0009285051067780873,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 1,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 4.545454545454546,
+      "false_rejects": 0,
+      "true_rejects": 1,
+      "n_good": 998,
+      "n_pos": 22,
+      "far_cp95": [
+        0.0,
+        0.36894491936705126
+      ],
+      "recall_cp95": [
+        0.11501475265735751,
+        22.84443976676334
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 1076,
+      "min_attainable_p": 0.0009285051067780873,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 1,
+      "detector": "v5_cross_conformal",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 7.6923076923076925,
+      "false_rejects": 0,
+      "true_rejects": 1,
+      "n_good": 822,
+      "n_pos": 13,
+      "far_cp95": [
+        0.0,
+        0.44776332753324954
+      ],
+      "recall_cp95": [
+        0.19456284973467483,
+        36.02974352678775
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 1076,
+      "min_attainable_p": 0.0009285051067780873,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 1,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 7.6923076923076925,
+      "false_rejects": 0,
+      "true_rejects": 1,
+      "n_good": 822,
+      "n_pos": 13,
+      "far_cp95": [
+        0.0,
+        0.44776332753324954
+      ],
+      "recall_cp95": [
+        0.19456284973467483,
+        36.02974352678775
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 1076,
+      "min_attainable_p": 0.0009285051067780873,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 1,
+      "detector": "v5_cross_conformal",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.9018036072144289,
+      "recall_pct": 81.81818181818183,
+      "false_rejects": 9,
+      "true_rejects": 18,
+      "n_good": 998,
+      "n_pos": 22,
+      "far_cp95": [
+        0.4131675146866769,
+        1.7049744327437937
+      ],
+      "recall_cp95": [
+        59.715421692212864,
+        94.81327006875631
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 88.88888888888889,
+        "D3_late_accelerator": 100.0,
+        "D4_multivariate": 50.0
+      },
+      "n_healthy_calibration": 1076,
+      "min_attainable_p": 0.0009285051067780873,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 1,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.1002004008016032,
+      "recall_pct": 27.27272727272727,
+      "false_rejects": 1,
+      "true_rejects": 6,
+      "n_good": 998,
+      "n_pos": 22,
+      "far_cp95": [
+        0.0025368223295620185,
+        0.5570038901875976
+      ],
+      "recall_cp95": [
+        10.728924837039697,
+        50.222120126634884
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 22.22222222222222,
+        "D3_late_accelerator": 42.857142857142854,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 1076,
+      "min_attainable_p": 0.0009285051067780873,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 1,
+      "detector": "v5_cross_conformal",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 168,
+      "achieved_far_pct": 1.70316301703163,
+      "recall_pct": 38.46153846153847,
+      "false_rejects": 14,
+      "true_rejects": 5,
+      "n_good": 822,
+      "n_pos": 13,
+      "far_cp95": [
+        0.9341832072970251,
+        2.841121099299089
+      ],
+      "recall_cp95": [
+        13.857933889016063,
+        68.4222397085937
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 60.0,
+        "D3_late_accelerator": 50.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 1076,
+      "min_attainable_p": 0.0009285051067780873,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 1,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.12165450121654502,
+      "recall_pct": 7.6923076923076925,
+      "false_rejects": 1,
+      "true_rejects": 1,
+      "n_good": 822,
+      "n_pos": 13,
+      "far_cp95": [
+        0.0030799778699327107,
+        0.6759336261226657
+      ],
+      "recall_cp95": [
+        0.19456284973467483,
+        36.02974352678775
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 1076,
+      "min_attainable_p": 0.0009285051067780873,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 2,
+      "detector": "v5_cross_conformal",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.2257336343115124,
+      "recall_pct": 10.526315789473683,
+      "false_rejects": 2,
+      "true_rejects": 2,
+      "n_good": 886,
+      "n_pos": 19,
+      "far_cp95": [
+        0.027349090653900753,
+        0.8130267772772186
+      ],
+      "recall_cp95": [
+        1.3012164371777464,
+        33.137666445676594
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 601,
+      "min_attainable_p": 0.0016611295681063123,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 2,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.1128668171557562,
+      "recall_pct": 10.526315789473683,
+      "false_rejects": 1,
+      "true_rejects": 2,
+      "n_good": 886,
+      "n_pos": 19,
+      "far_cp95": [
+        0.0028574995772504583,
+        0.6272336516531422
+      ],
+      "recall_cp95": [
+        1.3012164371777464,
+        33.137666445676594
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 601,
+      "min_attainable_p": 0.0016611295681063123,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 2,
+      "detector": "v5_cross_conformal",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.2677376171352075,
+      "recall_pct": 13.043478260869565,
+      "false_rejects": 2,
+      "true_rejects": 3,
+      "n_good": 747,
+      "n_pos": 23,
+      "far_cp95": [
+        0.032440729792063604,
+        0.9637839633754577
+      ],
+      "recall_cp95": [
+        2.775150742279319,
+        33.58891375371209
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 75.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 601,
+      "min_attainable_p": 0.0016611295681063123,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 2,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.2677376171352075,
+      "recall_pct": 13.043478260869565,
+      "false_rejects": 2,
+      "true_rejects": 3,
+      "n_good": 747,
+      "n_pos": 23,
+      "far_cp95": [
+        0.032440729792063604,
+        0.9637839633754577
+      ],
+      "recall_cp95": [
+        2.775150742279319,
+        33.58891375371209
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 75.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 601,
+      "min_attainable_p": 0.0016611295681063123,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 2,
+      "detector": "v5_cross_conformal",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.2257336343115124,
+      "recall_pct": 42.10526315789473,
+      "false_rejects": 2,
+      "true_rejects": 8,
+      "n_good": 886,
+      "n_pos": 19,
+      "far_cp95": [
+        0.027349090653900753,
+        0.8130267772772186
+      ],
+      "recall_cp95": [
+        20.25214389771628,
+        66.50021559882646
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 40.0,
+        "D3_late_accelerator": 57.14285714285714,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 601,
+      "min_attainable_p": 0.0016611295681063123,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 2,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 21.052631578947366,
+      "false_rejects": 0,
+      "true_rejects": 4,
+      "n_good": 886,
+      "n_pos": 19,
+      "far_cp95": [
+        0.0,
+        0.41548653922558404
+      ],
+      "recall_cp95": [
+        6.052453770928976,
+        45.56530818915056
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 25.0,
+        "D2_fast_drifter": 20.0,
+        "D3_late_accelerator": 28.57142857142857,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 601,
+      "min_attainable_p": 0.0016611295681063123,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 2,
+      "detector": "v5_cross_conformal",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.13386880856760375,
+      "recall_pct": 21.73913043478261,
+      "false_rejects": 1,
+      "true_rejects": 5,
+      "n_good": 747,
+      "n_pos": 23,
+      "far_cp95": [
+        0.0033892073554700293,
+        0.7435908993191612
+      ],
+      "recall_cp95": [
+        7.46034076488037,
+        43.70307262368146
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 75.0,
+        "D2_fast_drifter": 20.0,
+        "D3_late_accelerator": 16.666666666666664,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 601,
+      "min_attainable_p": 0.0016611295681063123,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 2,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.13386880856760375,
+      "recall_pct": 8.695652173913043,
+      "false_rejects": 1,
+      "true_rejects": 2,
+      "n_good": 747,
+      "n_pos": 23,
+      "far_cp95": [
+        0.0033892073554700293,
+        0.7435908993191612
+      ],
+      "recall_cp95": [
+        1.0709966037875884,
+        28.037933590941087
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 601,
+      "min_attainable_p": 0.0016611295681063123,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 3,
+      "detector": "v5_cross_conformal",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.5405405405405406,
+      "recall_pct": 36.0,
+      "false_rejects": 6,
+      "true_rejects": 9,
+      "n_good": 1110,
+      "n_pos": 25,
+      "far_cp95": [
+        0.19861943765073342,
+        1.1727912416113095
+      ],
+      "recall_cp95": [
+        17.971682058365538,
+        57.47936504461505
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 14.285714285714285,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 100.0
+      },
+      "n_healthy_calibration": 716,
+      "min_attainable_p": 0.001394700139470014,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 3,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.18018018018018017,
+      "recall_pct": 28.000000000000004,
+      "false_rejects": 2,
+      "true_rejects": 7,
+      "n_good": 1110,
+      "n_pos": 25,
+      "far_cp95": [
+        0.021828108995698214,
+        0.6493427577364325
+      ],
+      "recall_cp95": [
+        12.071668850406663,
+        49.38768218062555
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 80.0
+      },
+      "n_healthy_calibration": 716,
+      "min_attainable_p": 0.001394700139470014,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 3,
+      "detector": "v5_cross_conformal",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.8290155440414507,
+      "recall_pct": 10.0,
+      "false_rejects": 8,
+      "true_rejects": 2,
+      "n_good": 965,
+      "n_pos": 20,
+      "far_cp95": [
+        0.3585699234523748,
+        1.626925740152993
+      ],
+      "recall_cp95": [
+        1.2348527170294807,
+        31.698271401908233
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 716,
+      "min_attainable_p": 0.001394700139470014,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 3,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.41450777202072536,
+      "recall_pct": 10.0,
+      "false_rejects": 4,
+      "true_rejects": 2,
+      "n_good": 965,
+      "n_pos": 20,
+      "far_cp95": [
+        0.11305138523300566,
+        1.057876501712497
+      ],
+      "recall_cp95": [
+        1.2348527170294807,
+        31.698271401908233
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 716,
+      "min_attainable_p": 0.001394700139470014,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 3,
+      "detector": "v5_cross_conformal",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 60.0,
+      "false_rejects": 0,
+      "true_rejects": 15,
+      "n_good": 1110,
+      "n_pos": 25,
+      "far_cp95": [
+        0.0,
+        0.33177987250870766
+      ],
+      "recall_cp95": [
+        38.66534962568399,
+        78.8745193534858
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 71.42857142857143,
+        "D3_late_accelerator": 60.0,
+        "D4_multivariate": 20.0
+      },
+      "n_healthy_calibration": 716,
+      "min_attainable_p": 0.001394700139470014,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 3,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 44.0,
+      "false_rejects": 0,
+      "true_rejects": 11,
+      "n_good": 1110,
+      "n_pos": 25,
+      "far_cp95": [
+        0.0,
+        0.33177987250870766
+      ],
+      "recall_cp95": [
+        24.402366514720804,
+        65.07183660086642
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 57.14285714285714,
+        "D3_late_accelerator": 40.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 716,
+      "min_attainable_p": 0.001394700139470014,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 3,
+      "detector": "v5_cross_conformal",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.31088082901554404,
+      "recall_pct": 45.0,
+      "false_rejects": 3,
+      "true_rejects": 9,
+      "n_good": 965,
+      "n_pos": 20,
+      "far_cp95": [
+        0.06415704325230821,
+        0.9058143663462865
+      ],
+      "recall_cp95": [
+        23.05778967759241,
+        68.47218669594514
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 33.33333333333333,
+        "D3_late_accelerator": 62.5,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 716,
+      "min_attainable_p": 0.001394700139470014,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 3,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 15.0,
+      "false_rejects": 0,
+      "true_rejects": 3,
+      "n_good": 965,
+      "n_pos": 20,
+      "far_cp95": [
+        0.0,
+        0.3815375896096569
+      ],
+      "recall_cp95": [
+        3.20709371854637,
+        37.8926826545314
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 25.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 716,
+      "min_attainable_p": 0.001394700139470014,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 4,
+      "detector": "v5_cross_conformal",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 25.0,
+      "false_rejects": 0,
+      "true_rejects": 2,
+      "n_good": 537,
+      "n_pos": 8,
+      "far_cp95": [
+        0.0,
+        0.6845881159147663
+      ],
+      "recall_cp95": [
+        3.1854026249944227,
+        65.08557944128242
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": null,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 33.33333333333333
+      },
+      "n_healthy_calibration": 580,
+      "min_attainable_p": 0.0017211703958691911,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 4,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 0.0,
+      "false_rejects": 0,
+      "true_rejects": 0,
+      "n_good": 537,
+      "n_pos": 8,
+      "far_cp95": [
+        0.0,
+        0.6845881159147663
+      ],
+      "recall_cp95": [
+        0.0,
+        36.94166475528192
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 0.0,
+        "D2_fast_drifter": null,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 580,
+      "min_attainable_p": 0.0017211703958691911,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 4,
+      "detector": "v5_cross_conformal",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.936768149882904,
+      "recall_pct": 18.75,
+      "false_rejects": 8,
+      "true_rejects": 3,
+      "n_good": 854,
+      "n_pos": 16,
+      "far_cp95": [
+        0.40527290130704124,
+        1.8374245757255554
+      ],
+      "recall_cp95": [
+        4.047373390594588,
+        45.64565462316117
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 580,
+      "min_attainable_p": 0.0017211703958691911,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 4,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 24,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 0.0,
+      "false_rejects": 0,
+      "true_rejects": 0,
+      "n_good": 854,
+      "n_pos": 16,
+      "far_cp95": [
+        0.0,
+        0.43102152208436795
+      ],
+      "recall_cp95": [
+        0.0,
+        20.59072142078227
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 0.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 580,
+      "min_attainable_p": 0.0017211703958691911,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 4,
+      "detector": "v5_cross_conformal",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.931098696461825,
+      "recall_pct": 87.5,
+      "false_rejects": 5,
+      "true_rejects": 7,
+      "n_good": 537,
+      "n_pos": 8,
+      "far_cp95": [
+        0.30299678249778156,
+        2.1594101503372354
+      ],
+      "recall_cp95": [
+        47.349032912479345,
+        99.68402764687481
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": null,
+        "D3_late_accelerator": 100.0,
+        "D4_multivariate": 66.66666666666666
+      },
+      "n_healthy_calibration": 580,
+      "min_attainable_p": 0.0017211703958691911,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 4,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "inprior",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.0,
+      "recall_pct": 50.0,
+      "false_rejects": 0,
+      "true_rejects": 4,
+      "n_good": 537,
+      "n_pos": 8,
+      "far_cp95": [
+        0.0,
+        0.6845881159147663
+      ],
+      "recall_cp95": [
+        15.701277048705794,
+        84.29872295129421
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": null,
+        "D3_late_accelerator": 75.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 580,
+      "min_attainable_p": 0.0017211703958691911,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 4,
+      "detector": "v5_cross_conformal",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.005,
+      "target_far_pct": 0.5,
+      "decision_hour": 168,
+      "achieved_far_pct": 1.053864168618267,
+      "recall_pct": 25.0,
+      "false_rejects": 9,
+      "true_rejects": 4,
+      "n_good": 854,
+      "n_pos": 16,
+      "far_cp95": [
+        0.4829945059582292,
+        1.9910997570290663
+      ],
+      "recall_cp95": [
+        7.2662038252882155,
+        52.377081989612726
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 25.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 580,
+      "min_attainable_p": 0.0017211703958691911,
+      "infeasible_at_alpha": false
+    },
+    {
+      "seed": 4,
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "shifted",
+      "tier": "REJECT",
+      "target_alpha": 0.0025,
+      "target_far_pct": 0.25,
+      "decision_hour": 168,
+      "achieved_far_pct": 0.702576112412178,
+      "recall_pct": 18.75,
+      "false_rejects": 6,
+      "true_rejects": 3,
+      "n_good": 854,
+      "n_pos": 16,
+      "far_cp95": [
+        0.25825667328827245,
+        1.5228992461832198
+      ],
+      "recall_cp95": [
+        4.047373390594588,
+        45.64565462316117
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      },
+      "n_healthy_calibration": 580,
+      "min_attainable_p": 0.0017211703958691911,
+      "infeasible_at_alpha": false
+    }
+  ],
+  "operating_aggregates": [
+    {
+      "detector": "v5_cross_conformal",
+      "test_set": "inprior",
+      "decision_hour": 24,
+      "target_alpha": 0.005,
+      "mean_achieved_far_pct": 0.17343646968282228,
+      "sd_achieved_far_pct": 0.22523385848866687,
+      "per_seed_far_pct": [
+        {
+          "seed": 0,
+          "far_pct": 0.10090817356205853
+        },
+        {
+          "seed": 1,
+          "far_pct": 0.0
+        },
+        {
+          "seed": 2,
+          "far_pct": 0.2257336343115124
+        },
+        {
+          "seed": 3,
+          "far_pct": 0.5405405405405406
+        },
+        {
+          "seed": 4,
+          "far_pct": 0.0
+        }
+      ],
+      "seeds_above_nominal_alpha": 1,
+      "seeds_above_0_75_pct": 0,
+      "pooled_far_pct": 0.19902697921273774,
+      "pooled_far_cp95": [
+        0.09104693007318691,
+        0.37747750485308396
+      ],
+      "mean_recall_pct": 20.477511961722488,
+      "pooled_recall_pct": 20.43010752688172,
+      "pooled_recall_cp95": [
+        12.771532740356232,
+        30.0510210046396
+      ],
+      "n_healthy_calibration_by_seed": [
+        920,
+        1076,
+        601,
+        716,
+        580
+      ],
+      "min_attainable_p_by_seed": [
+        0.0010857763300760044,
+        0.0009285051067780873,
+        0.0016611295681063123,
+        0.001394700139470014,
+        0.0017211703958691911
+      ],
+      "any_infeasible_at_alpha": false
+    },
+    {
+      "detector": "v5_cross_conformal",
+      "test_set": "inprior",
+      "decision_hour": 168,
+      "target_alpha": 0.005,
+      "mean_achieved_far_pct": 0.6135435347216703,
+      "sd_achieved_far_pct": 0.46562264935422615,
+      "per_seed_far_pct": [
+        {
+          "seed": 0,
+          "far_pct": 1.0090817356205852
+        },
+        {
+          "seed": 1,
+          "far_pct": 0.9018036072144289
+        },
+        {
+          "seed": 2,
+          "far_pct": 0.2257336343115124
+        },
+        {
+          "seed": 3,
+          "far_pct": 0.0
+        },
+        {
+          "seed": 4,
+          "far_pct": 0.931098696461825
+        }
+      ],
+      "seeds_above_nominal_alpha": 3,
+      "seeds_above_0_75_pct": 3,
+      "pooled_far_pct": 0.5749668288367978,
+      "pooled_far_cp95": [
+        0.3759210120742965,
+        0.8413323339690391
+      ],
+      "mean_recall_pct": 67.9688995215311,
+      "pooled_recall_pct": 65.59139784946237,
+      "pooled_recall_cp95": [
+        55.02083021062623,
+        75.13863683209709
+      ],
+      "n_healthy_calibration_by_seed": [
+        920,
+        1076,
+        601,
+        716,
+        580
+      ],
+      "min_attainable_p_by_seed": [
+        0.0010857763300760044,
+        0.0009285051067780873,
+        0.0016611295681063123,
+        0.001394700139470014,
+        0.0017211703958691911
+      ],
+      "any_infeasible_at_alpha": false
+    },
+    {
+      "detector": "v5_cross_conformal",
+      "test_set": "shifted",
+      "decision_hour": 24,
+      "target_alpha": 0.005,
+      "mean_achieved_far_pct": 0.40670426221191247,
+      "sd_achieved_far_pct": 0.4498452472850914,
+      "per_seed_far_pct": [
+        {
+          "seed": 0,
+          "far_pct": 0.0
+        },
+        {
+          "seed": 1,
+          "far_pct": 0.0
+        },
+        {
+          "seed": 2,
+          "far_pct": 0.2677376171352075
+        },
+        {
+          "seed": 3,
+          "far_pct": 0.8290155440414507
+        },
+        {
+          "seed": 4,
+          "far_pct": 0.936768149882904
+        }
+      ],
+      "seeds_above_nominal_alpha": 2,
+      "seeds_above_0_75_pct": 2,
+      "pooled_far_pct": 0.4329004329004329,
+      "pooled_far_cp95": [
+        0.2567599088563851,
+        0.683309614397841
+      ],
+      "mean_recall_pct": 9.89715719063545,
+      "pooled_recall_pct": 10.344827586206897,
+      "pooled_recall_cp95": [
+        4.8405916691360655,
+        18.73134380191126
+      ],
+      "n_healthy_calibration_by_seed": [
+        920,
+        1076,
+        601,
+        716,
+        580
+      ],
+      "min_attainable_p_by_seed": [
+        0.0010857763300760044,
+        0.0009285051067780873,
+        0.0016611295681063123,
+        0.001394700139470014,
+        0.0017211703958691911
+      ],
+      "any_infeasible_at_alpha": false
+    },
+    {
+      "detector": "v5_cross_conformal",
+      "test_set": "shifted",
+      "decision_hour": 168,
+      "target_alpha": 0.005,
+      "mean_achieved_far_pct": 0.640355364646609,
+      "sd_achieved_far_pct": 0.7203621886037606,
+      "per_seed_far_pct": [
+        {
+          "seed": 0,
+          "far_pct": 0.0
+        },
+        {
+          "seed": 1,
+          "far_pct": 1.70316301703163
+        },
+        {
+          "seed": 2,
+          "far_pct": 0.13386880856760375
+        },
+        {
+          "seed": 3,
+          "far_pct": 0.31088082901554404
+        },
+        {
+          "seed": 4,
+          "far_pct": 1.053864168618267
+        }
+      ],
+      "seeds_above_nominal_alpha": 2,
+      "seeds_above_0_75_pct": 2,
+      "pooled_far_pct": 0.6493506493506493,
+      "pooled_far_cp95": [
+        0.4283494730714577,
+        0.9433748068658667
+      ],
+      "mean_recall_pct": 34.04013377926422,
+      "pooled_recall_pct": 33.333333333333336,
+      "pooled_recall_cp95": [
+        23.584931528086322,
+        44.25289770902783
+      ],
+      "n_healthy_calibration_by_seed": [
+        920,
+        1076,
+        601,
+        716,
+        580
+      ],
+      "min_attainable_p_by_seed": [
+        0.0010857763300760044,
+        0.0009285051067780873,
+        0.0016611295681063123,
+        0.001394700139470014,
+        0.0017211703958691911
+      ],
+      "any_infeasible_at_alpha": false
+    },
+    {
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "inprior",
+      "decision_hour": 24,
+      "target_alpha": 0.0025,
+      "mean_achieved_far_pct": 0.07879103417959898,
+      "sd_achieved_far_pct": 0.07801624814871891,
+      "per_seed_far_pct": [
+        {
+          "seed": 0,
+          "far_pct": 0.10090817356205853
+        },
+        {
+          "seed": 1,
+          "far_pct": 0.0
+        },
+        {
+          "seed": 2,
+          "far_pct": 0.1128668171557562
+        },
+        {
+          "seed": 3,
+          "far_pct": 0.18018018018018017
+        },
+        {
+          "seed": 4,
+          "far_pct": 0.0
+        }
+      ],
+      "seeds_above_nominal_alpha": 0,
+      "seeds_above_0_75_pct": 0,
+      "pooled_far_pct": 0.08845643520566121,
+      "pooled_far_cp95": [
+        0.02410649363518782,
+        0.22632734283894407
+      ],
+      "mean_recall_pct": 13.877511961722487,
+      "pooled_recall_pct": 16.129032258064516,
+      "pooled_recall_cp95": [
+        9.317817993004091,
+        25.203426255107946
+      ],
+      "n_healthy_calibration_by_seed": [
+        920,
+        1076,
+        601,
+        716,
+        580
+      ],
+      "min_attainable_p_by_seed": [
+        0.0010857763300760044,
+        0.0009285051067780873,
+        0.0016611295681063123,
+        0.001394700139470014,
+        0.0017211703958691911
+      ],
+      "any_infeasible_at_alpha": false
+    },
+    {
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "inprior",
+      "decision_hour": 168,
+      "target_alpha": 0.0025,
+      "mean_achieved_far_pct": 0.22185642728443772,
+      "sd_achieved_far_pct": 0.44220603168850486,
+      "per_seed_far_pct": [
+        {
+          "seed": 0,
+          "far_pct": 1.0090817356205852
+        },
+        {
+          "seed": 1,
+          "far_pct": 0.1002004008016032
+        },
+        {
+          "seed": 2,
+          "far_pct": 0.0
+        },
+        {
+          "seed": 3,
+          "far_pct": 0.0
+        },
+        {
+          "seed": 4,
+          "far_pct": 0.0
+        }
+      ],
+      "seeds_above_nominal_alpha": 1,
+      "seeds_above_0_75_pct": 1,
+      "pooled_far_pct": 0.24325519681556834,
+      "pooled_far_cp95": [
+        0.12149271577807155,
+        0.4348329427942024
+      ],
+      "mean_recall_pct": 41.09665071770335,
+      "pooled_recall_pct": 39.784946236559136,
+      "pooled_recall_cp95": [
+        29.77619485089268,
+        50.46291231169471
+      ],
+      "n_healthy_calibration_by_seed": [
+        920,
+        1076,
+        601,
+        716,
+        580
+      ],
+      "min_attainable_p_by_seed": [
+        0.0010857763300760044,
+        0.0009285051067780873,
+        0.0016611295681063123,
+        0.001394700139470014,
+        0.0017211703958691911
+      ],
+      "any_infeasible_at_alpha": false
+    },
+    {
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "shifted",
+      "decision_hour": 24,
+      "target_alpha": 0.0025,
+      "mean_achieved_far_pct": 0.13644907783118657,
+      "sd_achieved_far_pct": 0.19391259015979245,
+      "per_seed_far_pct": [
+        {
+          "seed": 0,
+          "far_pct": 0.0
+        },
+        {
+          "seed": 1,
+          "far_pct": 0.0
+        },
+        {
+          "seed": 2,
+          "far_pct": 0.2677376171352075
+        },
+        {
+          "seed": 3,
+          "far_pct": 0.41450777202072536
+        },
+        {
+          "seed": 4,
+          "far_pct": 0.0
+        }
+      ],
+      "seeds_above_nominal_alpha": 2,
+      "seeds_above_0_75_pct": 0,
+      "pooled_far_pct": 0.1443001443001443,
+      "pooled_far_cp95": [
+        0.052973438498858216,
+        0.3138141041866139
+      ],
+      "mean_recall_pct": 6.147157190635451,
+      "pooled_recall_pct": 6.896551724137931,
+      "pooled_recall_cp95": [
+        2.572816223179624,
+        14.40865938618586
+      ],
+      "n_healthy_calibration_by_seed": [
+        920,
+        1076,
+        601,
+        716,
+        580
+      ],
+      "min_attainable_p_by_seed": [
+        0.0010857763300760044,
+        0.0009285051067780873,
+        0.0016611295681063123,
+        0.001394700139470014,
+        0.0017211703958691911
+      ],
+      "any_infeasible_at_alpha": false
+    },
+    {
+      "detector": "v5_cross_conformal_conservative",
+      "test_set": "shifted",
+      "decision_hour": 168,
+      "target_alpha": 0.0025,
+      "mean_achieved_far_pct": 0.19161988443926536,
+      "sd_achieved_far_pct": 0.29272127047038216,
+      "per_seed_far_pct": [
+        {
+          "seed": 0,
+          "far_pct": 0.0
+        },
+        {
+          "seed": 1,
+          "far_pct": 0.12165450121654502
+        },
+        {
+          "seed": 2,
+          "far_pct": 0.13386880856760375
+        },
+        {
+          "seed": 3,
+          "far_pct": 0.0
+        },
+        {
+          "seed": 4,
+          "far_pct": 0.702576112412178
+        }
+      ],
+      "seeds_above_nominal_alpha": 1,
+      "seeds_above_0_75_pct": 0,
+      "pooled_far_pct": 0.1924001924001924,
+      "pooled_far_cp95": [
+        0.08310019578337949,
+        0.3787512405688314
+      ],
+      "mean_recall_pct": 14.027591973244148,
+      "pooled_recall_pct": 13.793103448275861,
+      "pooled_recall_cp95": [
+        7.335221197560933,
+        22.854546980532568
+      ],
+      "n_healthy_calibration_by_seed": [
+        920,
+        1076,
+        601,
+        716,
+        580
+      ],
+      "min_attainable_p_by_seed": [
+        0.0010857763300760044,
+        0.0009285051067780873,
+        0.0016611295681063123,
+        0.001394700139470014,
+        0.0017211703958691911
+      ],
+      "any_infeasible_at_alpha": false
+    }
+  ],
+  "review_crc": {
+    "criterion": "Angelopoulos et al. Eq. 4: (n * empirical risk + 1)/(n + 1) <= alpha",
+    "rows": [
+      {
+        "seed": 0,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 73.68421052631578,
+        "review_per_1000_good": 368.3148335015136,
+        "n_evaluation_defects": 19,
+        "threshold": 3.9605677813915525,
+        "empirical_fnr": 0.15,
+        "corrected_risk": 0.19047619047619047,
+        "n_calibration_defects": 20,
+        "feasible": true
+      },
+      {
+        "seed": 0,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 94.73684210526315,
+        "review_per_1000_good": 760.8476286579213,
+        "n_evaluation_defects": 19,
+        "threshold": 0.9144934645423926,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.047619047619047616,
+        "n_calibration_defects": 20,
+        "feasible": true
+      },
+      {
+        "seed": 0,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 80.0,
+        "recall_pct": 92.3076923076923,
+        "review_per_1000_good": 460.14127144298686,
+        "n_evaluation_defects": 13,
+        "threshold": 2.9377819848109064,
+        "empirical_fnr": 0.07692307692307693,
+        "corrected_risk": 0.14285714285714285,
+        "n_calibration_defects": 13,
+        "feasible": true
+      },
+      {
+        "seed": 0,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 13,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.07142857142857142,
+        "n_calibration_defects": 13,
+        "feasible": false
+      },
+      {
+        "seed": 0,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 53.333333333333336,
+        "review_per_1000_good": 350.64935064935065,
+        "n_evaluation_defects": 15,
+        "threshold": 3.9605677813915525,
+        "empirical_fnr": 0.15,
+        "corrected_risk": 0.19047619047619047,
+        "n_calibration_defects": 20,
+        "feasible": true
+      },
+      {
+        "seed": 0,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 86.66666666666667,
+        "review_per_1000_good": 771.4285714285714,
+        "n_evaluation_defects": 15,
+        "threshold": 0.9144934645423926,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.047619047619047616,
+        "n_calibration_defects": 20,
+        "feasible": true
+      },
+      {
+        "seed": 0,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 80.0,
+        "recall_pct": 77.77777777777779,
+        "review_per_1000_good": 445.45454545454544,
+        "n_evaluation_defects": 9,
+        "threshold": 2.9377819848109064,
+        "empirical_fnr": 0.07692307692307693,
+        "corrected_risk": 0.14285714285714285,
+        "n_calibration_defects": 13,
+        "feasible": true
+      },
+      {
+        "seed": 0,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 9,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.07142857142857142,
+        "n_calibration_defects": 13,
+        "feasible": false
+      },
+      {
+        "seed": 0,
+        "test_set": "inprior",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 73.68421052631578,
+        "review_per_1000_good": 227.04339051463168,
+        "n_evaluation_defects": 19,
+        "threshold": 6.613940297296935,
+        "empirical_fnr": 0.15,
+        "corrected_risk": 0.19047619047619047,
+        "n_calibration_defects": 20,
+        "feasible": true
+      },
+      {
+        "seed": 0,
+        "test_set": "inprior",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 84.21052631578947,
+        "review_per_1000_good": 557.0131180625631,
+        "n_evaluation_defects": 19,
+        "threshold": 2.04307862345415,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.047619047619047616,
+        "n_calibration_defects": 20,
+        "feasible": true
+      },
+      {
+        "seed": 0,
+        "test_set": "shifted",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 60.0,
+        "review_per_1000_good": 196.10389610389612,
+        "n_evaluation_defects": 15,
+        "threshold": 6.613940297296935,
+        "empirical_fnr": 0.15,
+        "corrected_risk": 0.19047619047619047,
+        "n_calibration_defects": 20,
+        "feasible": true
+      },
+      {
+        "seed": 0,
+        "test_set": "shifted",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 73.33333333333333,
+        "review_per_1000_good": 570.1298701298701,
+        "n_evaluation_defects": 15,
+        "threshold": 2.04307862345415,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.047619047619047616,
+        "n_calibration_defects": 20,
+        "feasible": true
+      },
+      {
+        "seed": 0,
+        "test_set": "inprior",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 78.94736842105263,
+        "review_per_1000_good": 13.118062563067609,
+        "n_evaluation_defects": 19,
+        "threshold": 23.868819323898435,
+        "empirical_fnr": 0.15,
+        "corrected_risk": 0.19047619047619047,
+        "n_calibration_defects": 20,
+        "feasible": true
+      },
+      {
+        "seed": 0,
+        "test_set": "inprior",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 94.73684210526315,
+        "review_per_1000_good": 32.29061553985873,
+        "n_evaluation_defects": 19,
+        "threshold": 17.018930061004056,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.047619047619047616,
+        "n_calibration_defects": 20,
+        "feasible": true
+      },
+      {
+        "seed": 0,
+        "test_set": "shifted",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 40.0,
+        "review_per_1000_good": 2.5974025974025974,
+        "n_evaluation_defects": 15,
+        "threshold": 23.868819323898435,
+        "empirical_fnr": 0.15,
+        "corrected_risk": 0.19047619047619047,
+        "n_calibration_defects": 20,
+        "feasible": true
+      },
+      {
+        "seed": 0,
+        "test_set": "shifted",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 66.66666666666666,
+        "review_per_1000_good": 15.584415584415584,
+        "n_evaluation_defects": 15,
+        "threshold": 17.018930061004056,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.047619047619047616,
+        "n_calibration_defects": 20,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 63.63636363636363,
+        "review_per_1000_good": 410.8216432865732,
+        "n_evaluation_defects": 22,
+        "threshold": 3.7370700076649497,
+        "empirical_fnr": 0.16666666666666666,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 24,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 983.9679358717435,
+        "n_evaluation_defects": 22,
+        "threshold": 0.13897654896465897,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.04,
+        "n_calibration_defects": 24,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 80.0,
+        "recall_pct": 86.66666666666667,
+        "review_per_1000_good": 275.55110220440883,
+        "n_evaluation_defects": 15,
+        "threshold": 5.662473040889019,
+        "empirical_fnr": 0.11764705882352941,
+        "corrected_risk": 0.16666666666666666,
+        "n_calibration_defects": 17,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 15,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.05555555555555555,
+        "n_calibration_defects": 17,
+        "feasible": false
+      },
+      {
+        "seed": 1,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 76.92307692307693,
+        "review_per_1000_good": 427.00729927007296,
+        "n_evaluation_defects": 13,
+        "threshold": 3.7370700076649497,
+        "empirical_fnr": 0.16666666666666666,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 24,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 987.8345498783456,
+        "n_evaluation_defects": 13,
+        "threshold": 0.13897654896465897,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.04,
+        "n_calibration_defects": 24,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 80.0,
+        "recall_pct": 72.72727272727273,
+        "review_per_1000_good": 287.1046228710462,
+        "n_evaluation_defects": 11,
+        "threshold": 5.662473040889019,
+        "empirical_fnr": 0.11764705882352941,
+        "corrected_risk": 0.16666666666666666,
+        "n_calibration_defects": 17,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 11,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.05555555555555555,
+        "n_calibration_defects": 17,
+        "feasible": false
+      },
+      {
+        "seed": 1,
+        "test_set": "inprior",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 68.18181818181817,
+        "review_per_1000_good": 190.3807615230461,
+        "n_evaluation_defects": 22,
+        "threshold": 6.867695461367891,
+        "empirical_fnr": 0.16666666666666666,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 24,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "inprior",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 95.45454545454545,
+        "review_per_1000_good": 880.7615230460922,
+        "n_evaluation_defects": 22,
+        "threshold": 0.48323204458034585,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.04,
+        "n_calibration_defects": 24,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "shifted",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 92.3076923076923,
+        "review_per_1000_good": 215.32846715328466,
+        "n_evaluation_defects": 13,
+        "threshold": 6.867695461367891,
+        "empirical_fnr": 0.16666666666666666,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 24,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "shifted",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 896.5936739659367,
+        "n_evaluation_defects": 13,
+        "threshold": 0.48323204458034585,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.04,
+        "n_calibration_defects": 24,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "inprior",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 68.18181818181817,
+        "review_per_1000_good": 7.014028056112225,
+        "n_evaluation_defects": 22,
+        "threshold": 25.34579320955622,
+        "empirical_fnr": 0.16666666666666666,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 24,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "inprior",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 90.9090909090909,
+        "review_per_1000_good": 24.04809619238477,
+        "n_evaluation_defects": 22,
+        "threshold": 20.226710335335085,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.04,
+        "n_calibration_defects": 24,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "shifted",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 30.76923076923077,
+        "review_per_1000_good": 4.866180048661801,
+        "n_evaluation_defects": 13,
+        "threshold": 25.34579320955622,
+        "empirical_fnr": 0.16666666666666666,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 24,
+        "feasible": true
+      },
+      {
+        "seed": 1,
+        "test_set": "shifted",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 46.15384615384615,
+        "review_per_1000_good": 27.980535279805352,
+        "n_evaluation_defects": 13,
+        "threshold": 20.226710335335085,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.04,
+        "n_calibration_defects": 24,
+        "feasible": true
+      },
+      {
+        "seed": 2,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 84.21052631578947,
+        "review_per_1000_good": 618.510158013544,
+        "n_evaluation_defects": 19,
+        "threshold": 1.7737601405090953,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 2,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 19,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 2,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 80.0,
+        "recall_pct": 91.66666666666666,
+        "review_per_1000_good": 664.785553047404,
+        "n_evaluation_defects": 12,
+        "threshold": 1.381575301353736,
+        "empirical_fnr": 0.1111111111111111,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 9,
+        "feasible": true
+      },
+      {
+        "seed": 2,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 12,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.1,
+        "n_calibration_defects": 9,
+        "feasible": false
+      },
+      {
+        "seed": 2,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 86.95652173913044,
+        "review_per_1000_good": 610.4417670682732,
+        "n_evaluation_defects": 23,
+        "threshold": 1.7737601405090953,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 2,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 23,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 2,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 80.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 673.3601070950469,
+        "n_evaluation_defects": 17,
+        "threshold": 1.381575301353736,
+        "empirical_fnr": 0.1111111111111111,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 9,
+        "feasible": true
+      },
+      {
+        "seed": 2,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 17,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.1,
+        "n_calibration_defects": 9,
+        "feasible": false
+      },
+      {
+        "seed": 2,
+        "test_set": "inprior",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 84.21052631578947,
+        "review_per_1000_good": 428.8939051918736,
+        "n_evaluation_defects": 19,
+        "threshold": 3.2064409620764036,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 2,
+        "test_set": "inprior",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 19,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 2,
+        "test_set": "shifted",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 82.6086956521739,
+        "review_per_1000_good": 441.7670682730924,
+        "n_evaluation_defects": 23,
+        "threshold": 3.2064409620764036,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 2,
+        "test_set": "shifted",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 23,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 2,
+        "test_set": "inprior",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 78.94736842105263,
+        "review_per_1000_good": 9.029345372460496,
+        "n_evaluation_defects": 19,
+        "threshold": 20.56769442361525,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 2,
+        "test_set": "inprior",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 19,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 2,
+        "test_set": "shifted",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 39.130434782608695,
+        "review_per_1000_good": 6.693440428380187,
+        "n_evaluation_defects": 23,
+        "threshold": 20.56769442361525,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 2,
+        "test_set": "shifted",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 23,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 3,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 60.0,
+        "review_per_1000_good": 261.26126126126127,
+        "n_evaluation_defects": 25,
+        "threshold": 5.585599944062017,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 3,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 25,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 3,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 80.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 261.26126126126127,
+        "n_evaluation_defects": 15,
+        "threshold": 5.585599944062017,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 3,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 15,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 3,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 50.0,
+        "review_per_1000_good": 258.03108808290153,
+        "n_evaluation_defects": 20,
+        "threshold": 5.585599944062017,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 3,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 20,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 3,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 80.0,
+        "recall_pct": 75.0,
+        "review_per_1000_good": 258.03108808290153,
+        "n_evaluation_defects": 12,
+        "threshold": 5.585599944062017,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 3,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 12,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 3,
+        "test_set": "inprior",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 60.0,
+        "review_per_1000_good": 45.94594594594595,
+        "n_evaluation_defects": 25,
+        "threshold": 13.079751506312073,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 3,
+        "test_set": "inprior",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 25,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 3,
+        "test_set": "shifted",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 25.0,
+        "review_per_1000_good": 49.740932642487046,
+        "n_evaluation_defects": 20,
+        "threshold": 13.079751506312073,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 3,
+        "test_set": "shifted",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 20,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 3,
+        "test_set": "inprior",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 96.0,
+        "review_per_1000_good": 18.91891891891892,
+        "n_evaluation_defects": 25,
+        "threshold": 16.216799215990413,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 3,
+        "test_set": "inprior",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 25,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 3,
+        "test_set": "shifted",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 65.0,
+        "review_per_1000_good": 33.16062176165803,
+        "n_evaluation_defects": 20,
+        "threshold": 16.216799215990413,
+        "empirical_fnr": 0.14285714285714285,
+        "corrected_risk": 0.2,
+        "n_calibration_defects": 14,
+        "feasible": true
+      },
+      {
+        "seed": 3,
+        "test_set": "shifted",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 20,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.06666666666666667,
+        "n_calibration_defects": 14,
+        "feasible": false
+      },
+      {
+        "seed": 4,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 756.0521415270018,
+        "n_evaluation_defects": 8,
+        "threshold": 0.8963980553644264,
+        "empirical_fnr": 0.13333333333333333,
+        "corrected_risk": 0.1875,
+        "n_calibration_defects": 15,
+        "feasible": true
+      },
+      {
+        "seed": 4,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 8,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.0625,
+        "n_calibration_defects": 15,
+        "feasible": false
+      },
+      {
+        "seed": 4,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 80.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 756.0521415270018,
+        "n_evaluation_defects": 4,
+        "threshold": 0.8963980553644264,
+        "empirical_fnr": 0.1,
+        "corrected_risk": 0.18181818181818182,
+        "n_calibration_defects": 10,
+        "feasible": true
+      },
+      {
+        "seed": 4,
+        "test_set": "inprior",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 4,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.09090909090909091,
+        "n_calibration_defects": 10,
+        "feasible": false
+      },
+      {
+        "seed": 4,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 784.5433255269321,
+        "n_evaluation_defects": 16,
+        "threshold": 0.8963980553644264,
+        "empirical_fnr": 0.13333333333333333,
+        "corrected_risk": 0.1875,
+        "n_calibration_defects": 15,
+        "feasible": true
+      },
+      {
+        "seed": 4,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 16,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.0625,
+        "n_calibration_defects": 15,
+        "feasible": false
+      },
+      {
+        "seed": 4,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 80.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 784.5433255269321,
+        "n_evaluation_defects": 12,
+        "threshold": 0.8963980553644264,
+        "empirical_fnr": 0.1,
+        "corrected_risk": 0.18181818181818182,
+        "n_calibration_defects": 10,
+        "feasible": true
+      },
+      {
+        "seed": 4,
+        "test_set": "shifted",
+        "decision_hour": 24,
+        "scope": "detectable_at_24h_D1_D2_D4",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 12,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.09090909090909091,
+        "n_calibration_defects": 10,
+        "feasible": false
+      },
+      {
+        "seed": 4,
+        "test_set": "inprior",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 87.5,
+        "review_per_1000_good": 603.3519553072626,
+        "n_evaluation_defects": 8,
+        "threshold": 1.9379187625336083,
+        "empirical_fnr": 0.13333333333333333,
+        "corrected_risk": 0.1875,
+        "n_calibration_defects": 15,
+        "feasible": true
+      },
+      {
+        "seed": 4,
+        "test_set": "inprior",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 8,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.0625,
+        "n_calibration_defects": 15,
+        "feasible": false
+      },
+      {
+        "seed": 4,
+        "test_set": "shifted",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 93.75,
+        "review_per_1000_good": 611.2412177985949,
+        "n_evaluation_defects": 16,
+        "threshold": 1.9379187625336083,
+        "empirical_fnr": 0.13333333333333333,
+        "corrected_risk": 0.1875,
+        "n_calibration_defects": 15,
+        "feasible": true
+      },
+      {
+        "seed": 4,
+        "test_set": "shifted",
+        "decision_hour": 96,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 16,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.0625,
+        "n_calibration_defects": 15,
+        "feasible": false
+      },
+      {
+        "seed": 4,
+        "test_set": "inprior",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 42.83054003724395,
+        "n_evaluation_defects": 8,
+        "threshold": 16.54523805451516,
+        "empirical_fnr": 0.13333333333333333,
+        "corrected_risk": 0.1875,
+        "n_calibration_defects": 15,
+        "feasible": true
+      },
+      {
+        "seed": 4,
+        "test_set": "inprior",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 8,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.0625,
+        "n_calibration_defects": 15,
+        "feasible": false
+      },
+      {
+        "seed": 4,
+        "test_set": "shifted",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 80.0,
+        "recall_pct": 62.5,
+        "review_per_1000_good": 55.03512880562061,
+        "n_evaluation_defects": 16,
+        "threshold": 16.54523805451516,
+        "empirical_fnr": 0.13333333333333333,
+        "corrected_risk": 0.1875,
+        "n_calibration_defects": 15,
+        "feasible": true
+      },
+      {
+        "seed": 4,
+        "test_set": "shifted",
+        "decision_hour": 168,
+        "scope": "all_defects",
+        "target_recall_pct": 95.0,
+        "recall_pct": 100.0,
+        "review_per_1000_good": 1000.0,
+        "n_evaluation_defects": 16,
+        "threshold": null,
+        "empirical_fnr": 0.0,
+        "corrected_risk": 0.0625,
+        "n_calibration_defects": 15,
+        "feasible": false
+      }
+    ]
+  },
+  "demo": {
+    "public_url": "https://sahodrift-app.vercel.app",
+    "supersedes_streamlit": true
+  },
+  "realdata_v5": {
+    "cora_identifier_erratum": {
+      "correct_doi": "10.34810/data3204",
+      "incorrect_readme_doi": "10.34810/data3206",
+      "verification": "DataCite title for data3204 is the Perez-Farre et al. Si IGBT accelerated power-cycling dataset; data3206 is an unrelated colistin delivery dataset."
+    }
+  },
+  "integrity": {
+    "acceptance_passed": true,
+    "limitations": [
+      "At 168 hours the nominal in-prior mean FAR is 0.614 percent and three seeds exceed 0.75 percent; the conservative alpha/2 row is the defensible sensitivity result.",
+      "BurnTrace has only 144 healthy calibration parts, so min p = 1/145 exceeds alpha 0.005; its nominal 0.5 percent rows are marked infeasible rather than treated as zero-recall failures.",
+      "R3 was not rerun because the full supervised fallback exceeded the 30-minute cap in prior profiling; no capped approximation was substituted.",
+      "The R4 robust covariance subcomponent uses a disclosed deterministic 12,000-row numerical cap; R1, R2 and R5 use the full training split.",
+      "No supported browser screen recorder or installed Playwright browser was available. Deployment was checked by production build, HTTP title response and the 18-test suite."
+    ],
+    "earlier_outputs_modified": false,
+    "runtime_seconds": 9.141793012619019,
+    "environment": {
+      "python": "3.11.14",
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "scipy": "1.17.1",
+      "sklearn": "1.9.1"
+    },
+    "frozen_input_hashes": {
+      "v2": "a69e4834451f23cd21bbd4473d25847c409dd2a47a7b419789c587fe8231e823",
+      "v3": "b51c8007b6e42aa34f8b6eddddf060442d1e9892096583ae874cab9d39dcdd89",
+      "v4": "0be4ea37a8959d490f14db15ae8091a7e264499456cb632f8fb2539c3d66e29d"
+    }
+  },
+  "ablation_protocol": {
+    "v4_rows_frozen_for_comparison": [
+      {
+        "detector": "plus_disjoint_c1_c2",
+        "test_set": "inprior",
+        "tier": "REJECT",
+        "target": "FAR 0.5%",
+        "decision_hour": 24,
+        "achieved_far_pct_mean": 0.306769956673194,
+        "achieved_far_pct_sd": 0.3390618285759386,
+        "recall_pct_mean": 16.461244019138757,
+        "recall_pct_sd": 10.538988456920698,
+        "false_rejects_per_1000_good_mean": 3.06769956673194,
+        "false_rejects_per_1000_good_sd": 3.390618285759386,
+        "review_per_1000_good_mean": 3.06769956673194,
+        "review_per_1000_good_sd": 3.390618285759386,
+        "n_pos": 93,
+        "n_good": 4522,
+        "recall_cp95": [
+          11.893289564836858,
+          28.85307613785408
+        ],
+        "far_cp95": [
+          0.2023730813665233,
+          0.5739565305806372
+        ],
+        "n_by_type": {
+          "D1_high_in_limit": 16,
+          "D2_fast_drifter": 26,
+          "D3_late_accelerator": 34,
+          "D4_multivariate": 17
+        },
+        "recall_by_type": {
+          "D1_high_in_limit": 31.25,
+          "D2_fast_drifter": 0.0,
+          "D3_late_accelerator": 0.0,
+          "D4_multivariate": 76.47058823529412
+        }
+      },
+      {
+        "detector": "plus_randomised_ties",
+        "test_set": "inprior",
+        "tier": "REJECT",
+        "target": "FAR 0.5%",
+        "decision_hour": 24,
+        "achieved_far_pct_mean": 0.36717330625833805,
+        "achieved_far_pct_sd": 0.3636965976413588,
+        "recall_pct_mean": 20.013875598086123,
+        "recall_pct_sd": 6.052347044014565,
+        "false_rejects_per_1000_good_mean": 3.671733062583381,
+        "false_rejects_per_1000_good_sd": 3.636965976413588,
+        "review_per_1000_good_mean": 3.671733062583381,
+        "review_per_1000_good_sd": 3.636965976413588,
+        "n_pos": 93,
+        "n_good": 4522,
+        "recall_cp95": [
+          13.658638199061226,
+          31.240558536324826
+        ],
+        "far_cp95": [
+          0.25315242446215636,
+          0.6553701567415059
+        ],
+        "n_by_type": {
+          "D1_high_in_limit": 16,
+          "D2_fast_drifter": 26,
+          "D3_late_accelerator": 34,
+          "D4_multivariate": 17
+        },
+        "recall_by_type": {
+          "D1_high_in_limit": 37.5,
+          "D2_fast_drifter": 0.0,
+          "D3_late_accelerator": 0.0,
+          "D4_multivariate": 82.3529411764706
+        }
+      },
+      {
+        "detector": "v2_reproduction",
+        "test_set": "inprior",
+        "tier": "REJECT",
+        "target": "FAR 0.5%",
+        "decision_hour": 24,
+        "achieved_far_pct_mean": 0.4077448676203518,
+        "achieved_far_pct_sd": 0.2401676817715179,
+        "recall_pct_mean": 27.26267942583732,
+        "recall_pct_sd": 7.826290282011418,
+        "false_rejects_per_1000_good_mean": 4.0774486762035185,
+        "false_rejects_per_1000_good_sd": 2.4016768177151793,
+        "review_per_1000_good_mean": 4.0774486762035185,
+        "review_per_1000_good_sd": 2.4016768177151793,
+        "n_pos": 93,
+        "n_good": 4522,
+        "recall_cp95": [
+          17.28666885288626,
+          35.92267859526558
+        ],
+        "far_cp95": [
+          0.2703604115858387,
+          0.6822463852619854
+        ],
+        "n_by_type": {
+          "D1_high_in_limit": 16,
+          "D2_fast_drifter": 26,
+          "D3_late_accelerator": 34,
+          "D4_multivariate": 17
+        },
+        "recall_by_type": {
+          "D1_high_in_limit": 81.25,
+          "D2_fast_drifter": 0.0,
+          "D3_late_accelerator": 0.0,
+          "D4_multivariate": 64.70588235294117
+        }
+      },
+      {
+        "detector": "v3_twice_mean",
+        "test_set": "inprior",
+        "tier": "REJECT",
+        "target": "FAR 0.5%",
+        "decision_hour": 24,
+        "achieved_far_pct_mean": 0.37563122140398547,
+        "achieved_far_pct_sd": 0.4311615502072215,
+        "recall_pct_mean": 21.219138755980858,
+        "recall_pct_sd": 14.210973524128047,
+        "false_rejects_per_1000_good_mean": 3.7563122140398546,
+        "false_rejects_per_1000_good_sd": 4.311615502072215,
+        "review_per_1000_good_mean": 3.7563122140398546,
+        "review_per_1000_good_sd": 4.311615502072215,
+        "n_pos": 93,
+        "n_good": 4522,
+        "recall_cp95": [
+          16.368489661265716,
+          34.762862840889255
+        ],
+        "far_cp95": [
+          0.25315242446215636,
+          0.6553701567415059
+        ],
+        "n_by_type": {
+          "D1_high_in_limit": 16,
+          "D2_fast_drifter": 26,
+          "D3_late_accelerator": 34,
+          "D4_multivariate": 17
+        },
+        "recall_by_type": {
+          "D1_high_in_limit": 56.25,
+          "D2_fast_drifter": 3.8461538461538463,
+          "D3_late_accelerator": 0.0,
+          "D4_multivariate": 76.47058823529412
+        }
+      },
+      {
+        "detector": "v4_three_way",
+        "test_set": "inprior",
+        "tier": "REJECT",
+        "target": "FAR 0.5%",
+        "decision_hour": 24,
+        "achieved_far_pct_mean": 0.6650199253705587,
+        "achieved_far_pct_sd": 1.147310750267829,
+        "recall_pct_mean": 13.883253588516748,
+        "recall_pct_sd": 13.960647449355356,
+        "false_rejects_per_1000_good_mean": 6.650199253705589,
+        "false_rejects_per_1000_good_sd": 11.473107502678292,
+        "review_per_1000_good_mean": 6.650199253705589,
+        "review_per_1000_good_sd": 11.473107502678292,
+        "n_pos": 93,
+        "n_good": 4522,
+        "recall_cp95": [
+          9.317817993004091,
+          25.203426255107946
+        ],
+        "far_cp95": [
+          0.5028540748168905,
+          1.0233489068470454
+        ],
+        "n_by_type": {
+          "D1_high_in_limit": 16,
+          "D2_fast_drifter": 26,
+          "D3_late_accelerator": 34,
+          "D4_multivariate": 17
+        },
+        "recall_by_type": {
+          "D1_high_in_limit": 43.75,
+          "D2_fast_drifter": 7.6923076923076925,
+          "D3_late_accelerator": 0.0,
+          "D4_multivariate": 35.294117647058826
+        }
+      }
+    ],
+    "v5_fair_selection": [
+      {
+        "method": "cauchy",
+        "mean_recall_pct": 0.0,
+        "mean_far_pct": 0.21574344023323616
+      },
+      {
+        "method": "fisher",
+        "mean_recall_pct": 7.333333333333333,
+        "mean_far_pct": 0.2623906705539359
+      },
+      {
+        "method": "harmonic_mean",
+        "mean_recall_pct": 0.0,
+        "mean_far_pct": 0.21574344023323616
+      },
+      {
+        "method": "tippett",
+        "mean_recall_pct": 0.0,
+        "mean_far_pct": 0.21574344023323616
+      },
+      {
+        "method": "twice_mean",
+        "mean_recall_pct": 11.333333333333332,
+        "mean_far_pct": 0.1807580174927114
+      }
+    ],
+    "v5_cross_conformal": {
+      "detector": "v5_cross_conformal",
+      "test_set": "inprior",
+      "decision_hour": 24,
+      "target_alpha": 0.005,
+      "mean_achieved_far_pct": 0.17343646968282228,
+      "sd_achieved_far_pct": 0.22523385848866687,
+      "per_seed_far_pct": [
+        {
+          "seed": 0,
+          "far_pct": 0.10090817356205853
+        },
+        {
+          "seed": 1,
+          "far_pct": 0.0
+        },
+        {
+          "seed": 2,
+          "far_pct": 0.2257336343115124
+        },
+        {
+          "seed": 3,
+          "far_pct": 0.5405405405405406
+        },
+        {
+          "seed": 4,
+          "far_pct": 0.0
+        }
+      ],
+      "seeds_above_nominal_alpha": 1,
+      "seeds_above_0_75_pct": 0,
+      "pooled_far_pct": 0.19902697921273774,
+      "pooled_far_cp95": [
+        0.09104693007318691,
+        0.37747750485308396
+      ],
+      "mean_recall_pct": 20.477511961722488,
+      "pooled_recall_pct": 20.43010752688172,
+      "pooled_recall_cp95": [
+        12.771532740356232,
+        30.0510210046396
+      ],
+      "n_healthy_calibration_by_seed": [
+        920,
+        1076,
+        601,
+        716,
+        580
+      ],
+      "min_attainable_p_by_seed": [
+        0.0010857763300760044,
+        0.0009285051067780873,
+        0.0016611295681063123,
+        0.001394700139470014,
+        0.0017211703958691911
+      ],
+      "any_infeasible_at_alpha": false
+    }
+  },
+  "rival_benchmark_v5": {
+    "file": "out/v5/rival_benchmark_v5.json",
+    "sha256": "fcbad8186c5d4c51ad899fbdf740556cd21aa5ae49a0e68a66300d0f5b17179b",
+    "benchmarks": [
+      {
+        "dataset": "Aabhas",
+        "commit": "3d3b1e152f65abd2ad2f90fdc6f755b83f2de73c",
+        "split": {
+          "trap_classes_counted_good": [
+            "Va",
+            "VI",
+            "VII",
+            "all rows where is_trap is true"
+          ],
+          "source_split": "train LOT000 to LOT143, calibration LOT144 to LOT191, test LOT192 to LOT239"
+        },
+        "rows": [
+          {
+            "dataset": "Aabhas",
+            "detector": "Sahodrift_v5",
+            "decision_hour": 24,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": 0.5005726890934544,
+            "recall_pct": 28.571428571428573,
+            "diagnostic_recall_pct": 28.571428571428573,
+            "n_pos": 427,
+            "n_good": 23573,
+            "far_cp95": [
+              0.41450737528472886,
+              0.5991668036106396
+            ],
+            "recall_cp95": [
+              24.330856102019858,
+              33.11184247729798
+            ],
+            "n_healthy_calibration": 23547,
+            "min_attainable_p": 4.246645150331238e-05,
+            "infeasible_at_alpha": false,
+            "calibration_rule": "v5 lot-cross conformal using every healthy calibration part"
+          },
+          {
+            "dataset": "Aabhas",
+            "detector": "Sahodrift_v5",
+            "decision_hour": 24,
+            "target_far_pct": 0.54,
+            "achieved_far_pct": 0.5260255376914267,
+            "recall_pct": 28.571428571428573,
+            "diagnostic_recall_pct": 28.571428571428573,
+            "n_pos": 427,
+            "n_good": 23573,
+            "far_cp95": [
+              0.43770546108924996,
+              0.6268589935841556
+            ],
+            "recall_cp95": [
+              24.330856102019858,
+              33.11184247729798
+            ],
+            "n_healthy_calibration": 23547,
+            "min_attainable_p": 4.246645150331238e-05,
+            "infeasible_at_alpha": false,
+            "calibration_rule": "v5 lot-cross conformal using every healthy calibration part"
+          },
+          {
+            "dataset": "Aabhas",
+            "detector": "R1_lot_mad",
+            "decision_hour": 24,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": 0.1442328087218428,
+            "recall_pct": 20.374707259953162,
+            "diagnostic_recall_pct": 20.374707259953162,
+            "n_pos": 427,
+            "n_good": 23573,
+            "n_healthy_calibration": 23547,
+            "min_attainable_p": 4.246645150331238e-05,
+            "infeasible_at_alpha": false,
+            "far_cp95": [
+              0.09990545274596435,
+              0.20149312204595515
+            ],
+            "recall_cp95": [
+              16.653836005526475,
+              24.511809981815727
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "no supervised fit"
+          },
+          {
+            "dataset": "Aabhas",
+            "detector": "R2_isolation_forest",
+            "decision_hour": 24,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": 0.564204810588385,
+            "recall_pct": 22.24824355971897,
+            "diagnostic_recall_pct": 22.24824355971897,
+            "n_pos": 427,
+            "n_good": 23573,
+            "n_healthy_calibration": 23547,
+            "min_attainable_p": 4.246645150331238e-05,
+            "infeasible_at_alpha": false,
+            "far_cp95": [
+              0.4726040868156857,
+              0.6682969447441537
+            ],
+            "recall_cp95": [
+              18.390260001535903,
+              26.495673654941093
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "fit independently inside each calibration or test lot, matching public stack"
+          },
+          {
+            "dataset": "Aabhas",
+            "detector": "R4_unsupervised_ensemble",
+            "decision_hour": 24,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": 0.3775505875365885,
+            "recall_pct": 33.25526932084309,
+            "diagnostic_recall_pct": 33.25526932084309,
+            "n_pos": 427,
+            "n_good": 23573,
+            "n_healthy_calibration": 23547,
+            "min_attainable_p": 4.246645150331238e-05,
+            "infeasible_at_alpha": false,
+            "far_cp95": [
+              0.3033105318345102,
+              0.46440612050537644
+            ],
+            "recall_cp95": [
+              28.799128629330607,
+              37.94538687053857
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "full training split except disclosed 12,000 healthy row MCD numerical cap"
+          },
+          {
+            "dataset": "Aabhas",
+            "detector": "R5_ridge_forecast_slope",
+            "decision_hour": 24,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": 0.1442328087218428,
+            "recall_pct": 15.22248243559719,
+            "diagnostic_recall_pct": 15.22248243559719,
+            "n_pos": 427,
+            "n_good": 23573,
+            "n_healthy_calibration": 23547,
+            "min_attainable_p": 4.246645150331238e-05,
+            "infeasible_at_alpha": false,
+            "far_cp95": [
+              0.09990545274596435,
+              0.20149312204595515
+            ],
+            "recall_cp95": [
+              11.949059866651558,
+              18.986739030182047
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "full training split"
+          },
+          {
+            "dataset": "Aabhas",
+            "detector": "Sahodrift_v5",
+            "decision_hour": 168,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": 0.4199720018665422,
+            "recall_pct": 40.749414519906324,
+            "diagnostic_recall_pct": 40.749414519906324,
+            "n_pos": 427,
+            "n_good": 23573,
+            "far_cp95": [
+              0.3414596596257484,
+              0.5110671937272051
+            ],
+            "recall_cp95": [
+              36.04999699613613,
+              45.57791899451699
+            ],
+            "n_healthy_calibration": 23547,
+            "min_attainable_p": 4.246645150331238e-05,
+            "infeasible_at_alpha": false,
+            "calibration_rule": "v5 lot-cross conformal using every healthy calibration part"
+          },
+          {
+            "dataset": "Aabhas",
+            "detector": "R1_lot_mad",
+            "decision_hour": 168,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": 0.1399906672888474,
+            "recall_pct": 45.433255269320846,
+            "diagnostic_recall_pct": 45.433255269320846,
+            "n_pos": 427,
+            "n_good": 23573,
+            "n_healthy_calibration": 23547,
+            "min_attainable_p": 4.246645150331238e-05,
+            "infeasible_at_alpha": false,
+            "far_cp95": [
+              0.09638211987802406,
+              0.19654329120107641
+            ],
+            "recall_cp95": [
+              40.63945957216623,
+              50.290751289993985
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "no supervised fit"
+          },
+          {
+            "dataset": "Aabhas",
+            "detector": "R2_isolation_forest",
+            "decision_hour": 168,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": 0.5769312348873712,
+            "recall_pct": 38.64168618266979,
+            "diagnostic_recall_pct": 38.64168618266979,
+            "n_pos": 427,
+            "n_good": 23573,
+            "n_healthy_calibration": 23547,
+            "min_attainable_p": 4.246645150331238e-05,
+            "infeasible_at_alpha": false,
+            "far_cp95": [
+              0.4842621870372148,
+              0.6820846461133052
+            ],
+            "recall_cp95": [
+              33.998862675077135,
+              43.44305397107293
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "fit independently inside each calibration or test lot, matching public stack"
+          },
+          {
+            "dataset": "Aabhas",
+            "detector": "R4_unsupervised_ensemble",
+            "decision_hour": 168,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": 0.29694990030967633,
+            "recall_pct": 45.19906323185012,
+            "diagnostic_recall_pct": 45.19906323185012,
+            "n_pos": 427,
+            "n_good": 23573,
+            "n_healthy_calibration": 23547,
+            "min_attainable_p": 4.246645150331238e-05,
+            "infeasible_at_alpha": false,
+            "far_cp95": [
+              0.2315579431114239,
+              0.3750315197553132
+            ],
+            "recall_cp95": [
+              40.40897910949787,
+              50.056115275274195
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "full training split except disclosed 12,000 healthy row MCD numerical cap"
+          },
+          {
+            "dataset": "Aabhas",
+            "detector": "R5_ridge_forecast_slope",
+            "decision_hour": 168,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": 0.19938064735078267,
+            "recall_pct": 28.337236533957846,
+            "diagnostic_recall_pct": 28.337236533957846,
+            "n_pos": 427,
+            "n_good": 23573,
+            "n_healthy_calibration": 23547,
+            "min_attainable_p": 4.246645150331238e-05,
+            "infeasible_at_alpha": false,
+            "far_cp95": [
+              0.14653305344727366,
+              0.26504680398617264
+            ],
+            "recall_cp95": [
+              24.108856758857957,
+              32.86876008795492
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "full training split"
+          }
+        ],
+        "published_points": [
+          {
+            "hour": 24,
+            "recall_pct": 29.7,
+            "far_pct": 0.54,
+            "split": "their published split"
+          }
+        ]
+      },
+      {
+        "dataset": "BurnTrace",
+        "commit": "a8796e197f242d87768272db8b055dda21120c69",
+        "split": {
+          "source_split": "lot grouped 60/20/20 inside the published labelled calibration table",
+          "split_differs_from_their_published_holdout": true,
+          "reason": "The designated public holdout has no labels"
+        },
+        "rows": [
+          {
+            "dataset": "BurnTrace",
+            "detector": "Sahodrift_v5",
+            "decision_hour": 24,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": null,
+            "recall_pct": null,
+            "diagnostic_recall_pct": 0.0,
+            "n_pos": 13,
+            "n_good": 215,
+            "far_cp95": [
+              0.0,
+              1.701122581691038
+            ],
+            "recall_cp95": [
+              0.0,
+              24.705263800047092
+            ],
+            "n_healthy_calibration": 144,
+            "min_attainable_p": 0.006896551724137931,
+            "infeasible_at_alpha": true,
+            "calibration_rule": "v5 lot-cross conformal using every healthy calibration part"
+          },
+          {
+            "dataset": "BurnTrace",
+            "detector": "R1_lot_mad",
+            "decision_hour": 24,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": null,
+            "recall_pct": null,
+            "diagnostic_recall_pct": 30.76923076923077,
+            "n_pos": 13,
+            "n_good": 215,
+            "n_healthy_calibration": 144,
+            "min_attainable_p": 0.006896551724137931,
+            "infeasible_at_alpha": true,
+            "far_cp95": [
+              0.011775031332615725,
+              2.5640774929679475
+            ],
+            "recall_cp95": [
+              9.09203945720966,
+              61.42616617507044
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "no supervised fit"
+          },
+          {
+            "dataset": "BurnTrace",
+            "detector": "R2_isolation_forest",
+            "decision_hour": 24,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": null,
+            "recall_pct": null,
+            "diagnostic_recall_pct": 23.076923076923077,
+            "n_pos": 13,
+            "n_good": 215,
+            "n_healthy_calibration": 144,
+            "min_attainable_p": 0.006896551724137931,
+            "infeasible_at_alpha": true,
+            "far_cp95": [
+              0.0,
+              1.701122581691038
+            ],
+            "recall_cp95": [
+              5.038107349115153,
+              53.81315392340409
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "fit independently inside each calibration or test lot, matching public stack"
+          },
+          {
+            "dataset": "BurnTrace",
+            "detector": "R4_unsupervised_ensemble",
+            "decision_hour": 24,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": null,
+            "recall_pct": null,
+            "diagnostic_recall_pct": 23.076923076923077,
+            "n_pos": 13,
+            "n_good": 215,
+            "n_healthy_calibration": 144,
+            "min_attainable_p": 0.006896551724137931,
+            "infeasible_at_alpha": true,
+            "far_cp95": [
+              0.011775031332615725,
+              2.5640774929679475
+            ],
+            "recall_cp95": [
+              5.038107349115153,
+              53.81315392340409
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "full training split except disclosed 12,000 healthy row MCD numerical cap"
+          },
+          {
+            "dataset": "BurnTrace",
+            "detector": "R5_ridge_forecast_slope",
+            "decision_hour": 24,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": null,
+            "recall_pct": null,
+            "diagnostic_recall_pct": 23.076923076923077,
+            "n_pos": 13,
+            "n_good": 215,
+            "n_healthy_calibration": 144,
+            "min_attainable_p": 0.006896551724137931,
+            "infeasible_at_alpha": true,
+            "far_cp95": [
+              0.0,
+              1.701122581691038
+            ],
+            "recall_cp95": [
+              5.038107349115153,
+              53.81315392340409
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "full training split"
+          },
+          {
+            "dataset": "BurnTrace",
+            "detector": "Sahodrift_v5",
+            "decision_hour": 168,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": null,
+            "recall_pct": null,
+            "diagnostic_recall_pct": 0.0,
+            "n_pos": 13,
+            "n_good": 215,
+            "far_cp95": [
+              0.0,
+              1.701122581691038
+            ],
+            "recall_cp95": [
+              0.0,
+              24.705263800047092
+            ],
+            "n_healthy_calibration": 144,
+            "min_attainable_p": 0.006896551724137931,
+            "infeasible_at_alpha": true,
+            "calibration_rule": "v5 lot-cross conformal using every healthy calibration part"
+          },
+          {
+            "dataset": "BurnTrace",
+            "detector": "R1_lot_mad",
+            "decision_hour": 168,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": null,
+            "recall_pct": null,
+            "diagnostic_recall_pct": 53.84615384615385,
+            "n_pos": 13,
+            "n_good": 215,
+            "n_healthy_calibration": 144,
+            "min_attainable_p": 0.006896551724137931,
+            "infeasible_at_alpha": true,
+            "far_cp95": [
+              0.011775031332615725,
+              2.5640774929679475
+            ],
+            "recall_cp95": [
+              25.134548227030358,
+              80.7767558198712
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "no supervised fit"
+          },
+          {
+            "dataset": "BurnTrace",
+            "detector": "R2_isolation_forest",
+            "decision_hour": 168,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": null,
+            "recall_pct": null,
+            "diagnostic_recall_pct": 61.53846153846154,
+            "n_pos": 13,
+            "n_good": 215,
+            "n_healthy_calibration": 144,
+            "min_attainable_p": 0.006896551724137931,
+            "infeasible_at_alpha": true,
+            "far_cp95": [
+              1.3188357419354335,
+              6.592891500021435
+            ],
+            "recall_cp95": [
+              31.577760291406303,
+              86.14206611098393
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "fit independently inside each calibration or test lot, matching public stack"
+          },
+          {
+            "dataset": "BurnTrace",
+            "detector": "R4_unsupervised_ensemble",
+            "decision_hour": 168,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": null,
+            "recall_pct": null,
+            "diagnostic_recall_pct": 69.23076923076923,
+            "n_pos": 13,
+            "n_good": 215,
+            "n_healthy_calibration": 144,
+            "min_attainable_p": 0.006896551724137931,
+            "infeasible_at_alpha": true,
+            "far_cp95": [
+              2.9169078342920716,
+              9.546549706361871
+            ],
+            "recall_cp95": [
+              38.57383382492956,
+              90.90796054279033
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "full training split except disclosed 12,000 healthy row MCD numerical cap"
+          },
+          {
+            "dataset": "BurnTrace",
+            "detector": "R5_ridge_forecast_slope",
+            "decision_hour": 168,
+            "target_far_pct": 0.5,
+            "achieved_far_pct": null,
+            "recall_pct": null,
+            "diagnostic_recall_pct": 30.76923076923077,
+            "n_pos": 13,
+            "n_good": 215,
+            "n_healthy_calibration": 144,
+            "min_attainable_p": 0.006896551724137931,
+            "infeasible_at_alpha": true,
+            "far_cp95": [
+              0.0,
+              1.701122581691038
+            ],
+            "recall_cp95": [
+              9.09203945720966,
+              61.42616617507044
+            ],
+            "calibration_rule": "same healthy calibration parts; empirical upper 1-alpha quantile",
+            "fit_note": "full training split"
+          }
+        ],
+        "published_points": [
+          {
+            "hour": 24,
+            "recall_pct": 21.1,
+            "far_pct": 2.55,
+            "split": "their published split"
+          },
+          {
+            "hour": 168,
+            "recall_pct": 72.2,
+            "far_pct": 1.04,
+            "split": "their published split"
+          }
+        ]
+      }
+    ]
+  }
+}
