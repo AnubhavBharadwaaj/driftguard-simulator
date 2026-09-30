@@ -1,0 +1,455 @@
+{
+  "status": "partial",
+  "seed_rows": [
+    {
+      "seed": 0,
+      "detector": "unweighted_conformal",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 6.666666666666667,
+      "achieved_far_pct": 0.6493506493506493,
+      "n_pos": 15,
+      "n_good": 770,
+      "recall_cp95": [
+        0.16864302413527013,
+        31.948456657830338
+      ],
+      "far_cp95": [
+        0.21116863707489847,
+        1.5088154646996017
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      }
+    },
+    {
+      "seed": 0,
+      "detector": "domain_weighted_conformal",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 6.666666666666667,
+      "achieved_far_pct": 1.6883116883116882,
+      "n_pos": 15,
+      "n_good": 770,
+      "recall_cp95": [
+        0.16864302413527013,
+        31.948456657830338
+      ],
+      "far_cp95": [
+        0.9019388694202604,
+        2.8697611449908393
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      }
+    },
+    {
+      "seed": 0,
+      "detector": "domain_alarm_conservative_fallback",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 0.0,
+      "achieved_far_pct": 0.5194805194805194,
+      "n_pos": 15,
+      "n_good": 770,
+      "recall_cp95": [
+        0.0,
+        21.8019360910534
+      ],
+      "far_cp95": [
+        0.14171689436340124,
+        1.324693977136858
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 0.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      }
+    },
+    {
+      "seed": 1,
+      "detector": "unweighted_conformal",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 15.384615384615385,
+      "achieved_far_pct": 3.64963503649635,
+      "n_pos": 13,
+      "n_good": 822,
+      "recall_cp95": [
+        1.9206671982528476,
+        45.44710556765577
+      ],
+      "far_cp95": [
+        2.4756873384868197,
+        5.169286752535532
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 100.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 20.0
+      }
+    },
+    {
+      "seed": 1,
+      "detector": "domain_weighted_conformal",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 7.6923076923076925,
+      "achieved_far_pct": 1.4598540145985401,
+      "n_pos": 13,
+      "n_good": 822,
+      "recall_cp95": [
+        0.19456284973467483,
+        36.02974352678775
+      ],
+      "far_cp95": [
+        0.7565427998720389,
+        2.536173920428688
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 0.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 20.0
+      }
+    },
+    {
+      "seed": 1,
+      "detector": "domain_alarm_conservative_fallback",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 7.6923076923076925,
+      "achieved_far_pct": 0.9732360097323601,
+      "n_pos": 13,
+      "n_good": 822,
+      "recall_cp95": [
+        0.19456284973467483,
+        36.02974352678775
+      ],
+      "far_cp95": [
+        0.4210841758502519,
+        1.908615781897648
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 0.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 20.0
+      }
+    },
+    {
+      "seed": 2,
+      "detector": "unweighted_conformal",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 8.695652173913043,
+      "achieved_far_pct": 0.0,
+      "n_pos": 23,
+      "n_good": 747,
+      "recall_cp95": [
+        1.0709966037875884,
+        28.037933590941087
+      ],
+      "far_cp95": [
+        0.0,
+        0.4926085820173367
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      }
+    },
+    {
+      "seed": 2,
+      "detector": "domain_weighted_conformal",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 13.043478260869565,
+      "achieved_far_pct": 0.4016064257028112,
+      "n_pos": 23,
+      "n_good": 747,
+      "recall_cp95": [
+        2.775150742279319,
+        33.58891375371209
+      ],
+      "far_cp95": [
+        0.0828975982555091,
+        1.1691413409990856
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 75.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      }
+    },
+    {
+      "seed": 2,
+      "detector": "domain_alarm_conservative_fallback",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 13.043478260869565,
+      "achieved_far_pct": 0.4016064257028112,
+      "n_pos": 23,
+      "n_good": 747,
+      "recall_cp95": [
+        2.775150742279319,
+        33.58891375371209
+      ],
+      "far_cp95": [
+        0.0828975982555091,
+        1.1691413409990856
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 75.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      }
+    },
+    {
+      "seed": 3,
+      "detector": "unweighted_conformal",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 5.0,
+      "achieved_far_pct": 0.31088082901554404,
+      "n_pos": 20,
+      "n_good": 965,
+      "recall_cp95": [
+        0.1265089497949804,
+        24.873276277202777
+      ],
+      "far_cp95": [
+        0.06415704325230821,
+        0.9058143663462865
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      }
+    },
+    {
+      "seed": 3,
+      "detector": "domain_weighted_conformal",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 5.0,
+      "achieved_far_pct": 0.20725388601036268,
+      "n_pos": 20,
+      "n_good": 965,
+      "recall_cp95": [
+        0.1265089497949804,
+        24.873276277202777
+      ],
+      "far_cp95": [
+        0.025109269460878863,
+        0.7466483110771548
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 50.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      }
+    },
+    {
+      "seed": 3,
+      "detector": "domain_alarm_conservative_fallback",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 0.0,
+      "achieved_far_pct": 0.10362694300518134,
+      "n_pos": 20,
+      "n_good": 965,
+      "recall_cp95": [
+        0.0,
+        16.843347098308527
+      ],
+      "far_cp95": [
+        0.0026235726287354823,
+        0.5760065897325778
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 0.0,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      }
+    },
+    {
+      "seed": 4,
+      "detector": "unweighted_conformal",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 6.25,
+      "achieved_far_pct": 0.0,
+      "n_pos": 16,
+      "n_good": 854,
+      "recall_cp95": [
+        0.15811117227658872,
+        30.23207384345319
+      ],
+      "far_cp95": [
+        0.0,
+        0.43102152208436795
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 33.33333333333333,
+        "D2_fast_drifter": 0.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      }
+    },
+    {
+      "seed": 4,
+      "detector": "domain_weighted_conformal",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 18.75,
+      "achieved_far_pct": 0.468384074941452,
+      "n_pos": 16,
+      "n_good": 854,
+      "recall_cp95": [
+        4.047373390594588,
+        45.64565462316117
+      ],
+      "far_cp95": [
+        0.1277618944045405,
+        1.1948728955562595
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 66.66666666666666,
+        "D2_fast_drifter": 25.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      }
+    },
+    {
+      "seed": 4,
+      "detector": "domain_alarm_conservative_fallback",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 18.75,
+      "achieved_far_pct": 0.351288056206089,
+      "n_pos": 16,
+      "n_good": 854,
+      "recall_cp95": [
+        4.047373390594588,
+        45.64565462316117
+      ],
+      "far_cp95": [
+        0.07250271346917972,
+        1.0231513910899368
+      ],
+      "recall_by_type": {
+        "D1_high_in_limit": 66.66666666666666,
+        "D2_fast_drifter": 25.0,
+        "D3_late_accelerator": 0.0,
+        "D4_multivariate": 0.0
+      }
+    }
+  ],
+  "aggregate": [
+    {
+      "detector": "domain_alarm_conservative_fallback",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 7.897157190635451,
+      "achieved_far_pct": 0.4698475908253922,
+      "n_pos": 87,
+      "n_good": 4158,
+      "aggregation": "mean of five seed percentages; per-seed CIs retained in seed_rows"
+    },
+    {
+      "detector": "domain_weighted_conformal",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 10.230490523968786,
+      "achieved_far_pct": 0.8450820179129709,
+      "n_pos": 87,
+      "n_good": 4158,
+      "aggregation": "mean of five seed percentages; per-seed CIs retained in seed_rows"
+    },
+    {
+      "detector": "unweighted_conformal",
+      "decision_hour": 24,
+      "target_far_pct": 0.5,
+      "recall_pct": 8.399386845039018,
+      "achieved_far_pct": 0.9219733029725086,
+      "n_pos": 87,
+      "n_good": 4158,
+      "aggregation": "mean of five seed percentages; per-seed CIs retained in seed_rows"
+    }
+  ],
+  "diagnostics": [
+    {
+      "seed": 0,
+      "domain_classifier_auc": 0.7587170514337503,
+      "fallback_triggered": true,
+      "fallback_alpha": 0.003,
+      "weight_clip": [
+        0.1,
+        10.0
+      ]
+    },
+    {
+      "seed": 1,
+      "domain_classifier_auc": 0.8275081236843719,
+      "fallback_triggered": true,
+      "fallback_alpha": 0.003,
+      "weight_clip": [
+        0.1,
+        10.0
+      ]
+    },
+    {
+      "seed": 2,
+      "domain_classifier_auc": 0.6714232269787825,
+      "fallback_triggered": false,
+      "fallback_alpha": 0.005,
+      "weight_clip": [
+        0.1,
+        10.0
+      ]
+    },
+    {
+      "seed": 3,
+      "domain_classifier_auc": 0.9412023729435508,
+      "fallback_triggered": true,
+      "fallback_alpha": 0.003,
+      "weight_clip": [
+        0.1,
+        10.0
+      ]
+    },
+    {
+      "seed": 4,
+      "domain_classifier_auc": 0.9561302681992337,
+      "fallback_triggered": true,
+      "fallback_alpha": 0.003,
+      "weight_clip": [
+        0.1,
+        10.0
+      ]
+    }
+  ],
+  "not_run": {
+    "hierarchical_lot_calibration": "requires a formally specified new-lot hierarchy; a nearest-lot shortcut would leak target structure",
+    "within_lot_calibration": "not run because labelled healthy target-lot calibration parts were not available",
+    "adaptive_alpha": "not claimed without the formal online update and delay analysis",
+    "exchangeability_martingale": "represented only by the domain-alarm fallback; no theorem-level martingale implementation is claimed"
+  }
+}

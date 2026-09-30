@@ -1,0 +1,5 @@
+streamlit==1.64.0
+reportlab==4.5.1
+Semi-ATE-STDF==0.1.28
+pandas==3.0.6
+numpy==2.4.6

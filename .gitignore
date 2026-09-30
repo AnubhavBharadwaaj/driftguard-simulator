@@ -4,6 +4,7 @@ __pycache__/
 *.py[cod]
 *.pt
 data/
+data_ext/
 literature/
 out/*
 !out/driftguard_results_v2.json

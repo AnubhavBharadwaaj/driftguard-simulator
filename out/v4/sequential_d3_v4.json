@@ -1,0 +1,556 @@
+{
+  "status": "exploratory_partial",
+  "seed_results": [
+    {
+      "seed": 0,
+      "method": "product of p-to-e calibrators, exploratory because conditional checkpoint validity is not proved",
+      "whole_horizon_threshold": 200.0,
+      "snapshots": [
+        {
+          "seed": 0,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "recall_pct": 0.0,
+          "achieved_far_pct": 0.0,
+          "n_pos": 19,
+          "n_good": 991,
+          "recall_cp95": [
+            0.0,
+            17.646691180696536
+          ],
+          "far_cp95": [
+            0.0,
+            0.37154614106355005
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 0.0,
+            "D2_fast_drifter": 0.0,
+            "D3_late_accelerator": 0.0,
+            "D4_multivariate": 0.0
+          }
+        },
+        {
+          "seed": 0,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 48,
+          "target_far_pct": 0.5,
+          "recall_pct": 5.263157894736842,
+          "achieved_far_pct": 3.4308779011099895,
+          "n_pos": 19,
+          "n_good": 991,
+          "recall_cp95": [
+            0.13316288041794228,
+            26.02806541952142
+          ],
+          "far_cp95": [
+            2.387455491629268,
+            4.7615037218032334
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 0.0,
+            "D2_fast_drifter": 0.0,
+            "D3_late_accelerator": 16.666666666666664,
+            "D4_multivariate": 0.0
+          }
+        },
+        {
+          "seed": 0,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 96,
+          "target_far_pct": 0.5,
+          "recall_pct": 63.1578947368421,
+          "achieved_far_pct": 39.354187689202824,
+          "n_pos": 19,
+          "n_good": 991,
+          "recall_cp95": [
+            38.35779233144053,
+            83.71141278449004
+          ],
+          "far_cp95": [
+            36.29758691652268,
+            42.474236281578506
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 100.0,
+            "D2_fast_drifter": 60.0,
+            "D3_late_accelerator": 33.33333333333333,
+            "D4_multivariate": 50.0
+          }
+        },
+        {
+          "seed": 0,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "recall_pct": 73.68421052631578,
+          "achieved_far_pct": 56.81130171543896,
+          "n_pos": 19,
+          "n_good": 991,
+          "recall_cp95": [
+            48.79706546541273,
+            90.85342150923334
+          ],
+          "far_cp95": [
+            53.66043376633811,
+            59.921586856704124
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 100.0,
+            "D2_fast_drifter": 60.0,
+            "D3_late_accelerator": 66.66666666666666,
+            "D4_multivariate": 50.0
+          }
+        }
+      ],
+      "d3_recall_by_hour_pct": {
+        "24": 0.0,
+        "48": 16.666666666666664,
+        "96": 33.33333333333333,
+        "168": 66.66666666666666
+      },
+      "oven_hours_saved_detected_defects": 912.0
+    },
+    {
+      "seed": 1,
+      "method": "product of p-to-e calibrators, exploratory because conditional checkpoint validity is not proved",
+      "whole_horizon_threshold": 200.0,
+      "snapshots": [
+        {
+          "seed": 1,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "recall_pct": 0.0,
+          "achieved_far_pct": 0.1002004008016032,
+          "n_pos": 22,
+          "n_good": 998,
+          "recall_cp95": [
+            0.0,
+            15.437251281557456
+          ],
+          "far_cp95": [
+            0.0025368223295620185,
+            0.5570038901875976
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 0.0,
+            "D2_fast_drifter": 0.0,
+            "D3_late_accelerator": 0.0,
+            "D4_multivariate": 0.0
+          }
+        },
+        {
+          "seed": 1,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 48,
+          "target_far_pct": 0.5,
+          "recall_pct": 22.727272727272727,
+          "achieved_far_pct": 21.8436873747495,
+          "n_pos": 22,
+          "n_good": 998,
+          "recall_cp95": [
+            7.820626035189253,
+            45.3703623662122
+          ],
+          "far_cp95": [
+            19.316228362265292,
+            24.53840486694032
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 50.0,
+            "D2_fast_drifter": 22.22222222222222,
+            "D3_late_accelerator": 14.285714285714285,
+            "D4_multivariate": 25.0
+          }
+        },
+        {
+          "seed": 1,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 96,
+          "target_far_pct": 0.5,
+          "recall_pct": 45.45454545454545,
+          "achieved_far_pct": 40.3807615230461,
+          "n_pos": 22,
+          "n_good": 998,
+          "recall_cp95": [
+            24.38618659230165,
+            67.78952454468283
+          ],
+          "far_cp95": [
+            37.31874818096837,
+            43.49969348498346
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 50.0,
+            "D2_fast_drifter": 44.44444444444444,
+            "D3_late_accelerator": 42.857142857142854,
+            "D4_multivariate": 50.0
+          }
+        },
+        {
+          "seed": 1,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "recall_pct": 68.18181818181817,
+          "achieved_far_pct": 62.02404809619239,
+          "n_pos": 22,
+          "n_good": 998,
+          "recall_cp95": [
+            45.12755724262295,
+            86.13534784462021
+          ],
+          "far_cp95": [
+            58.93099491941132,
+            65.04593662516484
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 50.0,
+            "D2_fast_drifter": 55.55555555555556,
+            "D3_late_accelerator": 85.71428571428571,
+            "D4_multivariate": 75.0
+          }
+        }
+      ],
+      "d3_recall_by_hour_pct": {
+        "24": 0.0,
+        "48": 14.285714285714285,
+        "96": 42.857142857142854,
+        "168": 85.71428571428571
+      },
+      "oven_hours_saved_detected_defects": 960.0
+    },
+    {
+      "seed": 2,
+      "method": "product of p-to-e calibrators, exploratory because conditional checkpoint validity is not proved",
+      "whole_horizon_threshold": 200.0,
+      "snapshots": [
+        {
+          "seed": 2,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "recall_pct": 0.0,
+          "achieved_far_pct": 0.0,
+          "n_pos": 19,
+          "n_good": 886,
+          "recall_cp95": [
+            0.0,
+            17.646691180696536
+          ],
+          "far_cp95": [
+            0.0,
+            0.41548653922558404
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 0.0,
+            "D2_fast_drifter": 0.0,
+            "D3_late_accelerator": 0.0,
+            "D4_multivariate": 0.0
+          }
+        },
+        {
+          "seed": 2,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 48,
+          "target_far_pct": 0.5,
+          "recall_pct": 0.0,
+          "achieved_far_pct": 0.1128668171557562,
+          "n_pos": 19,
+          "n_good": 886,
+          "recall_cp95": [
+            0.0,
+            17.646691180696536
+          ],
+          "far_cp95": [
+            0.0028574995772504583,
+            0.6272336516531422
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 0.0,
+            "D2_fast_drifter": 0.0,
+            "D3_late_accelerator": 0.0,
+            "D4_multivariate": 0.0
+          }
+        },
+        {
+          "seed": 2,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 96,
+          "target_far_pct": 0.5,
+          "recall_pct": 15.789473684210526,
+          "achieved_far_pct": 1.3544018058690745,
+          "n_pos": 19,
+          "n_good": 886,
+          "recall_cp95": [
+            3.3826249001764666,
+            39.57845512666743
+          ],
+          "far_cp95": [
+            0.7017448724795837,
+            2.3539051466165564
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 75.0,
+            "D2_fast_drifter": 0.0,
+            "D3_late_accelerator": 0.0,
+            "D4_multivariate": 0.0
+          }
+        },
+        {
+          "seed": 2,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "recall_pct": 15.789473684210526,
+          "achieved_far_pct": 1.6930022573363432,
+          "n_pos": 19,
+          "n_good": 886,
+          "recall_cp95": [
+            3.3826249001764666,
+            39.57845512666743
+          ],
+          "far_cp95": [
+            0.950577268989192,
+            2.7769964321587186
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 75.0,
+            "D2_fast_drifter": 0.0,
+            "D3_late_accelerator": 0.0,
+            "D4_multivariate": 0.0
+          }
+        }
+      ],
+      "d3_recall_by_hour_pct": {
+        "24": 0.0,
+        "48": 0.0,
+        "96": 0.0,
+        "168": 0.0
+      },
+      "oven_hours_saved_detected_defects": 216.0
+    },
+    {
+      "seed": 3,
+      "method": "product of p-to-e calibrators, exploratory because conditional checkpoint validity is not proved",
+      "whole_horizon_threshold": 200.0,
+      "snapshots": [
+        {
+          "seed": 3,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "recall_pct": 0.0,
+          "achieved_far_pct": 0.0,
+          "n_pos": 25,
+          "n_good": 1110,
+          "recall_cp95": [
+            0.0,
+            13.71851715307125
+          ],
+          "far_cp95": [
+            0.0,
+            0.33177987250870766
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 0.0,
+            "D2_fast_drifter": 0.0,
+            "D3_late_accelerator": 0.0,
+            "D4_multivariate": 0.0
+          }
+        },
+        {
+          "seed": 3,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 48,
+          "target_far_pct": 0.5,
+          "recall_pct": 8.0,
+          "achieved_far_pct": 0.18018018018018017,
+          "n_pos": 25,
+          "n_good": 1110,
+          "recall_cp95": [
+            0.9839590018797509,
+            26.03058421052142
+          ],
+          "far_cp95": [
+            0.021828108995698214,
+            0.6493427577364325
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 66.66666666666666,
+            "D2_fast_drifter": 0.0,
+            "D3_late_accelerator": 0.0,
+            "D4_multivariate": 0.0
+          }
+        },
+        {
+          "seed": 3,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 96,
+          "target_far_pct": 0.5,
+          "recall_pct": 20.0,
+          "achieved_far_pct": 1.4414414414414414,
+          "n_pos": 25,
+          "n_good": 1110,
+          "recall_cp95": [
+            6.831146401248402,
+            40.703743227867726
+          ],
+          "far_cp95": [
+            0.8260932406020608,
+            2.3302803650003856
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 100.0,
+            "D2_fast_drifter": 28.57142857142857,
+            "D3_late_accelerator": 0.0,
+            "D4_multivariate": 0.0
+          }
+        },
+        {
+          "seed": 3,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "recall_pct": 32.0,
+          "achieved_far_pct": 4.504504504504505,
+          "n_pos": 25,
+          "n_good": 1110,
+          "recall_cp95": [
+            14.949542261356955,
+            53.50007174973723
+          ],
+          "far_cp95": [
+            3.3615141040645176,
+            5.895781135736269
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 100.0,
+            "D2_fast_drifter": 57.14285714285714,
+            "D3_late_accelerator": 0.0,
+            "D4_multivariate": 20.0
+          }
+        }
+      ],
+      "d3_recall_by_hour_pct": {
+        "24": 0.0,
+        "48": 0.0,
+        "96": 0.0,
+        "168": 0.0
+      },
+      "oven_hours_saved_detected_defects": 456.0
+    },
+    {
+      "seed": 4,
+      "method": "product of p-to-e calibrators, exploratory because conditional checkpoint validity is not proved",
+      "whole_horizon_threshold": 200.0,
+      "snapshots": [
+        {
+          "seed": 4,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "recall_pct": 0.0,
+          "achieved_far_pct": 0.0,
+          "n_pos": 8,
+          "n_good": 537,
+          "recall_cp95": [
+            0.0,
+            36.94166475528192
+          ],
+          "far_cp95": [
+            0.0,
+            0.6845881159147663
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 0.0,
+            "D2_fast_drifter": null,
+            "D3_late_accelerator": 0.0,
+            "D4_multivariate": 0.0
+          }
+        },
+        {
+          "seed": 4,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 48,
+          "target_far_pct": 0.5,
+          "recall_pct": 12.5,
+          "achieved_far_pct": 0.0,
+          "n_pos": 8,
+          "n_good": 537,
+          "recall_cp95": [
+            0.3159723531251906,
+            52.65096708752065
+          ],
+          "far_cp95": [
+            0.0,
+            0.6845881159147663
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 0.0,
+            "D2_fast_drifter": null,
+            "D3_late_accelerator": 0.0,
+            "D4_multivariate": 33.33333333333333
+          }
+        },
+        {
+          "seed": 4,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 96,
+          "target_far_pct": 0.5,
+          "recall_pct": 50.0,
+          "achieved_far_pct": 19.180633147113593,
+          "n_pos": 8,
+          "n_good": 537,
+          "recall_cp95": [
+            15.701277048705794,
+            84.29872295129421
+          ],
+          "far_cp95": [
+            15.934725517918558,
+            22.769952556780776
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 100.0,
+            "D2_fast_drifter": null,
+            "D3_late_accelerator": 25.0,
+            "D4_multivariate": 66.66666666666666
+          }
+        },
+        {
+          "seed": 4,
+          "detector": "exploratory_eprocess",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "recall_pct": 62.5,
+          "achieved_far_pct": 30.54003724394786,
+          "n_pos": 8,
+          "n_good": 537,
+          "recall_cp95": [
+            24.48632163665516,
+            91.47665858627464
+          ],
+          "far_cp95": [
+            26.6677347469091,
+            34.62808819170719
+          ],
+          "recall_by_type": {
+            "D1_high_in_limit": 100.0,
+            "D2_fast_drifter": null,
+            "D3_late_accelerator": 25.0,
+            "D4_multivariate": 100.0
+          }
+        }
+      ],
+      "d3_recall_by_hour_pct": {
+        "24": 0.0,
+        "48": 0.0,
+        "96": 25.0,
+        "168": 25.0
+      },
+      "oven_hours_saved_detected_defects": 336.0
+    }
+  ],
+  "validity_warning": "The p-to-e product is not a production claim until conditional validity across repeated component measurements is established."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "skipped_human_gate",
+  "models": [
+    "TabPFN v2",
+    "TabPFN 2.5",
+    "TabICLv2",
+    "Mitra-v2",
+    "TabDPT v1.3",
+    "FoMo-0D",
+    "OUTFORMER",
+    "TabPFN unsupervised extension"
+  ],
+  "reason": "Packages and model weights are not installed; gated models also require a user token. Installing the full stack was unsafe with less than four GiB free disk.",
+  "results": []
+}

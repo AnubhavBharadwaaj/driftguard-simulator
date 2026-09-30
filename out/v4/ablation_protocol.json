@@ -1,0 +1,187 @@
+[
+  {
+    "detector": "plus_disjoint_c1_c2",
+    "test_set": "inprior",
+    "tier": "REJECT",
+    "target": "FAR 0.5%",
+    "decision_hour": 24,
+    "achieved_far_pct_mean": 0.306769956673194,
+    "achieved_far_pct_sd": 0.3390618285759386,
+    "recall_pct_mean": 16.461244019138757,
+    "recall_pct_sd": 10.538988456920698,
+    "false_rejects_per_1000_good_mean": 3.06769956673194,
+    "false_rejects_per_1000_good_sd": 3.390618285759386,
+    "review_per_1000_good_mean": 3.06769956673194,
+    "review_per_1000_good_sd": 3.390618285759386,
+    "n_pos": 93,
+    "n_good": 4522,
+    "recall_cp95": [
+      11.893289564836858,
+      28.85307613785408
+    ],
+    "far_cp95": [
+      0.2023730813665233,
+      0.5739565305806372
+    ],
+    "n_by_type": {
+      "D1_high_in_limit": 16,
+      "D2_fast_drifter": 26,
+      "D3_late_accelerator": 34,
+      "D4_multivariate": 17
+    },
+    "recall_by_type": {
+      "D1_high_in_limit": 31.25,
+      "D2_fast_drifter": 0.0,
+      "D3_late_accelerator": 0.0,
+      "D4_multivariate": 76.47058823529412
+    }
+  },
+  {
+    "detector": "plus_randomised_ties",
+    "test_set": "inprior",
+    "tier": "REJECT",
+    "target": "FAR 0.5%",
+    "decision_hour": 24,
+    "achieved_far_pct_mean": 0.36717330625833805,
+    "achieved_far_pct_sd": 0.3636965976413588,
+    "recall_pct_mean": 20.013875598086123,
+    "recall_pct_sd": 6.052347044014565,
+    "false_rejects_per_1000_good_mean": 3.671733062583381,
+    "false_rejects_per_1000_good_sd": 3.636965976413588,
+    "review_per_1000_good_mean": 3.671733062583381,
+    "review_per_1000_good_sd": 3.636965976413588,
+    "n_pos": 93,
+    "n_good": 4522,
+    "recall_cp95": [
+      13.658638199061226,
+      31.240558536324826
+    ],
+    "far_cp95": [
+      0.25315242446215636,
+      0.6553701567415059
+    ],
+    "n_by_type": {
+      "D1_high_in_limit": 16,
+      "D2_fast_drifter": 26,
+      "D3_late_accelerator": 34,
+      "D4_multivariate": 17
+    },
+    "recall_by_type": {
+      "D1_high_in_limit": 37.5,
+      "D2_fast_drifter": 0.0,
+      "D3_late_accelerator": 0.0,
+      "D4_multivariate": 82.3529411764706
+    }
+  },
+  {
+    "detector": "v2_reproduction",
+    "test_set": "inprior",
+    "tier": "REJECT",
+    "target": "FAR 0.5%",
+    "decision_hour": 24,
+    "achieved_far_pct_mean": 0.4077448676203518,
+    "achieved_far_pct_sd": 0.2401676817715179,
+    "recall_pct_mean": 27.26267942583732,
+    "recall_pct_sd": 7.826290282011418,
+    "false_rejects_per_1000_good_mean": 4.0774486762035185,
+    "false_rejects_per_1000_good_sd": 2.4016768177151793,
+    "review_per_1000_good_mean": 4.0774486762035185,
+    "review_per_1000_good_sd": 2.4016768177151793,
+    "n_pos": 93,
+    "n_good": 4522,
+    "recall_cp95": [
+      17.28666885288626,
+      35.92267859526558
+    ],
+    "far_cp95": [
+      0.2703604115858387,
+      0.6822463852619854
+    ],
+    "n_by_type": {
+      "D1_high_in_limit": 16,
+      "D2_fast_drifter": 26,
+      "D3_late_accelerator": 34,
+      "D4_multivariate": 17
+    },
+    "recall_by_type": {
+      "D1_high_in_limit": 81.25,
+      "D2_fast_drifter": 0.0,
+      "D3_late_accelerator": 0.0,
+      "D4_multivariate": 64.70588235294117
+    }
+  },
+  {
+    "detector": "v3_twice_mean",
+    "test_set": "inprior",
+    "tier": "REJECT",
+    "target": "FAR 0.5%",
+    "decision_hour": 24,
+    "achieved_far_pct_mean": 0.37563122140398547,
+    "achieved_far_pct_sd": 0.4311615502072215,
+    "recall_pct_mean": 21.219138755980858,
+    "recall_pct_sd": 14.210973524128047,
+    "false_rejects_per_1000_good_mean": 3.7563122140398546,
+    "false_rejects_per_1000_good_sd": 4.311615502072215,
+    "review_per_1000_good_mean": 3.7563122140398546,
+    "review_per_1000_good_sd": 4.311615502072215,
+    "n_pos": 93,
+    "n_good": 4522,
+    "recall_cp95": [
+      16.368489661265716,
+      34.762862840889255
+    ],
+    "far_cp95": [
+      0.25315242446215636,
+      0.6553701567415059
+    ],
+    "n_by_type": {
+      "D1_high_in_limit": 16,
+      "D2_fast_drifter": 26,
+      "D3_late_accelerator": 34,
+      "D4_multivariate": 17
+    },
+    "recall_by_type": {
+      "D1_high_in_limit": 56.25,
+      "D2_fast_drifter": 3.8461538461538463,
+      "D3_late_accelerator": 0.0,
+      "D4_multivariate": 76.47058823529412
+    }
+  },
+  {
+    "detector": "v4_three_way",
+    "test_set": "inprior",
+    "tier": "REJECT",
+    "target": "FAR 0.5%",
+    "decision_hour": 24,
+    "achieved_far_pct_mean": 0.6650199253705587,
+    "achieved_far_pct_sd": 1.147310750267829,
+    "recall_pct_mean": 13.883253588516748,
+    "recall_pct_sd": 13.960647449355356,
+    "false_rejects_per_1000_good_mean": 6.650199253705589,
+    "false_rejects_per_1000_good_sd": 11.473107502678292,
+    "review_per_1000_good_mean": 6.650199253705589,
+    "review_per_1000_good_sd": 11.473107502678292,
+    "n_pos": 93,
+    "n_good": 4522,
+    "recall_cp95": [
+      9.317817993004091,
+      25.203426255107946
+    ],
+    "far_cp95": [
+      0.5028540748168905,
+      1.0233489068470454
+    ],
+    "n_by_type": {
+      "D1_high_in_limit": 16,
+      "D2_fast_drifter": 26,
+      "D3_late_accelerator": 34,
+      "D4_multivariate": 17
+    },
+    "recall_by_type": {
+      "D1_high_in_limit": 43.75,
+      "D2_fast_drifter": 7.6923076923076925,
+      "D3_late_accelerator": 0.0,
+      "D4_multivariate": 35.294117647058826
+    }
+  }
+]

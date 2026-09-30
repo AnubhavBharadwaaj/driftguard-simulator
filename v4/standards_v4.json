@@ -1,0 +1,12 @@
+{
+  "status": "skipped",
+  "reason": "Primary standards text was not available locally and no unverified duration or percentage is asserted.",
+  "documents": [
+    "MIL-STD-883 TM1015",
+    "MIL-STD-883 TM5004",
+    "MIL-PRF-38535",
+    "MIL-STD-750 TM1042",
+    "ESCC 5000",
+    "ESCC 22900"
+  ]
+}

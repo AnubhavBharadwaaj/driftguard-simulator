@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "n_parts": 240,
+  "n_flagged": 1,
+  "input_sha256": "6a6ce5571c678263eb2c6b6f6c5e4a7ea76622ee18e840df8bdf3083f0b17e4e",
+  "stdf_roundtrip_rows": 1
+}

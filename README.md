@@ -1,8 +1,8 @@
-# DriftGuard simulator and benchmark
+# Sahodrift simulator, benchmark and inspector
 
-DriftGuard is a research prototype for SIH26170, AI driven anomaly detection in component burn in and screening. The repository contains the physics motivated synthetic data generator, fixed baselines, conformal detection methods, hierarchical forecasting, adaptive readout experiments, deconfounding logic and the experimental DriftPFN lot context model.
+Sahodrift, formerly DriftGuard, is a research prototype for SIH26170, AI driven anomaly detection in component burn in and screening. It combines lot relative evidence, drift evidence and conditional residual evidence, then calibrates reject or review decisions on lots that are disjoint from model and rule selection.
 
-The repository also includes the final machine readable experiment handback at [`out/driftguard_results_v2.json`](out/driftguard_results_v2.json).
+Machine readable handbacks are preserved at `out/driftguard_results_v2.json`, `out/v3/driftguard_results_v3.json` and `out/v4/sahodrift_results_v4.json`. The v4 handback is the current evidence index.
 
 ## Important scope statement
 
@@ -19,6 +19,11 @@ These results come from synthetic experiments and a limited public data pipeline
 * `driftpfn/`: lot in context transformer experiment
 * `run_v2.py`: main v2 experiment runner
 * `finalize_v2.py`: assembles the final JSON handback
+* `v3/run_v3.py`: two way conformal calibration and rival stack
+* `v4/run_phase_a.py`: three way calibration, protocol ablation, CRC review tier and trap experiments
+* `v4/rival_benchmark.py`: independent Aabhas and BurnTrace adapters
+* `v4/run_shift_sequential.py`: shifted set and exploratory sequential experiments
+* `app/`: local Streamlit inspector, reason cards, audit export and STDF v4 ingestion
 
 The v1 files are retained because the v2 postmortem compares against them.
 
@@ -47,15 +52,30 @@ For the original benchmark:
 python run_all.py
 ```
 
+For v4:
+
+```bash
+.venv/bin/python v4/run_phase_a.py
+.venv/bin/python v4/rival_benchmark.py
+.venv/bin/python v4/run_shift_sequential.py
+.venv/bin/python v4/test_demo.py
+.venv/bin/python v4/finalize_v4.py
+.venv/bin/streamlit run app/main.py
+```
+
 TabPFN is not listed as a required dependency because local model access may require separate licence acceptance and credentials. The final results JSON records that experiment as skipped. External datasets, downloaded papers, virtual environments and trained checkpoints are intentionally not committed.
 
 ## Reproducibility and integrity
 
 The experiment design keeps training, calibration and test lots separate. Thresholds and conformal quantities are set on calibration lots. The results JSON records seeds, package versions, work package status, limitations and every place where a new method lost to a baseline.
 
-## Results
+## Evidence labels and dataset licences
 
-See [`out/driftguard_results_v2.json`](out/driftguard_results_v2.json) for the complete structured results. Treat headline metrics together with the `integrity`, `wp_status`, `postmortem` and shifted set fields.
+Synthetic rows are labelled simulation evidence. Aabhas and BurnTrace are cross benchmark evidence tied to their repository commit and split note. CORA and gEOL are CC BY public laboratory data. Bosch data is governed by Kaggle competition rules and is never redistributed here. Rival repositories and datasets remain uncommitted under `data_ext/`.
+
+## Results and limitations
+
+Treat every recall together with its achieved FAR, decision hour, sample count and interval. V4 closes the calibration selection leak and degenerate review threshold, but its in prior 0.5 percent REJECT row spends 0.665 percent FAR and the review tiers remain expensive. Public cross benchmarks are mixed: the method is competitive on Aabhas at 24 hours but detected no BurnTrace anomalies in the small held out split. The sequential result is explicitly exploratory.
 
 ## Project status
 

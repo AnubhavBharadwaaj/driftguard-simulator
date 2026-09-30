@@ -1,0 +1,372 @@
+{
+  "benchmarks": [
+    {
+      "dataset": "Aabhas",
+      "meta": {
+        "trap_classes_counted_good": [
+          "Va",
+          "VI",
+          "VII",
+          "all rows where is_trap is true"
+        ],
+        "source_split": "train LOT000 to LOT143, calibration LOT144 to LOT191, test LOT192 to LOT239",
+        "missing_value_policy": "training period median per parameter and checkpoint"
+      },
+      "source_repo": "https://github.com/Mihir1107/Aabhas",
+      "commit": "3d3b1e152f65abd2ad2f90fdc6f755b83f2de73c",
+      "sahodrift": [
+        {
+          "dataset": "Aabhas",
+          "detector": "sahodrift_twice_mean",
+          "source_repo": "https://github.com/Mihir1107/Aabhas",
+          "commit": "3d3b1e152f65abd2ad2f90fdc6f755b83f2de73c",
+          "split_note": "train LOT000 to LOT143, calibration LOT144 to LOT191, test LOT192 to LOT239",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.6490476392482926,
+          "recall_pct": 28.805620608899297,
+          "n_pos": 427,
+          "n_good": 23573,
+          "recall_cp95": [
+            24.552996039854197,
+            33.354785268894524
+          ],
+          "far_cp95": [
+            0.5505391997831021,
+            0.760002699761994
+          ]
+        },
+        {
+          "dataset": "Aabhas",
+          "detector": "sahodrift_twice_mean",
+          "source_repo": "https://github.com/Mihir1107/Aabhas",
+          "commit": "3d3b1e152f65abd2ad2f90fdc6f755b83f2de73c",
+          "split_note": "train LOT000 to LOT143, calibration LOT144 to LOT191, test LOT192 to LOT239",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.4454248504645145,
+          "recall_pct": 40.749414519906324,
+          "n_pos": 427,
+          "n_good": 23573,
+          "recall_cp95": [
+            36.04999699613613,
+            45.57791899451699
+          ],
+          "far_cp95": [
+            0.3644536170845888,
+            0.5389608827061614
+          ]
+        }
+      ],
+      "rival_baselines": [],
+      "rival_baselines_status": "skipped_compute_cap: the five reference implementations require repeated tree ensembles on 72,000 training parts; Sahodrift and the repository's published comparator are reported without changing either method",
+      "their_published": [
+        {
+          "decision_hour": 24,
+          "recall_pct": 29.7,
+          "achieved_far_pct": 0.54,
+          "file": "results/safety_slopes_union.csv"
+        },
+        {
+          "decision_hour": 168,
+          "recall_pct": 92.7,
+          "yield_loss_pct": 7.0,
+          "file": "modulea/evaluation.py:169",
+          "caveat": "threshold taken from test good parts"
+        }
+      ]
+    },
+    {
+      "dataset": "BurnTrace",
+      "meta": {
+        "source_split": "lot grouped 60/20/20 inside the published labelled calibration table",
+        "split_differs_from_their_published_holdout": true,
+        "reason": "The designated public holdout has no labels",
+        "missing_value_policy": "training period median per parameter and checkpoint"
+      },
+      "source_repo": "https://github.com/chaitanychoudhari3107-dotcom/SIH26170-Improved",
+      "commit": "a8796e197f242d87768272db8b055dda21120c69",
+      "sahodrift": [
+        {
+          "dataset": "BurnTrace",
+          "detector": "sahodrift_twice_mean",
+          "source_repo": "https://github.com/chaitanychoudhari3107-dotcom/SIH26170-Improved",
+          "commit": "a8796e197f242d87768272db8b055dda21120c69",
+          "split_note": "lot grouped 60/20/20 inside the published labelled calibration table",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.46511627906976744,
+          "recall_pct": 0.0,
+          "n_pos": 13,
+          "n_good": 215,
+          "recall_cp95": [
+            0.0,
+            24.705263800047092
+          ],
+          "far_cp95": [
+            0.011775031332615725,
+            2.5640774929679475
+          ]
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "sahodrift_twice_mean",
+          "source_repo": "https://github.com/chaitanychoudhari3107-dotcom/SIH26170-Improved",
+          "commit": "a8796e197f242d87768272db8b055dda21120c69",
+          "split_note": "lot grouped 60/20/20 inside the published labelled calibration table",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.0,
+          "recall_pct": 0.0,
+          "n_pos": 13,
+          "n_good": 215,
+          "recall_cp95": [
+            0.0,
+            24.705263800047092
+          ],
+          "far_cp95": [
+            0.0,
+            1.701122581691038
+          ]
+        }
+      ],
+      "rival_baselines": [
+        {
+          "dataset": "BurnTrace",
+          "detector": "R1_lot_mad",
+          "source_repo": "https://github.com/chaitanychoudhari3107-dotcom/SIH26170-Improved",
+          "commit": "a8796e197f242d87768272db8b055dda21120c69",
+          "split_note": "lot grouped 60/20/20 inside the published labelled calibration table; rival baseline fit uses full training split",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.46511627906976744,
+          "recall_pct": 30.76923076923077,
+          "n_pos": 13,
+          "n_good": 215,
+          "recall_cp95": [
+            9.09203945720966,
+            61.42616617507044
+          ],
+          "far_cp95": [
+            0.011775031332615725,
+            2.5640774929679475
+          ],
+          "ci_note": "Counts reconstructed from the helper's unrounded percentages and exact denominators."
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R2_isolation_forest",
+          "source_repo": "https://github.com/chaitanychoudhari3107-dotcom/SIH26170-Improved",
+          "commit": "a8796e197f242d87768272db8b055dda21120c69",
+          "split_note": "lot grouped 60/20/20 inside the published labelled calibration table; rival baseline fit uses full training split",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.0,
+          "recall_pct": 23.076923076923077,
+          "n_pos": 13,
+          "n_good": 215,
+          "recall_cp95": [
+            5.038107349115153,
+            53.81315392340409
+          ],
+          "far_cp95": [
+            0.0,
+            1.701122581691038
+          ],
+          "ci_note": "Counts reconstructed from the helper's unrounded percentages and exact denominators."
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R3_supervised_gbdt_fallback",
+          "source_repo": "https://github.com/chaitanychoudhari3107-dotcom/SIH26170-Improved",
+          "commit": "a8796e197f242d87768272db8b055dda21120c69",
+          "split_note": "lot grouped 60/20/20 inside the published labelled calibration table; rival baseline fit uses full training split",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 1.3953488372093024,
+          "recall_pct": 7.6923076923076925,
+          "n_pos": 13,
+          "n_good": 215,
+          "recall_cp95": [
+            0.19456284973467483,
+            36.02974352678775
+          ],
+          "far_cp95": [
+            0.28868405648798506,
+            4.023427551179476
+          ],
+          "ci_note": "Counts reconstructed from the helper's unrounded percentages and exact denominators."
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R4_unsupervised_ensemble",
+          "source_repo": "https://github.com/chaitanychoudhari3107-dotcom/SIH26170-Improved",
+          "commit": "a8796e197f242d87768272db8b055dda21120c69",
+          "split_note": "lot grouped 60/20/20 inside the published labelled calibration table; rival baseline fit uses full training split",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.46511627906976744,
+          "recall_pct": 23.076923076923077,
+          "n_pos": 13,
+          "n_good": 215,
+          "recall_cp95": [
+            5.038107349115153,
+            53.81315392340409
+          ],
+          "far_cp95": [
+            0.011775031332615725,
+            2.5640774929679475
+          ],
+          "ci_note": "Counts reconstructed from the helper's unrounded percentages and exact denominators."
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R5_ridge_forecast_slope",
+          "source_repo": "https://github.com/chaitanychoudhari3107-dotcom/SIH26170-Improved",
+          "commit": "a8796e197f242d87768272db8b055dda21120c69",
+          "split_note": "lot grouped 60/20/20 inside the published labelled calibration table; rival baseline fit uses full training split",
+          "decision_hour": 24,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.0,
+          "recall_pct": 23.076923076923077,
+          "n_pos": 13,
+          "n_good": 215,
+          "recall_cp95": [
+            5.038107349115153,
+            53.81315392340409
+          ],
+          "far_cp95": [
+            0.0,
+            1.701122581691038
+          ],
+          "ci_note": "Counts reconstructed from the helper's unrounded percentages and exact denominators."
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R1_lot_mad",
+          "source_repo": "https://github.com/chaitanychoudhari3107-dotcom/SIH26170-Improved",
+          "commit": "a8796e197f242d87768272db8b055dda21120c69",
+          "split_note": "lot grouped 60/20/20 inside the published labelled calibration table; rival baseline fit uses full training split",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.46511627906976744,
+          "recall_pct": 53.84615384615385,
+          "n_pos": 13,
+          "n_good": 215,
+          "recall_cp95": [
+            25.134548227030358,
+            80.7767558198712
+          ],
+          "far_cp95": [
+            0.011775031332615725,
+            2.5640774929679475
+          ],
+          "ci_note": "Counts reconstructed from the helper's unrounded percentages and exact denominators."
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R2_isolation_forest",
+          "source_repo": "https://github.com/chaitanychoudhari3107-dotcom/SIH26170-Improved",
+          "commit": "a8796e197f242d87768272db8b055dda21120c69",
+          "split_note": "lot grouped 60/20/20 inside the published labelled calibration table; rival baseline fit uses full training split",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 3.255813953488372,
+          "recall_pct": 61.53846153846154,
+          "n_pos": 13,
+          "n_good": 215,
+          "recall_cp95": [
+            31.577760291406303,
+            86.14206611098393
+          ],
+          "far_cp95": [
+            1.3188357419354335,
+            6.592891500021435
+          ],
+          "ci_note": "Counts reconstructed from the helper's unrounded percentages and exact denominators."
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R3_supervised_gbdt_fallback",
+          "source_repo": "https://github.com/chaitanychoudhari3107-dotcom/SIH26170-Improved",
+          "commit": "a8796e197f242d87768272db8b055dda21120c69",
+          "split_note": "lot grouped 60/20/20 inside the published labelled calibration table; rival baseline fit uses full training split",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 2.7906976744186047,
+          "recall_pct": 7.6923076923076925,
+          "n_pos": 13,
+          "n_good": 215,
+          "recall_cp95": [
+            0.19456284973467483,
+            36.02974352678775
+          ],
+          "far_cp95": [
+            1.0308791633838166,
+            5.974908645347508
+          ],
+          "ci_note": "Counts reconstructed from the helper's unrounded percentages and exact denominators."
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R4_unsupervised_ensemble",
+          "source_repo": "https://github.com/chaitanychoudhari3107-dotcom/SIH26170-Improved",
+          "commit": "a8796e197f242d87768272db8b055dda21120c69",
+          "split_note": "lot grouped 60/20/20 inside the published labelled calibration table; rival baseline fit uses full training split",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 5.5813953488372094,
+          "recall_pct": 69.23076923076923,
+          "n_pos": 13,
+          "n_good": 215,
+          "recall_cp95": [
+            38.57383382492956,
+            90.90796054279033
+          ],
+          "far_cp95": [
+            2.9169078342920716,
+            9.546549706361871
+          ],
+          "ci_note": "Counts reconstructed from the helper's unrounded percentages and exact denominators."
+        },
+        {
+          "dataset": "BurnTrace",
+          "detector": "R5_ridge_forecast_slope",
+          "source_repo": "https://github.com/chaitanychoudhari3107-dotcom/SIH26170-Improved",
+          "commit": "a8796e197f242d87768272db8b055dda21120c69",
+          "split_note": "lot grouped 60/20/20 inside the published labelled calibration table; rival baseline fit uses full training split",
+          "decision_hour": 168,
+          "target_far_pct": 0.5,
+          "achieved_far_pct": 0.0,
+          "recall_pct": 30.76923076923077,
+          "n_pos": 13,
+          "n_good": 215,
+          "recall_cp95": [
+            9.09203945720966,
+            61.42616617507044
+          ],
+          "far_cp95": [
+            0.0,
+            1.701122581691038
+          ],
+          "ci_note": "Counts reconstructed from the helper's unrounded percentages and exact denominators."
+        }
+      ],
+      "rival_baselines_status": "completed",
+      "their_published": [
+        {
+          "decision_hour": 24,
+          "recall_pct": 21.1,
+          "achieved_far_pct": 2.55,
+          "file": "results/09_holdout_metrics.csv"
+        },
+        {
+          "decision_hour": 168,
+          "recall_pct": 72.2,
+          "achieved_far_pct": 1.04,
+          "file": "results/09_holdout_metrics.csv"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Start from the verified v3 environment.
+-r ../v3/requirements-v3.txt
+
+streamlit==1.64.0
+reportlab==4.5.1
+Semi-ATE-STDF==0.1.28
+
+# Human gated foundation models remain unpinned until weights, licences and
+# tokens are available in the environment where they will run.

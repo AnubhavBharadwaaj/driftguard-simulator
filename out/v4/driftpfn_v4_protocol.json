@@ -1,0 +1,4 @@
+{
+  "status": "skipped",
+  "reason": "No out/driftpfn.pt checkpoint exists in the repository; A8 forbids retraining as a substitute."
+}
