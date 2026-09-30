@@ -79,6 +79,12 @@ The v5 protocol compares every merger only after the same lot-held-out recalibra
 
 Public browser inspector: https://sahodrift-app.vercel.app
 
+Captioned 72 second walkthrough: https://github.com/AnubhavBharadwaaj/driftguard-simulator/releases/download/v6-results/Sahodrift_Inspector_demo.mp4
+
+## v6 comparison closure
+
+The preregistered v6 experiments compare Sahodrift with R1 through R5 under the same v5 healthy calibration rows, test the 168 hour half-budget rule on fresh seeds 5 through 9, diagnose Aabhas by defect class, and evaluate BurnTrace at resolvable 1 percent and 2 percent budgets. See `out/v6/sahodrift_results_v6.json` and `out/v6/simulator_rivals_v5_rules.json`.
+
 ### CORA identifier erratum
 
 The correct DOI for the Perez-Farre et al. Si IGBT accelerated power-cycling dataset is `10.34810/data3204`. The dataset Readme's `10.34810/data3206` reference is a typo: DataCite identifies `data3206` as an unrelated colistin-delivery dataset. The frozen v4 output is not rewritten; v5 records the correction explicitly.
